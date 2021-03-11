@@ -2,8 +2,8 @@ import "./App.css";
 import Menu from "./components/Menu";
 import Quiz from "./components/Quiz";
 import EndScreen from "./components/EndScreen.js";
-import { useState } from "react";
-// import { GameStateContext } from "./helpers/Contexts";
+import React, { useState,useContext } from "react";
+import { QuizContext } from "./Helpers/Contexts";
 // ['menu', 'playing', 'finished']
 
 function App() {
@@ -13,7 +13,12 @@ function App() {
   return (
     <div className="App">
       <h1>Quiz App</h1>
-      {gameState=="menu"&&<Menu/>}
+      <QuizContext.Provider value={{gameState,setGameState}}>
+        {gameState == "menu" && <Menu />}
+        {gameState == "quiz" && <Quiz />}
+        {gameState=="endscreen"&&<EndScreen/>}
+      </QuizContext.Provider>
+     
       {/* <GameStateContext.Provider
         value={{
           gameState,
