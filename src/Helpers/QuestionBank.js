@@ -1,6 +1,8 @@
-export const Questions =  [
+export const Questions = [
   {
     prompt: "What is my name?",
+    image:
+      "https://asset.holidaycardsapp.com/assets/card/20210107_hi6-1b29c66cd4c2e7019e9c31183f57bc555520020a2a1c7589e7400cf769b907e9.png",
     optionA: "John",
     optionB: "Jake",
     optionC: "Josh",
@@ -23,4 +25,4 @@ export const Questions =  [
     optionD: "Java",
     answer: "D",
   },
-];
+]

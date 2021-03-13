@@ -1,3 +1,8 @@
+.quizContainer {
+  margin-top: 15px;
+  width: 100%;
+  height: 100%;
+}
 .App {
   text-align: center;
   font-family: arial;
@@ -6,12 +11,15 @@
   align-items: center;
   flex-direction: column;
 }
-
+.Quiz {
+  background: lightseagreen;
+}
 .Menu,
-.Quiz,.EndScreen {
-  width: 500px;
-  height: 500px;
-  border-radius: 10px;
+.Quiz,
+.EndScreen {
+  width: 100vw;
+  height: 100vh;
+
   background-color: lightseagreen;
   display: flex;
   flex-direction: column;
@@ -19,30 +27,27 @@
   align-items: center;
 }
 
-.Menu button,
-.Quiz button ,
-.EndScreen button{
+/* .Menu button,
+.Quiz button,
+.EndScreen button {
   width: 300px;
   height: 50px;
   margin: 5px;
   border: none;
   border-radius: 5px;
   font-size: 20px;
-}
+} */
 button:hover {
   cursor: pointer;
 }
 
-
-
-.Menu, .Quiz, .EndScreen h1 {
+.Menu,
+.Quiz,
+.EndScreen h1 {
   color: white;
 }
 
 .EndScreen {
-  width: 500px;
-  height: 500px;
-  border-radius: 10px;
   background-color: lightseagreen;
   display: flex;
   flex-direction: column;
@@ -53,4 +58,3 @@ button:hover {
 #nextQuestion {
   width: 200px;
 }
-
