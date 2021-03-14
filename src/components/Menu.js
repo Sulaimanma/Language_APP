@@ -11,6 +11,7 @@ export default function Menu() {
         onClick={() => {
           setGameState("quiz")
         }}
+        size="lg"
       >
         Start quiz
       </Button>

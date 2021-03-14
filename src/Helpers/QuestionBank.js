@@ -2,7 +2,7 @@ export const Questions = [
   {
     prompt: "What is my name?",
     image:
-      "https://asset.holidaycardsapp.com/assets/card/20210107_hi6-1b29c66cd4c2e7019e9c31183f57bc555520020a2a1c7589e7400cf769b907e9.png",
+      "https://doqvf81n9htmm.cloudfront.net/data/crop_article/100385/shutterstock_1164809464.jpg_1140x855.jpg",
     optionA: "John",
     optionB: "Jake",
     optionC: "Josh",
@@ -11,6 +11,9 @@ export const Questions = [
   },
   {
     prompt: "Which of this is not a programming language?",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS21AL-3L9KcGG7AoKZV-T2-L0B0L80qmRvWQ&usqp=CAU",
+
     optionA: "Python",
     optionB: "JavaScript",
     optionC: "MC-03",
@@ -19,6 +22,7 @@ export const Questions = [
   },
   {
     prompt: "Which of this is not a javascript framework?",
+    video: "https://www.youtube.com/embed/vciLmWkOTAQ",
     optionA: "React",
     optionB: "Angular",
     optionC: "Vue",

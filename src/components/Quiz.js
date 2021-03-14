@@ -10,6 +10,7 @@ import { FaRegKeyboard } from "react-icons/fa"
 import { HiOutlineLightBulb, HiDownload } from "react-icons/hi"
 import { RiKeyboardFill } from "react-icons/ri"
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap"
+
 export default function Quiz() {
   const { score, setScore, setGameState } = useContext(QuizContext)
   const [currentQuestion, setCurrentQuestion] = useState(0)
@@ -56,11 +57,17 @@ export default function Quiz() {
                   </div>
                 </div>
               </Col>
-              <Col md={{ span: 5, offset: 2 }} xs={12}>
-                <ProgressBar animated now={45} />
+              <Col md={{ span: 6, offset: 1 }} xs={10}>
+                <div className="progressbarDiv">
+                  <ProgressBar
+                    animated
+                    now={((currentQuestion + 1) * 100) / Questions.length}
+                  />
+                </div>
               </Col>
-              <Col auto>
-                <div className="iconCloseDiv">
+              <Col auto></Col>
+              <Col xs={1}>
+                <div className="iconCloseDiv" onClick={finishQuiz}>
                   <div className="iconItem">
                     <IoClose />
                   </div>
@@ -70,53 +77,88 @@ export default function Quiz() {
           </IconContext.Provider>
 
           <Row>
-            <Col
-              md={{ span: 3, offset: 3 }}
-            >{`md={{ span: 3, offset: 3 }}`}</Col>
-            <Col
-              md={{ span: 3, offset: 3 }}
-            >{`md={{ span: 3, offset: 3 }}`}</Col>
+            <Col md={{ span: 4, offset: 4 }} xs={12} className="text-left">
+              <div className="question">
+                <h3>{Questions[currentQuestion].prompt}</h3>
+              </div>
+            </Col>
           </Row>
           <Row>
-            <Col
-              md={{ span: 6, offset: 3 }}
-            >{`md={{ span: 6, offset: 3 }}`}</Col>
-          </Row>
-          <Row>
-            <Col md={4}>md=4</Col>
-            <Col
-              md={{ span: 4, offset: 4 }}
-            >{`md={{ span: 4, offset: 4 }}`}</Col>
-          </Row>
-          <Row>
-            <h1>{Questions[currentQuestion].prompt}</h1>
-            <Col lg={{ span: 4, offset: 4 }}>
+            <Col md={{ span: 4, offset: 4 }} className="text-left">
               {Questions[currentQuestion].image && (
-                <Image src={Questions[currentQuestion].image} fluid />
+                <div className="QuestionDiv">
+                  <Image
+                    src={Questions[currentQuestion].image}
+                    fluid
+                    rounded
+                    className="questionImg"
+                  />
+                </div>
+              )}
+              {Questions[currentQuestion].video && (
+                <div className="QuestionDiv">
+                  <iframe
+                    width="450"
+                    height="315"
+                    src={Questions[currentQuestion].video}
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
               )}
             </Col>
-
-            <div className="options">
-              <Button onClick={() => setOptionChosen("A")}>
-                {Questions[currentQuestion].optionA}
-              </Button>
-              <Button onClick={() => setOptionChosen("B")}>
-                {Questions[currentQuestion].optionB}
-              </Button>
-              <Button onClick={() => setOptionChosen("C")}>
-                {Questions[currentQuestion].optionC}
-              </Button>
-              <Button onClick={() => setOptionChosen("D")}>
-                {Questions[currentQuestion].optionD}
-              </Button>
-            </div>
-            {currentQuestion === Questions.length - 1 ? (
-              <Button onClick={finishQuiz}>Finish Quiz</Button>
-            ) : (
-              <Button onClick={nextQuestion}>Next Question</Button>
-            )}
+          </Row>
+          <Row>
+            <Col md={{ span: 4, offset: 4 }} className="text-left">
+              <div className="options">
+                <Button
+                  variant="light"
+                  onClick={() => setOptionChosen("A")}
+                  className="optionButton"
+                >
+                  {Questions[currentQuestion].optionA}
+                </Button>
+                <Button
+                  variant="light"
+                  onClick={() => setOptionChosen("B")}
+                  className="optionButton"
+                >
+                  {Questions[currentQuestion].optionB}
+                </Button>
+                <Button
+                  variant="light"
+                  onClick={() => setOptionChosen("C")}
+                  className="optionButton"
+                >
+                  {Questions[currentQuestion].optionC}
+                </Button>
+                <Button
+                  variant="light"
+                  onClick={() => setOptionChosen("D")}
+                  className="optionButton"
+                >
+                  {Questions[currentQuestion].optionD}
+                </Button>
+              </div>
+            </Col>
           </Row>
         </Container>
+        <Row className="nextRow">
+          <Col md={{ span: 4, offset: 8 }} className="text-right">
+            <div className="nextDiv">
+              {currentQuestion === Questions.length - 1 ? (
+                <Button onClick={finishQuiz} className="next" size="lg">
+                  Finish Quiz
+                </Button>
+              ) : (
+                <Button onClick={nextQuestion} className="next" size="lg">
+                  Next Question
+                </Button>
+              )}
+            </div>
+          </Col>
+        </Row>
       </div>
     </>
   )
