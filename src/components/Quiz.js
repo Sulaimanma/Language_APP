@@ -4,14 +4,12 @@ import { QuizContext } from "../Helpers/Contexts"
 import "../App.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Image from "react-bootstrap/Image"
-import {
-  Container,
-  Row,
-  Col,
-  ButtonGroup,
-  Button,
-  ProgressBar,
-} from "react-bootstrap"
+import { IconContext } from "react-icons"
+import { IoClose } from "react-icons/io5"
+import { FaRegKeyboard } from "react-icons/fa"
+import { HiOutlineLightBulb, HiDownload } from "react-icons/hi"
+import { RiKeyboardFill } from "react-icons/ri"
+import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap"
 export default function Quiz() {
   const { score, setScore, setGameState } = useContext(QuizContext)
   const [currentQuestion, setCurrentQuestion] = useState(0)
@@ -37,25 +35,39 @@ export default function Quiz() {
     <>
       <div className="Quiz">
         <Container fluid className="quizContainer">
-          <Row fluid>
-            <Col md={1}>
-              <ButtonGroup aria-label="Basic example" size="sm">
-                <Button variant="secondary" size="sm">
-                  Left
-                </Button>
-                <Button variant="secondary" size="sm">
-                  Middle
-                </Button>
-                <Button variant="secondary" size="sm">
-                  Right
-                </Button>
-              </ButtonGroup>
-            </Col>
-            <Col md={{ span: 4, offset: 3 }}>
-              <ProgressBar animated now={45} />
-            </Col>
-            <Col md="auto"></Col>
-          </Row>
+          <IconContext.Provider
+            value={{
+              className: "menu-icons",
+              size: "1.7rem",
+              color: "#666e7e",
+            }}
+          >
+            <Row fluid>
+              <Col md={2} xs={12}>
+                <div className="iconMenu">
+                  <div className="iconItem">
+                    <RiKeyboardFill className="keyboard" />
+                  </div>
+                  <div className="iconItem">
+                    <HiOutlineLightBulb className="bulb" />
+                  </div>
+                  <div className="iconItem">
+                    <HiDownload className="download" />
+                  </div>
+                </div>
+              </Col>
+              <Col md={{ span: 5, offset: 2 }} xs={12}>
+                <ProgressBar animated now={45} />
+              </Col>
+              <Col auto>
+                <div className="iconCloseDiv">
+                  <div className="iconClose">
+                    <IoClose />
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </IconContext.Provider>
           <Row>
             <Col
               md={{ span: 3, offset: 3 }}
