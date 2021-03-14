@@ -116,6 +116,7 @@ export default function Quiz() {
                   variant="light"
                   onClick={() => setOptionChosen("A")}
                   className="optionButton"
+                  size="lg"
                 >
                   {Questions[currentQuestion].optionA}
                 </Button>
@@ -123,6 +124,7 @@ export default function Quiz() {
                   variant="light"
                   onClick={() => setOptionChosen("B")}
                   className="optionButton"
+                  size="lg"
                 >
                   {Questions[currentQuestion].optionB}
                 </Button>
@@ -130,6 +132,7 @@ export default function Quiz() {
                   variant="light"
                   onClick={() => setOptionChosen("C")}
                   className="optionButton"
+                  size="lg"
                 >
                   {Questions[currentQuestion].optionC}
                 </Button>
@@ -137,6 +140,7 @@ export default function Quiz() {
                   variant="light"
                   onClick={() => setOptionChosen("D")}
                   className="optionButton"
+                  size="lg"
                 >
                   {Questions[currentQuestion].optionD}
                 </Button>
@@ -145,7 +149,11 @@ export default function Quiz() {
           </Row>
         </Container>
         <Row className="nextRow">
-          <Col md={{ span: 4, offset: 8 }} className="text-right">
+          <Col
+            md={{ span: 4, offset: 8 }}
+            xs={{ span: 6, offset: 3 }}
+            className="text-right"
+          >
             <div className="nextDiv">
               {currentQuestion === Questions.length - 1 ? (
                 <Button onClick={finishQuiz} className="next" size="lg">
