@@ -1,3 +1,4 @@
+/* Top icon group and progress bar */
 .quizContainer {
   margin-top: 15px;
   width: 100%;
@@ -16,10 +17,16 @@
 }
 .iconItem {
   margin-right: 1rem;
+  transition: all 0.2s ease;
 }
+.iconItem:hover {
+  transform: scale(1.2);
+}
+
 .keyboard {
   padding: 5px;
 }
+
 .bulb {
   padding: 3px;
 }
@@ -33,6 +40,7 @@
   justify-content: flex-end;
   text-align: center;
 }
+
 .App {
   text-align: center;
   font-family: arial;

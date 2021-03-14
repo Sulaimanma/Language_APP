@@ -61,13 +61,14 @@ export default function Quiz() {
               </Col>
               <Col auto>
                 <div className="iconCloseDiv">
-                  <div className="iconClose">
+                  <div className="iconItem">
                     <IoClose />
                   </div>
                 </div>
               </Col>
             </Row>
           </IconContext.Provider>
+
           <Row>
             <Col
               md={{ span: 3, offset: 3 }}
@@ -96,23 +97,23 @@ export default function Quiz() {
             </Col>
 
             <div className="options">
-              <button onClick={() => setOptionChosen("A")}>
+              <Button onClick={() => setOptionChosen("A")}>
                 {Questions[currentQuestion].optionA}
-              </button>
-              <button onClick={() => setOptionChosen("B")}>
+              </Button>
+              <Button onClick={() => setOptionChosen("B")}>
                 {Questions[currentQuestion].optionB}
-              </button>
-              <button onClick={() => setOptionChosen("C")}>
+              </Button>
+              <Button onClick={() => setOptionChosen("C")}>
                 {Questions[currentQuestion].optionC}
-              </button>
-              <button onClick={() => setOptionChosen("D")}>
+              </Button>
+              <Button onClick={() => setOptionChosen("D")}>
                 {Questions[currentQuestion].optionD}
-              </button>
+              </Button>
             </div>
             {currentQuestion === Questions.length - 1 ? (
-              <button onClick={finishQuiz}>Finish Quiz</button>
+              <Button onClick={finishQuiz}>Finish Quiz</Button>
             ) : (
-              <button onClick={nextQuestion}>Next Question</button>
+              <Button onClick={nextQuestion}>Next Question</Button>
             )}
           </Row>
         </Container>
