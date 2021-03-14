@@ -98,9 +98,8 @@ export default function Quiz() {
               {Questions[currentQuestion].video && (
                 <div className="QuestionDiv">
                   <iframe
-                    width="450"
-                    height="315"
                     src={Questions[currentQuestion].video}
+                    className="video"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
@@ -113,6 +112,7 @@ export default function Quiz() {
             <Col md={{ span: 4, offset: 4 }} className="text-left">
               <div className="options">
                 <Button
+                  fluid
                   variant="light"
                   onClick={() => setOptionChosen("A")}
                   className="optionButton"
@@ -120,6 +120,7 @@ export default function Quiz() {
                 >
                   {Questions[currentQuestion].optionA}
                 </Button>
+
                 <Button
                   variant="light"
                   onClick={() => setOptionChosen("B")}
