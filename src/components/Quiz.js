@@ -129,22 +129,26 @@ export default function Quiz() {
                 >
                   {Questions[currentQuestion].optionB}
                 </Button>
-                <Button
-                  variant="light"
-                  onClick={() => setOptionChosen("C")}
-                  className="optionButton"
-                  size="lg"
-                >
-                  {Questions[currentQuestion].optionC}
-                </Button>
-                <Button
-                  variant="light"
-                  onClick={() => setOptionChosen("D")}
-                  className="optionButton"
-                  size="lg"
-                >
-                  {Questions[currentQuestion].optionD}
-                </Button>
+                {Questions[currentQuestion].optionC && (
+                  <Button
+                    variant="light"
+                    onClick={() => setOptionChosen("C")}
+                    className="optionButton"
+                    size="lg"
+                  >
+                    {Questions[currentQuestion].optionC}
+                  </Button>
+                )}
+                {Questions[currentQuestion].optionD && (
+                  <Button
+                    variant="light"
+                    onClick={() => setOptionChosen("D")}
+                    className="optionButton"
+                    size="lg"
+                  >
+                    {Questions[currentQuestion].optionD}
+                  </Button>
+                )}
               </div>
             </Col>
           </Row>

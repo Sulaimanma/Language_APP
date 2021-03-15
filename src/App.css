@@ -56,8 +56,8 @@
 /* Question Image */
 
 .questionImg {
-  min-width: 420px;
-  max-width: 450px;
+  min-width: 30vw;
+  max-width: 90vw;
 }
 /* Options button */
 .options {
@@ -136,7 +136,14 @@
   .optionButton {
     width: 100%;
   }
+  .row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
   .nextDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
   .next {
     margin-top: 30px;
