@@ -3,6 +3,7 @@ import Menu from "./components/Menu"
 import Quiz from "./components/Quiz"
 import EndScreen from "./components/EndScreen"
 import Learn from "./components/Learn"
+import BasicTable from './components/BasicTable'
 import React, { useState } from "react"
 import { QuizContext } from "./Helpers/Contexts"
 
@@ -18,7 +19,7 @@ function App() {
       <QuizContext.Provider
         value={{ gameState, setGameState, score, setScore }}
       >
-        {gameState === "learn" && <Learn />}
+        {gameState === "learn" && <BasicTable />}
         {gameState === "menu" && <Menu />}
         {gameState === "quiz" && <Quiz />}
         {gameState === "endscreen" && <EndScreen />}

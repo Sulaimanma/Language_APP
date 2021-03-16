@@ -30,6 +30,9 @@ export default function Quiz() {
       console.log(score)
     }
     setGameState("endscreen")
+    }
+    const learnWords = () => {
+      setGameState("learn")
   }
 console.log(Questions[0].wakkawakka[0])
   return (
@@ -50,9 +53,9 @@ console.log(Questions[0].wakkawakka[0])
                     <RiKeyboardFill className="keyboard" />
                   </div>
                   <div className="iconItem">
-                    <HiOutlineLightBulb className="bulb" />
+                    <HiOutlineLightBulb className="bulb" onClick={learnWords} />
                   </div>
-                  <div className="iconItem">
+                  <div className="iconItem" >
                     <HiDownload className="download" />
                   </div>
                 </div>
