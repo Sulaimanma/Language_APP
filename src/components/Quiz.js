@@ -6,14 +6,14 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import Image from "react-bootstrap/Image"
 import { IconContext } from "react-icons"
 import { IoClose } from "react-icons/io5"
-import { FaRegKeyboard } from "react-icons/fa"
+// import { FaRegKeyboard } from "react-icons/fa"
 import { HiOutlineLightBulb, HiDownload } from "react-icons/hi"
 import { RiKeyboardFill } from "react-icons/ri"
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap"
 
 export default function Quiz() {
   const { score, setScore, setGameState } = useContext(QuizContext)
-  const [currentQuestion, setCurrentQuestion] = useState(0)
+  const [currentQuestion, setCurrentQuestion] = useState(1)
   const [optionChosen, setOptionChosen] = useState("")
 
   const nextQuestion = () => {
@@ -31,7 +31,7 @@ export default function Quiz() {
     }
     setGameState("endscreen")
   }
-
+console.log(Questions[0].wakkawakka[0])
   return (
     <>
       <div className="Quiz">
@@ -57,7 +57,7 @@ export default function Quiz() {
                   </div>
                 </div>
               </Col>
-              <Col md={{ span: 6, offset: 1 }} xs={10}>
+              <Col md={{ span: 6, offset: 1 }} xs={9}>
                 <div className="progressbarDiv">
                   <ProgressBar
                     animated

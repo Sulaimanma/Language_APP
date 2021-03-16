@@ -1,5 +1,9 @@
 export const Questions = [
   {
+    wakkawakka: ["Ngari", "Mu", "Diang"],
+    English:["Hello","Eye","Teeth"]
+  },
+  {
     prompt: 'What is "Hello" in Wakka Wakka language?',
     image:
       "https://doqvf81n9htmm.cloudfront.net/data/crop_article/100385/shutterstock_1164809464.jpg_1140x855.jpg",
