@@ -1,40 +1,40 @@
-import React, { useState, useContext } from "react"
-import { Questions } from "../Helpers/QuestionBank"
-import { QuizContext } from "../Helpers/Contexts"
-import "../App.css"
-import "bootstrap/dist/css/bootstrap.min.css"
-import Image from "react-bootstrap/Image"
-import { IconContext } from "react-icons"
-import { IoClose } from "react-icons/io5"
+import React, { useState, useContext } from "react";
+import { Questions } from "../Helpers/QuestionBank";
+import { QuizContext } from "../Helpers/Contexts";
+import "../App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Image from "react-bootstrap/Image";
+import { IconContext } from "react-icons";
+import { IoClose } from "react-icons/io5";
 // import { FaRegKeyboard } from "react-icons/fa"
-import { HiOutlineLightBulb, HiDownload } from "react-icons/hi"
-import { RiKeyboardFill } from "react-icons/ri"
-import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap"
+import { HiOutlineLightBulb, HiDownload } from "react-icons/hi";
+import { RiKeyboardFill } from "react-icons/ri";
+import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 
 export default function Quiz() {
-  const { score, setScore, setGameState } = useContext(QuizContext)
-  const [currentQuestion, setCurrentQuestion] = useState(1)
-  const [optionChosen, setOptionChosen] = useState("")
+  const { score, setScore, setGameState } = useContext(QuizContext);
+  const [currentQuestion, setCurrentQuestion] = useState(1);
+  const [optionChosen, setOptionChosen] = useState("");
 
   const nextQuestion = () => {
     if (Questions[currentQuestion].answer === optionChosen) {
-      setScore(score + 1)
+      setScore(score + 1);
     }
 
-    setCurrentQuestion(currentQuestion + 1)
-  }
+    setCurrentQuestion(currentQuestion + 1);
+  };
   const finishQuiz = () => {
     if (Questions[currentQuestion].answer === optionChosen) {
-      setScore(score + 1)
+      setScore(score + 1);
 
-      console.log(score)
+      console.log(score);
     }
-    setGameState("endscreen")
-    }
-    const learnWords = () => {
-      setGameState("learn")
-  }
-console.log(Questions[0].wakkawakka[0])
+    setGameState("endscreen");
+  };
+  const learnWords = () => {
+    setGameState("learn");
+  };
+  console.log(Questions[0].wakkawakka[0]);
   return (
     <>
       <div className="Quiz">
@@ -55,7 +55,7 @@ console.log(Questions[0].wakkawakka[0])
                   <div className="iconItem">
                     <HiOutlineLightBulb className="bulb" onClick={learnWords} />
                   </div>
-                  <div className="iconItem" >
+                  <div className="iconItem">
                     <HiDownload className="download" />
                   </div>
                 </div>
@@ -177,5 +177,5 @@ console.log(Questions[0].wakkawakka[0])
         </Row>
       </div>
     </>
-  )
+  );
 }

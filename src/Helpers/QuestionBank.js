@@ -1,7 +1,7 @@
 export const Questions = [
   {
     wakkawakka: ["Ngari", "Mu", "Diang"],
-    english:["Hello","Eye","Teeth"]
+    english: ["Hello", "Eye", "Teeth"],
   },
   {
     prompt: 'What is "Hello" in Wakka Wakka language?',
@@ -33,4 +33,4 @@ export const Questions = [
     optionD: "Diang",
     answer: "D",
   },
-]
+];
