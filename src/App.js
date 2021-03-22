@@ -14,7 +14,7 @@ function App() {
   const [gameState, setGameState] = useState("menu")
   // const [userName, setUserName] = useState("");
   const [score, setScore] = useState(0)
-  const [language, setLanguage] = useState()
+  const [language, setLanguage] = useState("Baradha")
   return (
     <div className="App">
       {" "}
@@ -25,6 +25,8 @@ function App() {
           setGameState,
           score,
           setScore,
+          language,
+          setLanguage,
         }}
       >
         {gameState === "select" && <Select />}
