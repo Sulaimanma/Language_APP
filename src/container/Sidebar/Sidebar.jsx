@@ -5,6 +5,7 @@ import classes from "./sidebar.module.scss";
 import { FaSignOutAlt, FaSignInAlt, FaInfoCircle } from "react-icons/fa";
 import { scaleRotate as Menu } from "react-burger-menu"; //scaleRotate
 import { QuizContext } from "../../Helpers/Contexts";
+import LanguageIcon from "../../components/LanuageIcon/LanguageIcon";
 // import { Menulist } from "./Menulist/Menulist";
 // import { Link } from "react-router-dom";
 // import { Context } from "../../Context";
@@ -55,8 +56,13 @@ export const Sidebar = props => {
 
   // useEffect(() => {}, [userProfile])
   const { setGameState, setLanguage, language } = useContext(QuizContext);
+
   return (
-    <Menu {...props} burgerButtonClassName={classes.burgerIcon}>
+    <Menu
+      {...props}
+      burgerButtonClassName={classes.burgerIcon}
+      //   customBurgerIcon={<anguageIcon />}
+    >
       <div className={classes.container}>
         <div className={classes.userProfile}>
           <FaSignOutAlt

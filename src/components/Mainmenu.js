@@ -7,6 +7,8 @@ import { Container, Row, Col, DropdownButton, Dropdown } from "react-bootstrap";
 import { bubble as Menu } from "react-burger-menu";
 import { IconContext } from "react-icons";
 import { IoMenu } from "react-icons/io5";
+import { HiOutlineLightBulb, HiDownload } from "react-icons/hi";
+import { RiKeyboardFill } from "react-icons/ri";
 export default function Mainmenu() {
   const { setGameState, setLanguage, language } = useContext(QuizContext);
   const handleChange = event => {
@@ -15,54 +17,71 @@ export default function Mainmenu() {
 
   return (
     <>
-      <div id="outer-container">
-        <a id="home" className="menu-item" href="/">
-          Home
-        </a>
-        <a id="about" className="menu-item" href="/about">
-          About
-        </a>
-        <a id="contact" className="menu-item" href="/contact">
-          Contact
-        </a>
-        <a className="menu-item--small" href="">
-          Settings
-        </a>
-
-        <main id="page-wrap">
-          <div className="Menu">
-            <label>
-              Pick the Language You Want to Learn:
-              <select value={language} onChange={handleChange}>
-                <option value="Baradha">Baradha</option>
-                <option value="Bayali">Bayali</option>
-                <option value="Bidjara">Bidjara</option>
-                <option value="Butchulla">Butchulla</option>
-                <option value="Dharumbal">Dharumbal</option>
-                <option value="Gangulu">Gangulu</option>
-                <option value="Gooreng Gooreng">Gooreng Gooreng</option>
-                <option value="Gurang">Gurang</option>
-                <option value="Meerooni">Meerooni</option>
-                <option value="Taribelang">Taribelang</option>
-                <option value="Tulua">Tulua</option>
-                <option value="Wadjingu">Wadjingu</option>
-                <option value="Wakka Wakka">Wakka Wakka</option>
-                <option value="Woppaburra">Woppaburra</option>
-                <option value="Yinman">Yinman</option>
-              </select>
-            </label>
-
-            {console.log(language)}
-            <Button
-              onClick={() => {
-                setGameState("quiz");
-              }}
-              size="lg"
-            >
-              Start quiz
-            </Button>
-          </div>
-        </main>
+      <div className="Menu">
+        <Container fluid className="quizContainer">
+          <IconContext.Provider
+            value={{
+              className: "menu-icons",
+              size: "1.7rem",
+              color: "#666e7e",
+            }}
+          >
+            <Row fluid>
+              <Col md={2} xs={12}>
+                <div className="iconMenu">
+                  <div className="iconItem">
+                    <RiKeyboardFill className="keyboard" />
+                  </div>
+                  <div className="iconItem">
+                    <HiOutlineLightBulb className="bulb" />
+                  </div>
+                  <div className="iconItem">
+                    <HiDownload className="download" />
+                  </div>
+                </div>
+              </Col>
+              <Col md={{ span: 6, offset: 1 }} xs={9}></Col>
+              <Col auto></Col>
+              <Col xs={1}></Col>
+            </Row>
+          </IconContext.Provider>
+          <Row fluid>
+            <Col>
+              <label>
+                Pick the Language You Want to Learn:
+                <select value={language} onChange={handleChange}>
+                  <option value="Baradha">Baradha</option>
+                  <option value="Bayali">Bayali</option>
+                  <option value="Bidjara">Bidjara</option>
+                  <option value="Butchulla">Butchulla</option>
+                  <option value="Dharumbal">Dharumbal</option>
+                  <option value="Gangulu">Gangulu</option>
+                  <option value="Gooreng Gooreng">Gooreng Gooreng</option>
+                  <option value="Gurang">Gurang</option>
+                  <option value="Meerooni">Meerooni</option>
+                  <option value="Taribelang">Taribelang</option>
+                  <option value="Tulua">Tulua</option>
+                  <option value="Wadjingu">Wadjingu</option>
+                  <option value="Wakka Wakka">Wakka Wakka</option>
+                  <option value="Woppaburra">Woppaburra</option>
+                  <option value="Yinman">Yinman</option>
+                </select>
+              </label>
+            </Col>
+          </Row>
+          <Row fluid>
+            <Col>
+              <Button
+                onClick={() => {
+                  setGameState("quiz");
+                }}
+                size="lg"
+              >
+                Start quiz
+              </Button>
+            </Col>{" "}
+          </Row>
+        </Container>
       </div>
     </>
   );
