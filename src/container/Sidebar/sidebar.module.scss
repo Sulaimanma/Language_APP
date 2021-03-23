@@ -64,11 +64,18 @@
 
 .burgerIcon {
   transform: scale(0.7);
+  filter: none !important;
+  width: 55px !important;
+  height: 44px !important;
+  left: 9rem !important;
 }
-
+.languageicon {
+  color: rgb(102, 110, 126);
+}
 //desktop
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
   .burgerIcon {
+    filter: none !important;
     transform: scale(0.8);
     margin-left: 16px;
     margin-top: 6px;
@@ -82,5 +89,6 @@
     transform: scale(0.9);
     margin-left: 12px;
     margin-top: 12px;
+    filter: none !important;
   }
 }

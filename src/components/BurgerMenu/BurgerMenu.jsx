@@ -24,6 +24,7 @@ export const BurgerMenu = props => {
         // pageWrapId={'page-wrap'}
         outerContainerId={"App"}
         styles={props.hide ? hideButton : menuStyles}
+        language={props.language}
       />
       {props.children}
     </div>

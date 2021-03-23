@@ -95,8 +95,7 @@
   }
 } */
 /* Next div */
-.nextDiv {
-}
+
 .nextRow {
   background-color: white;
   width: 100%;
@@ -191,10 +190,22 @@
   align-items: center;
 }
 /* Burger Menu */
-.burgermenu {
-  height: 10px;
-  width: 10px;
-  font-size: small;
+.countryicon {
+  width: 20px;
+  height: 54px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.countryiconImg {
+  width: 64px;
+  height: 46px;
+}
+.languagetext {
+  color: black;
+  margin-top: 9px;
+  margin-left: 13px;
+  white-space: nowrap;
 }
 /* .Menu button,
 .Quiz button,

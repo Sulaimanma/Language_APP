@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import classes from "./sidebar.module.scss";
-// import InitialLogo from "../../components/InitialLogo/InitialLogo";
-// import { menuitems } from "./menuitems";
+import { IoIosOptions } from "react-icons/io";
 import { FaSignOutAlt, FaSignInAlt, FaInfoCircle } from "react-icons/fa";
 import { scaleRotate as Menu } from "react-burger-menu"; //scaleRotate
 import { QuizContext } from "../../Helpers/Contexts";
@@ -61,23 +60,17 @@ export const Sidebar = props => {
     <Menu
       {...props}
       burgerButtonClassName={classes.burgerIcon}
-      //   customBurgerIcon={<anguageIcon />}
+      customBurgerIcon={<IoIosOptions className={classes.languageicon} />}
     >
       <div className={classes.container}>
-        <div className={classes.userProfile}>
-          <FaSignOutAlt
-            className={classes.icon}
-            onClick={() => setGameState("quiz")}
-          />
-        </div>
+        <div className={classes.userProfile}></div>
         <div className={classes.user}>
-          <div className={classes.name}>Hi ${"John" + "! 😍"}</div>
-          <p className={classes.username}>${"John"}` : "@visitor"</p>
+          <div className={classes.name}>Hi,there 💗</div>
+          <p className={classes.username}>You are learning {language}</p>
         </div>
-        <div className={classes.logo}>
-          <FaInfoCircle />
-        </div>
-        <div className={classes.menu}></div>
+
+        <div className={classes.logo}></div>
+        <div className={classes.menu}>{props.language}</div>
       </div>
     </Menu>
   );
