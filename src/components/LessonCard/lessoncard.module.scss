@@ -21,10 +21,17 @@
   flex-direction: column;
   font-family: Nista, Helvetica Neue, Helvetica, Arial, sans-serif;
   text-align: start;
-  .h2 {
+  h2 {
+    white-space: nowrap;
     color: #252b2f;
   }
-  .p {
+  p {
+    white-space: nowrap;
     color: #252b2f;
+  }
+}
+@media only screen and (min-width: 766px) {
+  .CardDiv {
+    min-width: 720px !important;
   }
 }

@@ -17,7 +17,37 @@ export default function Mainmenu() {
   const handleChange = event => {
     setLanguage(event.target.value);
   };
-
+  const lessonData = [
+    {
+      lessonTitle: "Lesson 1: Greetings!",
+      lessonIntro: "Learning some basic greetings",
+      imageUrl:
+        "https://doqvf81n9htmm.cloudfront.net/data/crop_article/100385/shutterstock_1164809464.jpg_1140x855.jpg",
+    },
+    {
+      lessonTitle: "Lesson 2: Know myself!",
+      lessonIntro: "Learning some words related to your body",
+      imageUrl: "https://o.quizlet.com/H0HWHm6uGg7QsmYxDdMiRw_b.jpg",
+    },
+    {
+      lessonTitle: "Lesson 3: My Family!",
+      lessonIntro: "Talking about your family, using possessive adjective",
+      imageUrl:
+        "https://www.brisbanekids.com.au/wp-content/uploads/2016/03/bigstock-Happy-Family-Standing-On-The-B-98845208.jpg",
+    },
+    {
+      lessonTitle: "Lesson 4: Environment!",
+      lessonIntro: "Learning some environmental words",
+      imageUrl:
+        "https://travel.mqcdn.com/mapquest/travel/wp-content/uploads/2020/06/GettyImages-676934538-e1592461667985-835x480.jpg",
+    },
+    {
+      lessonTitle: "Lesson 5: Conversation!",
+      lessonIntro: "Learning some phrase for conversation",
+      imageUrl:
+        "https://shipway-consulting.co.uk/wp-content/uploads/2020/05/conversation-image-2.jpg",
+    },
+  ];
   return (
     <>
       <BurgerMenu
@@ -27,9 +57,7 @@ export default function Mainmenu() {
             <label>
               <h3>Pick the Language You Want to Learn:</h3>
               <select value={language} onChange={handleChange}>
-                <option value="Wakka Wakka" selected>
-                  Wakka Wakka
-                </option>
+                <option value="Wakka Wakka">Wakka Wakka</option>
                 <option value="Baradha" disabled>
                   Baradha
                 </option>
@@ -102,7 +130,15 @@ export default function Mainmenu() {
             <Row fluid></Row>
             <Row fluid>
               <Col md={{ span: 4, offset: 4 }}>
-                <LessonCard />
+                {lessonData.map(lesson => {
+                  return (
+                    <LessonCard
+                      title={lesson.lessonTitle}
+                      intro={lesson.lessonIntro}
+                      imgUrl={lesson.imageUrl}
+                    />
+                  );
+                })}
               </Col>{" "}
             </Row>
             <Row fluid>

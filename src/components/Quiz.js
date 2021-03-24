@@ -64,7 +64,7 @@ export default function Quiz() {
                 <div className="progressbarDiv">
                   <ProgressBar
                     animated
-                    now={((currentQuestion + 1) * 100) / Questions.length}
+                    now={(currentQuestion * 100) / (Questions.length - 1)}
                   />
                 </div>
               </Col>
