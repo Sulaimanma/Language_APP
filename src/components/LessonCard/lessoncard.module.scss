@@ -1,0 +1,30 @@
+.ImageDiv {
+  width: 90px;
+  height: 90px;
+  //   margin-top: 9px;
+}
+.CardDiv {
+  cursor: pointer;
+  align-items: center !important;
+
+  margin-top: 20px;
+  min-height: 120px;
+  border-radius: 10px;
+  background-color: white;
+}
+.ProgressBar {
+  //   margin-top: 50px;
+  max-height: 10px;
+}
+.TextDiv {
+  display: flex;
+  flex-direction: column;
+  font-family: Nista, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-align: start;
+  .h2 {
+    color: #252b2f;
+  }
+  .p {
+    color: #252b2f;
+  }
+}

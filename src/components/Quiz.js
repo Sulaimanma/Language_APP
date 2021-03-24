@@ -70,7 +70,10 @@ export default function Quiz() {
               </Col>
               <Col auto></Col>
               <Col xs={1}>
-                <div className="iconCloseDiv" onClick={finishQuiz}>
+                <div
+                  className="iconCloseDiv"
+                  onClick={() => setGameState("menu")}
+                >
                   <div className="iconItem">
                     <IoClose />
                   </div>

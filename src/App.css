@@ -167,7 +167,7 @@
     height: 100%;
   }
 }
-.App {
+.Home {
   text-align: center;
   font-family: arial;
   display: flex;
@@ -221,7 +221,6 @@ button:hover {
   cursor: pointer;
 }
 
-.Menu,
 .Quiz,
 .EndScreen h3,
 h1 {
@@ -230,7 +229,8 @@ h1 {
   font-family: Nista, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.EndScreen {
+.EndScreen,
+.Menu {
   background-color: #f2f7fd;
   display: flex;
   flex-direction: column;

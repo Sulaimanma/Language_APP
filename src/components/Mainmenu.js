@@ -10,6 +10,7 @@ import { IconContext } from "react-icons";
 // import { HiOutlineLightBulb, HiDownload } from "react-icons/hi";
 // import { RiKeyboardFill } from "react-icons/ri";
 import { BurgerMenu } from "./BurgerMenu/BurgerMenu";
+import LessonCard from "./LessonCard/LessonCard";
 export default function Mainmenu() {
   const { setGameState, setLanguage, language } = useContext(QuizContext);
 
@@ -22,55 +23,60 @@ export default function Mainmenu() {
       <BurgerMenu
         nonSticky={false}
         language={
-          <label>
-            <h3>Pick the Language You Want to Learn:</h3>
-            <select value={language} onChange={handleChange}>
-              <option value="Wakka Wakka" selected>
-                Wakka Wakka
-              </option>
-              <option value="Baradha" disabled>
-                Baradha
-              </option>
-              <option value="Bayali" disabled>
-                Bayali
-              </option>
-              <option value="Bidjara" disabled>
-                Bidjara
-              </option>
-              <option value="Butchulla" disabled>
-                Butchulla
-              </option>
-              <option value="Dharumbal" disabled>
-                Dharumbal
-              </option>
-              <option value="Gangulu" disabled>
-                Gangulu
-              </option>
-              <option value="Gooreng Gooreng">Gooreng Gooreng</option>
-              <option value="Gurang" disabled>
-                Gurang
-              </option>
-              <option value="Meerooni" disabled>
-                Meerooni
-              </option>
-              <option value="Taribelang" disabled>
-                Taribelang
-              </option>
-              <option value="Tulua" disabled>
-                Tulua
-              </option>
-              <option value="Wadjingu" disabled>
-                Wadjingu
-              </option>
+          <div>
+            <label>
+              <h3>Pick the Language You Want to Learn:</h3>
+              <select value={language} onChange={handleChange}>
+                <option value="Wakka Wakka" selected>
+                  Wakka Wakka
+                </option>
+                <option value="Baradha" disabled>
+                  Baradha
+                </option>
+                <option value="Bayali" disabled>
+                  Bayali
+                </option>
+                <option value="Bidjara" disabled>
+                  Bidjara
+                </option>
+                <option value="Butchulla" disabled>
+                  Butchulla
+                </option>
+                <option value="Dharumbal" disabled>
+                  Dharumbal
+                </option>
+                <option value="Gangulu" disabled>
+                  Gangulu
+                </option>
+                <option value="Gooreng Gooreng">Gooreng Gooreng</option>
+                <option value="Gurang" disabled>
+                  Gurang
+                </option>
+                <option value="Meerooni" disabled>
+                  Meerooni
+                </option>
+                <option value="Taribelang" disabled>
+                  Taribelang
+                </option>
+                <option value="Tulua" disabled>
+                  Tulua
+                </option>
+                <option value="Wadjingu" disabled>
+                  Wadjingu
+                </option>
 
-              <option value="Woppaburra" disabled>
-                Woppaburra
-              </option>
-              <option value="Yinman" disabled>
-                Yinman
-              </option>
-            </select>
-          </label>
+                <option value="Woppaburra" disabled>
+                  Woppaburra
+                </option>
+                <option value="Yinman" disabled>
+                  Yinman
+                </option>
+              </select>
+            </label>
+            <Button variant="primary" onClick={() => setGameState("quiz")}>
+              Learn Now!
+            </Button>
+          </div>
         }
       >
         <div className="Menu">
@@ -96,28 +102,7 @@ export default function Mainmenu() {
             <Row fluid></Row>
             <Row fluid>
               <Col md={{ span: 4, offset: 4 }}>
-                <Card style={{ width: "20vw" }}>
-                  <Card.Img
-                    variant="top"
-                    src="https://doqvf81n9htmm.cloudfront.net/data/crop_article/100385/shutterstock_1164809464.jpg_1140x855.jpg"
-                  />
-                  <Card.Body>
-                    <Card.Title>Greetings</Card.Title>
-                    <Card.Text>
-                      Let's learn some simple greeting words in Wakka Wakka
-                      language!
-                    </Card.Text>
-                    <Button
-                      size="lg"
-                      variant="primary"
-                      onClick={() => {
-                        setGameState("quiz");
-                      }}
-                    >
-                      Learn Now!
-                    </Button>
-                  </Card.Body>
-                </Card>
+                <LessonCard />
               </Col>{" "}
             </Row>
             <Row fluid>
