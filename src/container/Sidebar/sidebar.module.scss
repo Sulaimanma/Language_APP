@@ -1,3 +1,7 @@
+.bm-menu-wrap {
+  width: 312px !important;
+}
+
 .container {
   outline: none;
   padding: 1.5rem 0.5rem 0 1.5rem;
@@ -67,7 +71,8 @@
   filter: none !important;
   width: 55px !important;
   height: 44px !important;
-  left: 9rem !important;
+  margin-left: 240px;
+  margin-top: 6px;
 }
 .languageicon {
   color: rgb(102, 110, 126);
@@ -76,9 +81,9 @@
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
   .burgerIcon {
     filter: none !important;
-    transform: scale(0.8);
-    margin-left: 16px;
-    margin-top: 6px;
+    transform: scale(0.7);
+    margin-left: 240px;
+    // margin-top: 6px;
   }
   .menu {
     width: 90% !important;
@@ -86,9 +91,9 @@
 }
 @media only screen and (width: 768px) {
   .burgerIcon {
-    transform: scale(0.9);
+    transform: scale(0.7);
     margin-left: 12px;
-    margin-top: 12px;
+    // margin-top: 12px;
     filter: none !important;
   }
 }

@@ -2,7 +2,7 @@ import "./App.css";
 import Mainmenu from "./components/Mainmenu";
 import Quiz from "./components/Quiz";
 import EndScreen from "./components/EndScreen";
-import Learn from "./components/Learn";
+
 import BasicTable from "./components/BasicTable";
 import React, { useState } from "react";
 import { QuizContext } from "./Helpers/Contexts";

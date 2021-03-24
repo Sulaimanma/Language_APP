@@ -1,13 +1,13 @@
-import React, { useMemo, useEffect, useState } from "react"
-import { useTable } from "react-table"
-import { word_data, columns } from "./Learn"
+import React, { useMemo, useEffect, useState } from "react";
+// import { useTable } from "react-table"
+// import { word_data, columns } from "./Learn"
 // import axios from "axios";
-import "./table.css"
-import { pcccData } from "../Helpers/pccc"
-import Location from "../Helpers/Location"
+import "./table.css";
+// import { pcccData } from "../Helpers/pccc"
+import Location from "../Helpers/Location";
 export default function BasicTable() {
-  const [data, setData] = useState()
-  Location()
+  const [data, setData] = useState();
+  Location();
   //   useEffect(() => {
   //     (async () => {
   //       const result = await axios(
@@ -75,5 +75,5 @@ export default function BasicTable() {
     //     })}
     //   </tbody>{" "}
     // </table>
-  )
+  );
 }

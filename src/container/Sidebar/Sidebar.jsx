@@ -1,10 +1,10 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import classes from "./sidebar.module.scss";
 import { IoIosOptions } from "react-icons/io";
-import { FaSignOutAlt, FaSignInAlt, FaInfoCircle } from "react-icons/fa";
+// import { FaSignOutAlt, FaSignInAlt, FaInfoCircle } from "react-icons/fa";
 import { scaleRotate as Menu } from "react-burger-menu"; //scaleRotate
 import { QuizContext } from "../../Helpers/Contexts";
-import LanguageIcon from "../../components/LanuageIcon/LanguageIcon";
+
 // import { Menulist } from "./Menulist/Menulist";
 // import { Link } from "react-router-dom";
 // import { Context } from "../../Context";
@@ -54,7 +54,7 @@ export const Sidebar = props => {
   //   }, [userImg, isLogin, setDefaultImg]);
 
   // useEffect(() => {}, [userProfile])
-  const { setGameState, setLanguage, language } = useContext(QuizContext);
+  const { language } = useContext(QuizContext);
 
   return (
     <Menu

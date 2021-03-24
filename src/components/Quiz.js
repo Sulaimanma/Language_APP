@@ -10,7 +10,6 @@ import { IoClose } from "react-icons/io5";
 import { HiOutlineLightBulb, HiDownload } from "react-icons/hi";
 import { RiKeyboardFill } from "react-icons/ri";
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import { BurgerMenu } from "./BurgerMenu/BurgerMenu";
 
 export default function Quiz() {
   const { score, setScore, setGameState } = useContext(QuizContext);
@@ -102,6 +101,7 @@ export default function Quiz() {
               {Questions[currentQuestion].video && (
                 <div className="QuestionDiv">
                   <iframe
+                    title="educational_content"
                     src={Questions[currentQuestion].video}
                     className="video"
                     frameborder="0"

@@ -1,22 +1,14 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { QuizContext } from "../Helpers/Contexts";
 import "../App.css";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  Container,
-  Row,
-  Col,
-  DropdownButton,
-  Dropdown,
-  Image,
-  Card,
-} from "react-bootstrap";
-import { bubble as Menu } from "react-burger-menu";
+import { Container, Row, Col, Image, Card } from "react-bootstrap";
+
 import { IconContext } from "react-icons";
-import { IoMenu, IoIosOptions } from "react-icons/io5";
-import { HiOutlineLightBulb, HiDownload } from "react-icons/hi";
-import { RiKeyboardFill } from "react-icons/ri";
+// import { IoMenu, IoIosOptions } from "react-icons/io5";
+// import { HiOutlineLightBulb, HiDownload } from "react-icons/hi";
+// import { RiKeyboardFill } from "react-icons/ri";
 import { BurgerMenu } from "./BurgerMenu/BurgerMenu";
 export default function Mainmenu() {
   const { setGameState, setLanguage, language } = useContext(QuizContext);
@@ -54,9 +46,7 @@ export default function Mainmenu() {
               <option value="Gangulu" disabled>
                 Gangulu
               </option>
-              <option value="Gooreng Gooreng" disabled>
-                Gooreng Gooreng
-              </option>
+              <option value="Gooreng Gooreng">Gooreng Gooreng</option>
               <option value="Gurang" disabled>
                 Gurang
               </option>
@@ -92,22 +82,18 @@ export default function Mainmenu() {
                 color: "#666e7e",
               }}
             >
-              <Row fluid>
-                <Col md={{ span: 2, offset: 1 }} xs={1}>
-                  <div className="countryicon">
-                    <Image
-                      src="https://www.independenceaustralia.com/uploads/images/Corporate/aboriginal.png"
-                      rounded
-                      className="countryiconImg"
-                    />
-                    <p className="languagetext">{language}</p>
-                  </div>
-                </Col>
-                <Col md={1} xs={1}></Col>
-                <Col auto></Col>
-                <Col xs={1}></Col>
-              </Row>
+              <div className="languagediv">
+                <div className="countryicon">
+                  <Image
+                    src="https://www.independenceaustralia.com/uploads/images/Corporate/aboriginal.png"
+                    rounded
+                    className="countryiconImg"
+                  />
+                  <p className="languagetext">{language}</p>
+                </div>
+              </div>
             </IconContext.Provider>
+            <Row fluid></Row>
             <Row fluid>
               <Col md={{ span: 4, offset: 4 }}>
                 <Card style={{ width: "20vw" }}>

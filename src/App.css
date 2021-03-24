@@ -191,11 +191,11 @@
 }
 /* Burger Menu */
 .countryicon {
-  width: 20px;
+  width: 246px;
   height: 54px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .countryiconImg {
   width: 64px;

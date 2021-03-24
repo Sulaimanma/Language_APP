@@ -1,9 +1,9 @@
-import React, { useContext, useEffect } from "react";
-import { FaSignOutAlt, FaSignInAlt, FaInfoCircle } from "react-icons/fa";
-import { scaleRotate as Menu } from "react-burger-menu"; //scaleRotate
+import React, { useEffect } from "react";
+// import { FaSignOutAlt, FaSignInAlt, FaInfoCircle } from "react-icons/fa";
+// import { scaleRotate as Menu } from "react-burger-menu"; //scaleRotate
 
-import classes from "./BurgerMenu.module.scss";
-import { QuizContext } from "../../Helpers/Contexts";
+// import classes from "./BurgerMenu.module.scss";
+// import { QuizContext } from "../../Helpers/Contexts";
 import { menuStyles } from "../../Styles/sidebar";
 import { Sidebar } from "../../container/Sidebar/Sidebar";
 
