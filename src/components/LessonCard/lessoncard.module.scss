@@ -35,3 +35,28 @@
     min-width: 720px !important;
   }
 }
+
+@media only screen and (max-width: 300px) {
+  .CardDiv {
+  }
+  .ImageDiv {
+    margin-top: 10px;
+  }
+  .TextDiv {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: Nista, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: start;
+    h2 {
+      font-size: 19px;
+      white-space: unset;
+      color: #252b2f;
+    }
+    p {
+      white-space: unset;
+      color: #252b2f;
+      font-size: 13px;
+    }
+  }
+}

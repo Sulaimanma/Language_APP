@@ -89,11 +89,11 @@
     width: 90% !important;
   }
 }
-@media only screen and (width: 768px) {
+@media only screen and (max-width: 451px) {
   .burgerIcon {
-    transform: scale(0.7);
-    margin-left: 12px;
-    // margin-top: 12px;
+    transform: scale(0.9);
+    margin-left: 5px;
+    margin-top: 0px;
     filter: none !important;
   }
 }

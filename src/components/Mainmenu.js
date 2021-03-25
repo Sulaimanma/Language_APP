@@ -127,8 +127,8 @@ export default function Mainmenu() {
                 </div>
               </div>
             </IconContext.Provider>
-            <Row fluid></Row>
-            <Row fluid>
+
+            <Row fluid className="cardRow">
               <Col md={{ span: 4, offset: 4 }}>
                 {lessonData.map(lesson => {
                   return (
