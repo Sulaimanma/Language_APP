@@ -15,9 +15,10 @@ export const Questions = [
   },
   {
     prompt: 'What is "Eye" in Wakka Wakka language?',
+    // image:
+    //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS21AL-3L9KcGG7AoKZV-T2-L0B0L80qmRvWQ&usqp=CAU",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS21AL-3L9KcGG7AoKZV-T2-L0B0L80qmRvWQ&usqp=CAU",
-
+      "https://vs360maiwar.s3-ap-southeast-2.amazonaws.com/img/Boggo04.PNG",
     optionA: "Mau",
     optionB: "Mi",
     optionC: "Ma",
