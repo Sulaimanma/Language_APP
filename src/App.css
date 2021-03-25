@@ -207,9 +207,10 @@
   margin-left: 13px;
   white-space: nowrap;
 }
-@media only screen and (max-width: 451px) {
+@media only screen and (max-width: 551px) {
   .cardRow {
     margin-top: 50px;
+    margin-bottom: 200px;
   }
   .languagediv {
     position: fixed;

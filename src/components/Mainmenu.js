@@ -141,9 +141,6 @@ export default function Mainmenu() {
                 })}
               </Col>{" "}
             </Row>
-            <Row fluid>
-              <Col></Col>{" "}
-            </Row>
           </Container>
         </div>
       </BurgerMenu>
