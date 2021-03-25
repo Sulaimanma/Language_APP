@@ -6,6 +6,8 @@ import { QuizContext } from "../../Helpers/Contexts";
 import { ImBooks } from "react-icons/im";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 import option from "../../img/option.png";
+import ReactTooltip from "react-tooltip";
+
 export default function LessonCard(props) {
   const { setGameState, setLanguage, language } = useContext(QuizContext);
   const [expand, setExpand] = useState(false);
@@ -48,13 +50,23 @@ export default function LessonCard(props) {
         <Row className={classes.optionDiv}>
           <Col xs={{ span: 4, offset: 1 }}>
             <Image src={option} className={classes.optionImg}></Image>
-            <ImBooks className={classes.learn} />
-            <BsFillQuestionCircleFill
-              className={classes.quiz}
-              onClick={() => {
-                setGameState("quiz");
-              }}
-            />
+            <a data-tip data-for="learn">
+              <ImBooks className={classes.learn} />
+            </a>
+            <ReactTooltip id="learn" type="error">
+              <span>Click to start learning</span>
+            </ReactTooltip>
+            <a data-tip data-for="quiz">
+              <BsFillQuestionCircleFill
+                className={classes.quiz}
+                onClick={() => {
+                  setGameState("quiz");
+                }}
+              />
+            </a>
+            <ReactTooltip id="quiz" type="error">
+              <span>Click to have a little quiz</span>
+            </ReactTooltip>
           </Col>
         </Row>
       )}
