@@ -108,7 +108,7 @@ export default function Mainmenu() {
         }
       >
         <div className="Menu">
-          <Container fluid className="quizContainer">
+          <Container fluid className="lessonContainer">
             <IconContext.Provider
               value={{
                 className: "menu-icons",

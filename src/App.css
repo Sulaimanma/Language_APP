@@ -208,9 +208,14 @@
   white-space: nowrap;
 }
 @media only screen and (max-width: 551px) {
+  .lessonContainer {
+    width: 100vw;
+    overflow-x: hidden;
+  }
   .cardRow {
     margin-top: 50px;
     margin-bottom: 200px;
+    width: 95vw;
   }
   .languagediv {
     position: fixed;
