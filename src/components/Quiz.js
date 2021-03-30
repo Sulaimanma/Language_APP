@@ -1,40 +1,42 @@
-import React, { useState, useContext } from "react";
-import { Questions } from "../Helpers/QuestionBank";
-import { QuizContext } from "../Helpers/Contexts";
-import "../App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Image from "react-bootstrap/Image";
-import { IconContext } from "react-icons";
-import { IoClose } from "react-icons/io5";
+import React, { useState, useContext } from "react"
+import { Questions } from "../Helpers/QuestionBank"
+import { QuizContext } from "../Helpers/Contexts"
+import "../App.css"
+import "bootstrap/dist/css/bootstrap.min.css"
+import Image from "react-bootstrap/Image"
+import { IconContext } from "react-icons"
+import { IoClose } from "react-icons/io5"
 // import { FaRegKeyboard } from "react-icons/fa"
-import { HiOutlineLightBulb, HiDownload } from "react-icons/hi";
-import { RiKeyboardFill } from "react-icons/ri";
-import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import { HiOutlineLightBulb, HiDownload } from "react-icons/hi"
+import { RiKeyboardFill } from "react-icons/ri"
+import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 export default function Quiz() {
-  const { score, setScore, setGameState } = useContext(QuizContext);
-  const [currentQuestion, setCurrentQuestion] = useState(1);
-  const [optionChosen, setOptionChosen] = useState("");
+  const { score, setScore, setGameState } = useContext(QuizContext)
+  const [currentQuestion, setCurrentQuestion] = useState(1)
+  const [optionChosen, setOptionChosen] = useState("")
 
   const nextQuestion = () => {
     if (Questions[currentQuestion].answer === optionChosen) {
-      setScore(score + 1);
+      setScore(score + 1)
     }
 
-    setCurrentQuestion(currentQuestion + 1);
-  };
+    setCurrentQuestion(currentQuestion + 1)
+  }
   const finishQuiz = () => {
     if (Questions[currentQuestion].answer === optionChosen) {
-      setScore(score + 1);
+      setScore(score + 1)
 
-      console.log(score);
+      console.log(score)
     }
-    setGameState("endscreen");
-  };
+    setGameState("endscreen")
+  }
   const learnWords = () => {
-    setGameState("burger");
-  };
-  console.log(Questions[0].wakkawakka[0]);
+    setGameState("burger")
+  }
+  console.log(Questions[0].wakkawakka[0])
+
   return (
     <>
       <div className="Quiz">
@@ -47,16 +49,12 @@ export default function Quiz() {
             }}
           >
             <Row fluid>
-              <Col md={2} xs={12}>
+              <Col md={2} xs={1}>
                 <div className="iconMenu">
                   <div className="iconItem">
-                    <RiKeyboardFill className="keyboard" />
-                  </div>
-                  <div className="iconItem">
-                    <HiOutlineLightBulb className="bulb" onClick={learnWords} />
-                  </div>
-                  <div className="iconItem">
-                    <HiDownload className="download" />
+                    <Link to="/endscreen">
+                      <HiOutlineLightBulb className="bulb" />
+                    </Link>
                   </div>
                 </div>
               </Col>
@@ -68,14 +66,16 @@ export default function Quiz() {
                   />
                 </div>
               </Col>
-              <Col auto></Col>
-              <Col xs={1}>
+
+              <Col xs={{ span: 1, offset: 1 }}>
                 <div
                   className="iconCloseDiv"
                   onClick={() => setGameState("menu")}
                 >
                   <div className="iconItem">
-                    <IoClose />
+                    <Link to="/">
+                      <IoClose />
+                    </Link>
                   </div>
                 </div>
               </Col>
@@ -168,9 +168,11 @@ export default function Quiz() {
           >
             <div className="nextDiv">
               {currentQuestion === Questions.length - 1 ? (
-                <Button onClick={finishQuiz} className="next" size="lg">
-                  Finish Quiz
-                </Button>
+                <Link to="/endscreen">
+                  <Button onClick={finishQuiz} className="next" size="lg">
+                    Finish Quiz
+                  </Button>
+                </Link>
               ) : (
                 <Button onClick={nextQuestion} className="next" size="lg">
                   Next Question
@@ -181,5 +183,5 @@ export default function Quiz() {
         </Row>
       </div>
     </>
-  );
+  )
 }

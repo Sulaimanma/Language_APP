@@ -1,23 +1,25 @@
-import React, { useContext, useState } from "react";
-import classes from "./lessoncard.module.scss";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col, Image, ProgressBar } from "react-bootstrap";
-import { QuizContext } from "../../Helpers/Contexts";
-import { ImBooks } from "react-icons/im";
-import { BsFillQuestionCircleFill } from "react-icons/bs";
-import option from "../../img/option.png";
-import ReactTooltip from "react-tooltip";
+import React, { useContext, useState } from "react"
+import classes from "./lessoncard.module.scss"
+import "bootstrap/dist/css/bootstrap.min.css"
+import { Container, Row, Col, Image, ProgressBar } from "react-bootstrap"
+import { QuizContext } from "../../Helpers/Contexts"
+import { ImBooks } from "react-icons/im"
+import { BsFillQuestionCircleFill } from "react-icons/bs"
+import option from "../../img/option.png"
+import ReactTooltip from "react-tooltip"
+import { Link } from "react-router-dom"
 
 export default function LessonCard(props) {
-  const { setGameState, setLanguage, language } = useContext(QuizContext);
-  const [expand, setExpand] = useState(false);
+  const { setGameState, setLanguage, language } = useContext(QuizContext)
+  const [expand, setExpand] = useState(false)
+
   return (
     <>
       <Row
         className={classes.CardDiv}
         onClick={() => {
           //   setGameState("quiz");
-          setExpand(!expand);
+          setExpand(!expand)
         }}
       >
         <Col md={2}>
@@ -51,18 +53,17 @@ export default function LessonCard(props) {
           <Col xs={{ span: 4, offset: 1 }}>
             <Image src={option} className={classes.optionImg}></Image>
             <a data-tip data-for="learn">
-              <ImBooks className={classes.learn} />
+              <Link to="/learn">
+                <ImBooks className={classes.learn} />
+              </Link>
             </a>
             <ReactTooltip id="learn" type="error">
               <span>Click to start learning</span>
             </ReactTooltip>
             <a data-tip data-for="quiz">
-              <BsFillQuestionCircleFill
-                className={classes.quiz}
-                onClick={() => {
-                  setGameState("quiz");
-                }}
-              />
+              <Link to="/quiz">
+                <BsFillQuestionCircleFill className={classes.quiz} />
+              </Link>
             </a>
             <ReactTooltip id="quiz" type="error">
               <span>Click to have a little quiz</span>
@@ -71,5 +72,5 @@ export default function LessonCard(props) {
         </Row>
       )}
     </>
-  );
+  )
 }
