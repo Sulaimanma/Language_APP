@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react"
 import { Questions } from "../Helpers/QuestionBank"
 import { QuizContext } from "../Helpers/Contexts"
-import "../App.css"
+import "./learn.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Image from "react-bootstrap/Image"
 import { IconContext } from "react-icons"
@@ -9,8 +9,16 @@ import { IoClose } from "react-icons/io5"
 // import { FaRegKeyboard } from "react-icons/fa"
 import { HiOutlineLightBulb, HiDownload } from "react-icons/hi"
 import { RiKeyboardFill } from "react-icons/ri"
-import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap"
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  ProgressBar,
+  Table,
+} from "react-bootstrap"
 import { Link } from "react-router-dom"
+import WordTable from "./WordTable/WordTable"
 
 export default function Quiz() {
   const { score, setScore, setGameState } = useContext(QuizContext)
@@ -34,8 +42,6 @@ export default function Quiz() {
     }
   }
 
-  console.log(Questions[0].wakkawakka[0])
-
   return (
     <>
       <div className="Quiz">
@@ -50,7 +56,7 @@ export default function Quiz() {
             <Row fluid>
               <Col md={2} xs={1}>
                 <div className="iconMenu">
-                  <div className="iconItem">
+                  <div id="iconItem" className="mx-auto">
                     <Link to="/endscreen">
                       <HiOutlineLightBulb className="bulb" />
                     </Link>
@@ -71,7 +77,7 @@ export default function Quiz() {
                   className="iconCloseDiv"
                   onClick={() => setGameState("menu")}
                 >
-                  <div className="iconItem">
+                  <div id="iconItem" className="mx-auto">
                     <Link to="/">
                       <IoClose />
                     </Link>
@@ -81,7 +87,21 @@ export default function Quiz() {
             </Row>
           </IconContext.Provider>
           {intro ? (
-            <Row>Intro</Row>
+            <div>
+              <Row className="Introduction">
+                <HiOutlineLightBulb className="bulbIntro" />
+              </Row>
+              <Row>
+                <p className="introText">
+                  Welcome to the Language Course! <br /> Let's start by learning
+                  some words!
+                </p>
+              </Row>
+
+              <Row>
+                <WordTable></WordTable>
+              </Row>
+            </div>
           ) : (
             <div>
               <Row>

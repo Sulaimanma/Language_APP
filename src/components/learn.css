@@ -15,7 +15,7 @@
   background-color: rgba(255, 255, 255, 0.952);
   border-radius: 20px;
 }
-.iconItem {
+#iconItem {
   transition: all 0.2s ease;
 }
 .iconItem:hover {
@@ -28,6 +28,9 @@
 
 .bulb {
   padding: 3px;
+}
+.iconItem {
+  align-items: center;
 }
 .download {
   padding: 4px;
@@ -56,7 +59,7 @@
 
 .questionImg {
   min-width: 30vw;
-  max-width: 83vw !important;
+  max-width: 90vw;
 }
 /* Options button */
 .options {
@@ -121,8 +124,8 @@
 .video {
   min-width: 30vw;
   max-width: 90vw;
-  min-height: 40vh !important;
-  max-height: 90vh !important;
+  min-height: 20vw;
+  max-height: 90vw;
 }
 
 @media only screen and (max-width: 768px) {
@@ -160,26 +163,9 @@
   .questionImg {
     min-width: 100%;
   }
-  .Quiz {
-    background: #1d2227;
-    width: 100%;
-    height: 100%;
-  }
 }
-.Home {
-  text-align: center;
-  font-family: arial;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+
 .Quiz {
-  background: #f2f7fd;
-}
-.Menu,
-.Quiz,
-.EndScreen {
   width: 100vw;
   height: 100vh;
 
@@ -187,52 +173,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #f2f7fd;
 }
-/* Burger Menu */
-.countryicon {
-  width: 246px;
-  height: 54px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.countryiconImg {
-  width: 64px;
-  height: 46px;
-}
-.languagetext {
-  color: black;
-  margin-top: 9px;
-  margin-left: 13px;
-  white-space: nowrap;
-}
+
 @media only screen and (max-width: 551px) {
-  .lessonContainer {
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  .cardRow {
-    margin-top: 50px;
-    margin-bottom: 200px;
-    width: 95vw;
-  }
-  .languagediv {
-    position: fixed;
-    left: 0;
-    top: 0;
-    background: #f2f7fd;
-    z-index: 2;
-    width: 100vw;
-  }
-  .countryicon {
-    margin-top: 14px;
-    margin-left: 67px;
-  }
-  .countryiconImg {
-  }
-  .languagetext {
-    font-size: 19px;
-  }
 }
 /* .Menu button,
 .Quiz button,
@@ -249,22 +193,28 @@ button:hover {
 }
 
 .Quiz,
-.EndScreen h3,
 h1 {
   color: #007bff;
   font-size: 1.3rem;
   font-family: Nista, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.EndScreen,
-.Menu {
-  background-color: #f2f7fd;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 #nextQuestion {
   width: 200px;
+}
+/* Introduction */
+.Introduction {
+}
+.bulbIntro {
+  margin-top: 20px;
+  font-size: 40px;
+}
+.introText {
+  margin-top: 10px;
+  padding-left: 6px;
+  font-size: 17px;
+}
+.introText1 {
+  padding-left: 6px;
+  font-size: 17px;
 }

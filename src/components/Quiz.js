@@ -48,8 +48,8 @@ export default function Quiz() {
               color: "#666e7e",
             }}
           >
-            <Row fluid>
-              <Col md={2} xs={1}>
+            <Row className="d-flex justify-content-center">
+              <Col md={2} xs={1} className="mx-auto">
                 <div className="iconMenu">
                   <div className="iconItem">
                     <Link to="/endscreen">
@@ -67,12 +67,12 @@ export default function Quiz() {
                 </div>
               </Col>
 
-              <Col xs={{ span: 1, offset: 1 }}>
+              <Col xs={{ span: 1, offset: 1 }} className="mx-auto-right">
                 <div
                   className="iconCloseDiv"
                   onClick={() => setGameState("menu")}
                 >
-                  <div className="iconItem">
+                  <div id="iconItem" className="mx-auto">
                     <Link to="/">
                       <IoClose />
                     </Link>
@@ -90,7 +90,7 @@ export default function Quiz() {
             </Col>
           </Row>
           <Row>
-            <Col md={{ span: 4, offset: 4 }} className="text-left">
+            <Col md={4} className="float-left">
               {Questions[currentQuestion].image && (
                 <div className="QuestionDiv">
                   <Image

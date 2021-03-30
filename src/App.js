@@ -4,7 +4,7 @@ import Mainmenu from "./components/Mainmenu"
 import Quiz from "./components/Quiz"
 import EndScreen from "./components/EndScreen"
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom"
-import BasicTable from "./components/BasicTable"
+
 import React, { useState } from "react"
 import { QuizContext } from "./Helpers/Contexts"
 
