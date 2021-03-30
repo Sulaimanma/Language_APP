@@ -93,22 +93,24 @@ export default function Quiz() {
               </Row>
               <Row>
                 <p className="introText">
-                  Welcome to the Language Course! <br /> Let's start by learning
-                  some words!
+                  Welcome to the Language Course! <br />
+                </p>
+              </Row>
+              <Row>
+                <p className="introText1">
+                  Let's start by learning some words!
                 </p>
               </Row>
 
               <Row>
-                <WordTable></WordTable>
+                <WordTable />
               </Row>
             </div>
           ) : (
             <div>
               <Row>
                 <Col md={{ span: 4, offset: 4 }} xs={12} className="text-left">
-                  <div className="question">
-                    <h3>{Questions[currentQuestion].prompt}</h3>
-                  </div>
+                  <p className="introText">Memorise the words.</p>
                 </Col>
               </Row>
               <Row>
@@ -139,45 +141,15 @@ export default function Quiz() {
               </Row>
               <Row>
                 <Col md={{ span: 4, offset: 4 }} className="text-left">
-                  <div className="options">
-                    <Button
-                      fluid
-                      variant="light"
-                      onClick={() => setOptionChosen("A")}
-                      className="optionButton"
-                      size="lg"
-                    >
-                      {Questions[currentQuestion].optionA}
-                    </Button>
-
-                    <Button
-                      variant="light"
-                      onClick={() => setOptionChosen("B")}
-                      className="optionButton"
-                      size="lg"
-                    >
-                      {Questions[currentQuestion].optionB}
-                    </Button>
-                    {Questions[currentQuestion].optionC && (
-                      <Button
-                        variant="light"
-                        onClick={() => setOptionChosen("C")}
-                        className="optionButton"
-                        size="lg"
-                      >
-                        {Questions[currentQuestion].optionC}
-                      </Button>
-                    )}
-                    {Questions[currentQuestion].optionD && (
-                      <Button
-                        variant="light"
-                        onClick={() => setOptionChosen("D")}
-                        className="optionButton"
-                        size="lg"
-                      >
-                        {Questions[currentQuestion].optionD}
-                      </Button>
-                    )}
+                  <div className="wordLearn">
+                    <p>{Questions[currentQuestion].optionA}</p>
+                  </div>
+                </Col>
+              </Row>
+              <Row>
+                <Col md={{ span: 4, offset: 4 }} className="text-left">
+                  <div className="wordEnglish">
+                    <p>{Questions[currentQuestion].optionA}</p>
                   </div>
                 </Col>
               </Row>

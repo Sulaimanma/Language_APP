@@ -210,11 +210,21 @@ h1 {
   font-size: 40px;
 }
 .introText {
+  font-weight: bold;
   margin-top: 10px;
   padding-left: 6px;
   font-size: 17px;
 }
 .introText1 {
-  padding-left: 6px;
+  margin-left: 8px;
   font-size: 17px;
+}
+.wordLearn {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+.wordEnglish {
+  color: grey;
 }
