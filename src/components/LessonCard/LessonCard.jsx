@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import classes from "./lessoncard.module.scss"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Container, Row, Col, Image, ProgressBar } from "react-bootstrap"
@@ -12,42 +12,49 @@ import { Link } from "react-router-dom"
 export default function LessonCard(props) {
   const { setGameState, setLanguage, language } = useContext(QuizContext)
   const [expand, setExpand] = useState(false)
+  const [display, setDisplay] = useState(true)
+  useEffect(() => {
+    props.display === 0 ? setDisplay(false) : setDisplay(true)
+  }, [props.display])
 
   return (
     <>
-      <Row
-        className={classes.CardDiv}
-        onClick={() => {
-          //   setGameState("quiz");
-          setExpand(!expand)
-        }}
-      >
-        <Col md={2}>
-          <Image
-            className={classes.ImageDiv}
-            roundedCircle
-            src={props.imgUrl}
-          ></Image>
-        </Col>
-        <Col md={6}>
-          <div className={classes.TextDiv}>
-            <Row>
-              {" "}
-              <h2> {props.title}</h2>
-            </Row>
-            <Row>
-              <p> {props.intro}</p>
-            </Row>
-          </div>
-        </Col>
-        <Col md={4}>
-          <ProgressBar
-            className={classes.ProgressBar}
-            variant="success"
-            now={40}
-          />
-        </Col>
-      </Row>
+      {display && (
+        <Row
+          className={classes.CardDiv}
+          onClick={() => {
+            //   setGameState("quiz");
+            setExpand(!expand)
+          }}
+        >
+          <Col md={2}>
+            <Image
+              className={classes.ImageDiv}
+              roundedCircle
+              src={props.imgUrl}
+            ></Image>
+          </Col>
+          <Col md={6}>
+            <div className={classes.TextDiv}>
+              <Row>
+                {" "}
+                <h2> {props.title}</h2>
+              </Row>
+              <Row>
+                <p> {props.intro}</p>
+              </Row>
+            </div>
+          </Col>
+          <Col md={4}>
+            <ProgressBar
+              className={classes.ProgressBar}
+              variant="success"
+              now={40}
+            />
+          </Col>
+        </Row>
+      )}
+
       {expand && (
         <Row className={classes.optionDiv}>
           <Col xs={{ span: 4, offset: 1 }}>

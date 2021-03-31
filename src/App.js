@@ -13,27 +13,12 @@ import Select from "./components/Select"
 import LessonCard from "./components/LessonCard/LessonCard"
 import Learn from "./components/Learn"
 
-import { useEffect } from "react"
-import Amplify, { Storage } from "aws-amplify"
-import awsconfig from "./aws-exports"
-Amplify.configure(awsconfig)
 const App = () => {
   const [gameState, setGameState] = useState("menu")
   // const [userName, setUserName] = useState("");
   const [score, setScore] = useState(0)
-  const [language, setLanguage] = useState("Wakka Wakka")
+  const [language, setLanguage] = useState("Baradha")
   const [url, setUrl] = useState("111")
-
-  useEffect(() => {
-    Storage.get("img/")
-      .then((data) => {
-        console.log(data)
-        console.log(".....................")
-      })
-      .catch((err) => {
-        console.log(err)
-      })
-  }, [])
 
   return (
     <>

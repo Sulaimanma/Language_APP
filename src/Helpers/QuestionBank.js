@@ -35,41 +35,69 @@ export const Questions = [
     answer: "D",
   },
 ]
-export const WordJSON = {
-  language: "",
-  wordlist: [
-    { English: "Hello", Language: "", Image: "", Audio: "", Video: "" },
+export const WordJSON_Baradha = {
+  language: "Baradha",
+  wordlist_greeting: [
     {
-      English: "Thank you",
-      Language: "",
-      Url: "",
-      Image: "",
+      English: "Hello",
+      Gidarjil: "Binbi gari",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/hello.jpg",
       Audio: "",
       Video: "",
     },
     {
-      English: "Hello",
-      Language: "",
-      Url: "",
-      Image: "",
-      Audio: "",
-      Video: "",
-    },
-    {
-      English: "Hello",
-      Language: "",
-      Url: "",
-      Image: "",
-      Audio: "",
-      Video: "",
-    },
-    {
-      English: "Hello",
-      Language: "",
-      Url: "",
-      Image: "",
+      English: "Hello friend",
+      Gidarjil: "Binbi gari yaba",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/hello+friend.jpg",
       Audio: "",
       Video: "",
     },
   ],
+  wordlist_body: [],
+  wordlist_family: [],
+  wordlist_environment: [
+    {
+      English: "Bird",
+      Gidarjil: "Dhibila",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/bird.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Fish",
+      Gidarjil: "Wina",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Grass ",
+      Gidarjil: "Wagura",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Water ",
+      Gidarjil: "Gamu",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Sun",
+      Gidarjil: "Gari",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
+      Audio: "",
+      Video: "",
+    },
+  ],
+  wordlist_conversation: [],
 }
