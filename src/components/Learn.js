@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react"
+import React, { useState, useContext, useEffect } from "react"
 import { Questions } from "../Helpers/QuestionBank"
 import { QuizContext } from "../Helpers/Contexts"
 import "./learn.css"

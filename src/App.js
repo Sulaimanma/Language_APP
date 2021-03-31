@@ -12,13 +12,13 @@ import Select from "./components/Select"
 import { BurgerMenu } from "./components/BurgerMenu/BurgerMenu"
 import LessonCard from "./components/LessonCard/LessonCard"
 import Learn from "./components/Learn"
-// ['menu', 'playing', 'finished']
 
 const App = () => {
   const [gameState, setGameState] = useState("menu")
   // const [userName, setUserName] = useState("");
   const [score, setScore] = useState(0)
   const [language, setLanguage] = useState("Wakka Wakka")
+  const [url, setUrl] = useState("111")
 
   return (
     <>

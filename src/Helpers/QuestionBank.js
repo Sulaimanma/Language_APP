@@ -34,4 +34,42 @@ export const Questions = [
     optionD: "Diang",
     answer: "D",
   },
-];
+]
+export const WordJSON = {
+  language: "",
+  wordlist: [
+    { English: "Hello", Language: "", Image: "", Audio: "", Video: "" },
+    {
+      English: "Thank you",
+      Language: "",
+      Url: "",
+      Image: "",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Hello",
+      Language: "",
+      Url: "",
+      Image: "",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Hello",
+      Language: "",
+      Url: "",
+      Image: "",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Hello",
+      Language: "",
+      Url: "",
+      Image: "",
+      Audio: "",
+      Video: "",
+    },
+  ],
+}

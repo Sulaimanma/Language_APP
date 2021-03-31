@@ -1,0 +1,16 @@
+{
+  "auth": {
+    "amplifylanguageapp51a81924": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "amplifygidarjil": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}
