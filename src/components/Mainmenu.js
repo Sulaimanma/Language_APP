@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react"
-import { QuizContext } from "../Helpers/Contexts"
+import { QuizContext } from "../Helpers/Context"
 import "../App.css"
 import Button from "react-bootstrap/Button"
 import "bootstrap/dist/css/bootstrap.min.css"

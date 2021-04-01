@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react"
 import { Questions } from "../Helpers/QuestionBank"
-import { QuizContext } from "../Helpers/Contexts"
+import { QuizContext } from "../Helpers/Context"
 import "../App.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Image from "react-bootstrap/Image"
