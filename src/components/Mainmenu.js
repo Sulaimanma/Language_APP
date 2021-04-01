@@ -10,10 +10,10 @@ import { IconContext } from "react-icons"
 import { BurgerMenu } from "./BurgerMenu/BurgerMenu"
 import LessonCard from "./LessonCard/LessonCard"
 import { WordJSON_Baradha } from "../Helpers/QuestionBank"
-import Amplify, { Storage } from "aws-amplify"
-import awsconfig from "../aws-exports"
+// import Amplify, { Storage } from "aws-amplify"
+// import awsconfig from "../aws-exports"
 
-Amplify.configure(awsconfig)
+// Amplify.configure(awsconfig)
 
 export default function Mainmenu(props) {
   const { setGameState, setLanguage, language } = useContext(QuizContext)

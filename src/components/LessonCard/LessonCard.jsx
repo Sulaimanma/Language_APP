@@ -60,7 +60,7 @@ export default function LessonCard(props) {
             <ProgressBar
               className={classes.ProgressBar}
               variant="success"
-              now={40}
+              now={0}
             />
           </Col>
         </Row>

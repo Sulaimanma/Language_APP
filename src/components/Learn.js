@@ -25,7 +25,8 @@ export default function Learn(props) {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [optionChosen, setOptionChosen] = useState("")
   const [intro, setNointro] = useState(true)
-
+  const [vocabularyEn, setVocabularyEn] = useState([])
+  const [vocabularyGi, setVocabularyGi] = useState([])
   const nextQuestion = () => {
     if (Questions[currentQuestion].answer === optionChosen) {
       setScore(score + 1)
@@ -42,6 +43,8 @@ export default function Learn(props) {
     }
   }
   console.log(props.location.param1)
+  if (props.location.param1 === "Lesson: Greetings!") {
+  }
   return (
     <>
       <div className="Quiz">

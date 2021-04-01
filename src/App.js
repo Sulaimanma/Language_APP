@@ -127,7 +127,9 @@ const App = () => {
             }}
           >
             <Switch>
-              <Route exact path="/learn" component={Learn} />
+              <Route exact path="/learn">
+                <Learn />
+              </Route>
               <Route exact path="/select">
                 <Select />
               </Route>
