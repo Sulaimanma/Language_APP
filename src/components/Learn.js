@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react"
+import React, { useState, useContext, useEffect, useRef } from "react"
 import { Questions } from "../Helpers/QuestionBank"
 import { QuizContext } from "../Helpers/Context"
 import "./learn.css"
@@ -15,7 +15,8 @@ import {
   Col,
   Button,
   ProgressBar,
-  Table,
+  Popover,
+  Overlay,
 } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import WordTable from "./WordTable/WordTable"
@@ -35,6 +36,14 @@ export default function Learn(props) {
   const [module, setModule] = useState([])
   const [vocabulary, setVocabulary] = useState([])
   const [vocabularyGi, setVocabularyGi] = useState([])
+  const [show, setShow] = useState(false)
+  const [target, setTarget] = useState(null)
+  const ref = useRef(null)
+
+  const handleClick = (event) => {
+    setShow(!show)
+    setTarget(event.target)
+  }
   useEffect(() => {
     props.location.param1 === "Lesson: Greetings!" &&
       setModule("wordlist_greeting")
@@ -77,7 +86,7 @@ export default function Learn(props) {
   // console.log(props.location.param1)
 
   return (
-    <>
+    <div ref={ref}>
       <div className="Quiz">
         <Container fluid className="quizContainer">
           <IconContext.Provider
@@ -90,10 +99,27 @@ export default function Learn(props) {
             <Row fluid>
               <Col md={2} xs={1}>
                 <div className="iconMenu">
-                  <div id="iconItem" className="mx-auto">
-                    <Link to="/endscreen">
-                      <HiOutlineLightBulb className="bulb" />
-                    </Link>
+                  <div id="iconItem" className="mx-auto" onClick={handleClick}>
+                    <HiOutlineLightBulb className="bulb" />
+                    <Overlay
+                      show={show}
+                      target={target}
+                      placement="bottom"
+                      container={ref.current}
+                      containerPadding={20}
+                    >
+                      <Popover id="popover-contained">
+                        <Popover.Title as="h3" style={{ color: "#007bff" }}>
+                          Vocabulary
+                        </Popover.Title>
+                        <Popover.Content>
+                          <WordTable
+                            vocabulary={vocabulary}
+                            language={language}
+                          />
+                        </Popover.Content>
+                      </Popover>
+                    </Overlay>
                   </div>
                 </div>
               </Col>
@@ -213,6 +239,6 @@ export default function Learn(props) {
           </Col>
         </Row>
       </div>
-    </>
+    </div>
   )
 }
