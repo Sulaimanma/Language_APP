@@ -1,6 +1,7 @@
 .wordTable {
   margin-left: 6px;
   font-size: 17px;
-
+  width: max-content;
   color: black;
+  overflow-x: hidden;
 }

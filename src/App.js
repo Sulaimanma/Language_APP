@@ -21,10 +21,7 @@ const App = () => {
   const [language, setLanguage] = useState("Baradha")
   const [wordData, setWordData] = useState([])
   const [lessonData, setLessonData] = useState([])
-  const [module, setModule] = useState([])
-  const handleChange = (event) => {
-    setLanguage(event.target.value)
-  }
+
   const fetchUrl = `https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/wordlist/${language}.json`
   const fetch_word = (fetchUrl) => {
     axios
