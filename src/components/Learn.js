@@ -21,12 +21,13 @@ import { Link } from "react-router-dom"
 import WordTable from "./WordTable/WordTable"
 
 export default function Learn(props) {
-  const { score, setScore, setGameState } = useContext(QuizContext)
+  const { score, setScore, setGameState, wordData, lessonData } = useContext(
+    QuizContext
+  )
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [optionChosen, setOptionChosen] = useState("")
   const [intro, setNointro] = useState(true)
-  const [vocabularyEn, setVocabularyEn] = useState([])
-  const [vocabularyGi, setVocabularyGi] = useState([])
+
   const nextQuestion = () => {
     if (Questions[currentQuestion].answer === optionChosen) {
       setScore(score + 1)
@@ -42,9 +43,8 @@ export default function Learn(props) {
       console.log(score)
     }
   }
+  console.log("~~~~~~~~~~~~~~~~~~~~~~~~n")
   console.log(props.location.param1)
-  // if (props.location.param1 === "Lesson: Greetings!") {
-  // }
   return (
     <>
       <div className="Quiz">

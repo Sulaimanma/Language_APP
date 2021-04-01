@@ -122,14 +122,12 @@ const App = () => {
               setScore,
               language,
               setLanguage,
-              module,
-              setModule,
+              wordData,
+              lessonData,
             }}
           >
             <Switch>
-              <Route exact path="/learn">
-                <Learn />
-              </Route>
+              <Route exact path="/learn" component={Learn}></Route>
               <Route exact path="/select">
                 <Select />
               </Route>
