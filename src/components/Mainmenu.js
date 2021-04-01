@@ -1,15 +1,15 @@
-import React, { useContext, useEffect, useState } from "react"
+import React, { useContext } from "react"
 import { QuizContext } from "../Helpers/Context"
 import "../App.css"
 import Button from "react-bootstrap/Button"
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Container, Row, Col, Image, Card } from "react-bootstrap"
+import { Container, Row, Col, Image } from "react-bootstrap"
 
 import { IconContext } from "react-icons"
 
 import { BurgerMenu } from "./BurgerMenu/BurgerMenu"
 import LessonCard from "./LessonCard/LessonCard"
-import { WordJSON_Baradha } from "../Helpers/QuestionBank"
+
 // import Amplify, { Storage } from "aws-amplify"
 // import awsconfig from "../aws-exports"
 
@@ -19,7 +19,10 @@ export default function Mainmenu(props) {
   const { setGameState, setLanguage, language, lessonData } = useContext(
     QuizContext
   )
-  const [moduleArray, setModuleArray] = useState([])
+
+  const handleComplete = () => {
+    return props.location.now === 100 ? true : false
+  }
   const handleChange = (event) => {
     setLanguage(event.target.value)
   }
@@ -104,26 +107,47 @@ export default function Mainmenu(props) {
 
             <Row fluid className="cardRow">
               <Col md={{ span: 4, offset: 4 }}>
-                {lessonData.map((lesson) => {
-                  return props.location.module === lesson.lessonTitle ? (
-                    <LessonCard
-                      title={lesson.lessonTitle}
-                      intro={lesson.lessonIntro}
-                      imgUrl={lesson.imageUrl}
-                      language={language}
-                      display={lesson}
-                      now={props.location.now}
-                    />
-                  ) : (
-                    <LessonCard
-                      title={lesson.lessonTitle}
-                      intro={lesson.lessonIntro}
-                      imgUrl={lesson.imageUrl}
-                      language={language}
-                      display={lesson}
-                      now={0}
-                    />
-                  )
+                {lessonData.map((lesson, id) => {
+                  if (
+                    props.location.module === lesson.lessonTitle &&
+                    handleComplete() === true
+                  ) {
+                    return (
+                      <LessonCard
+                        title={lesson.lessonTitle}
+                        intro={lesson.lessonIntro}
+                        imgUrl={lesson.imageUrl}
+                        language={language}
+                        display={lesson}
+                        now={100}
+                      />
+                    )
+                  } else if (
+                    props.location.module === lesson.lessonTitle &&
+                    handleComplete() !== true
+                  ) {
+                    return (
+                      <LessonCard
+                        title={lesson.lessonTitle}
+                        intro={lesson.lessonIntro}
+                        imgUrl={lesson.imageUrl}
+                        language={language}
+                        display={lesson}
+                        now={props.location.now}
+                      />
+                    )
+                  } else {
+                    return (
+                      <LessonCard
+                        title={lesson.lessonTitle}
+                        intro={lesson.lessonIntro}
+                        imgUrl={lesson.imageUrl}
+                        language={language}
+                        display={lesson}
+                        now={0}
+                      />
+                    )
+                  }
                 })}
               </Col>{" "}
             </Row>

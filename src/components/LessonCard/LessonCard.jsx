@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 import classes from "./lessoncard.module.scss"
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Container, Row, Col, Image, ProgressBar } from "react-bootstrap"
-import { QuizContext } from "../../Helpers/Context"
+import { Row, Col, Image, ProgressBar } from "react-bootstrap"
+// import { QuizContext } from "../../Helpers/Context"
 import { ImBooks } from "react-icons/im"
 import { BsFillQuestionCircleFill } from "react-icons/bs"
 import option from "../../img/option.png"
@@ -10,16 +10,16 @@ import ReactTooltip from "react-tooltip"
 import { Link } from "react-router-dom"
 
 export default function LessonCard(props) {
-  const {
-    setGameState,
-    setLanguage,
-    language,
-    setModule,
-    module,
-    lessonData,
-    setLessonData,
-    wordData,
-  } = useContext(QuizContext)
+  // const {
+  //   setGameState,
+  //   setLanguage,
+  //   language,
+  //   setModule,
+  //   module,
+  //   lessonData,
+  //   setLessonData,
+  //   wordData,
+  // } = useContext(QuizContext)
 
   const [expand, setExpand] = useState(false)
   const [display, setDisplay] = useState(true)

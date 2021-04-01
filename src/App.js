@@ -40,7 +40,7 @@ const App = () => {
   console.log(wordData)
   useEffect(() => {
     fetch_word(fetchUrl)
-    wordData.length != 0 &&
+    wordData.length !== 0 &&
       setLessonData([
         wordData.wordlist_greeting.length && {
           lessonTitle: "Lesson: Greetings!",
@@ -79,7 +79,7 @@ const App = () => {
       ])
   }, [fetchUrl, language])
   useEffect(() => {
-    wordData.length != 0 &&
+    wordData.length !== 0 &&
       setLessonData([
         wordData.wordlist_greeting.length && {
           lessonTitle: "Lesson: Greetings!",

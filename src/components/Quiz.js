@@ -7,8 +7,8 @@ import Image from "react-bootstrap/Image"
 import { IconContext } from "react-icons"
 import { IoClose } from "react-icons/io5"
 // import { FaRegKeyboard } from "react-icons/fa"
-import { HiOutlineLightBulb, HiDownload } from "react-icons/hi"
-import { RiKeyboardFill } from "react-icons/ri"
+import { HiOutlineLightBulb } from "react-icons/hi"
+
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
@@ -32,9 +32,7 @@ export default function Quiz(props) {
     }
     setGameState("endscreen")
   }
-  const learnWords = () => {
-    setGameState("burger")
-  }
+
   console.log(Questions[0].wakkawakka[0])
 
   return (

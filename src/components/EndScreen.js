@@ -7,7 +7,7 @@ import "../App.css"
 import { Link } from "react-router-dom"
 
 export default function EndScreen() {
-  const { score, setScore, setGameState } = useContext(QuizContext)
+  const { score, setScore } = useContext(QuizContext)
   const restartQuiz = () => {
     setScore(0)
   }

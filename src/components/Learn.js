@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect, useRef } from "react"
-import { Questions } from "../Helpers/QuestionBank"
+
 import { QuizContext } from "../Helpers/Context"
 import "./learn.css"
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -7,8 +7,8 @@ import Image from "react-bootstrap/Image"
 import { IconContext } from "react-icons"
 import { IoClose } from "react-icons/io5"
 // import { FaRegKeyboard } from "react-icons/fa"
-import { HiOutlineLightBulb, HiDownload } from "react-icons/hi"
-import { RiKeyboardFill } from "react-icons/ri"
+import { HiOutlineLightBulb } from "react-icons/hi"
+
 import {
   Container,
   Row,
@@ -23,19 +23,17 @@ import WordTable from "./WordTable/WordTable"
 
 export default function Learn(props) {
   const {
-    score,
-    setScore,
     setGameState,
     wordData,
-    lessonData,
+
     language,
   } = useContext(QuizContext)
   const [currentQuestion, setCurrentQuestion] = useState(-1)
-  const [optionChosen, setOptionChosen] = useState("")
+
   const [intro, setNointro] = useState(true)
   const [module, setModule] = useState([])
   const [vocabulary, setVocabulary] = useState([])
-  const [vocabularyGi, setVocabularyGi] = useState([])
+
   const [show, setShow] = useState(false)
   const [target, setTarget] = useState(null)
   const ref = useRef(null)
@@ -47,7 +45,15 @@ export default function Learn(props) {
   useEffect(() => {
     props.location.param1 === "Lesson: Greetings!" &&
       setModule("wordlist_greeting")
-    module.length != 0 &&
+    props.location.param1 === "Lesson: Know myself!" &&
+      setModule("wordlist_body")
+    props.location.param1 === "Lesson: My Family!" &&
+      setModule("wordlist_family")
+    props.location.param1 === "Lesson: Environment!" &&
+      setModule("wordlist_environment")
+    props.location.param1 === "Lesson: Conversation!" &&
+      setModule("wordlist_conversation")
+    module.length !== 0 &&
       setVocabulary(
         wordData[module].map((word, id) => {
           return [word.English, word.Gidarjil]
