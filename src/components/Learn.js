@@ -20,7 +20,7 @@ import {
 import { Link } from "react-router-dom"
 import WordTable from "./WordTable/WordTable"
 
-export default function Quiz() {
+export default function Learn(props) {
   const { score, setScore, setGameState } = useContext(QuizContext)
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [optionChosen, setOptionChosen] = useState("")
@@ -41,7 +41,7 @@ export default function Quiz() {
       console.log(score)
     }
   }
-
+  console.log(props.location.param1)
   return (
     <>
       <div className="Quiz">

@@ -12,105 +12,16 @@ import LessonCard from "./LessonCard/LessonCard"
 import { WordJSON_Baradha } from "../Helpers/QuestionBank"
 import Amplify, { Storage } from "aws-amplify"
 import awsconfig from "../aws-exports"
-import axios from "axios"
+
 Amplify.configure(awsconfig)
 
-export default function Mainmenu() {
+export default function Mainmenu(props) {
   const { setGameState, setLanguage, language } = useContext(QuizContext)
-  const [wordData, setWordData] = useState([])
-  const [lessonData, setLessonData] = useState([])
+  const [moduleArray, setModuleArray] = useState([])
   const handleChange = (event) => {
     setLanguage(event.target.value)
   }
-  const fetchUrl = `https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/wordlist/${language}.json`
-  const fetch_word = (fetchUrl) => {
-    axios
-      .get(fetchUrl)
-      .then((res) => {
-        const data = res.data
-        setWordData(data)
-      })
-      .catch((error) => {
-        // handle your errors here
-        console.error(error)
-      })
-  }
-  console.log(language)
-  console.log("%%%%%%%%%%%%%")
-  console.log(wordData)
-  useEffect(() => {
-    fetch_word(fetchUrl)
 
-    wordData.length != 0 &&
-      setLessonData([
-        wordData.wordlist_greeting.length && {
-          lessonTitle: "Lesson: Greetings!",
-          lessonIntro: "Learning some basic greetings",
-          imageUrl:
-            "https://doqvf81n9htmm.cloudfront.net/data/crop_article/100385/shutterstock_1164809464.jpg_1140x855.jpg",
-        },
-        wordData.wordlist_body.length && {
-          lessonTitle: "Lesson: Know myself!",
-          lessonIntro: "Learning some words related to your body",
-          imageUrl: "https://o.quizlet.com/H0HWHm6uGg7QsmYxDdMiRw_b.jpg",
-        },
-        wordData.wordlist_family.length && {
-          lessonTitle: "Lesson: My Family!",
-          lessonIntro: "Talking about your family, using possessive adjective",
-          imageUrl:
-            "https://www.brisbanekids.com.au/wp-content/uploads/2016/03/bigstock-Happy-Family-Standing-On-The-B-98845208.jpg",
-        },
-        wordData.wordlist_environment.length && {
-          lessonTitle: "Lesson: Environment!",
-          lessonIntro: "Learning some environmental words",
-          imageUrl:
-            "https://travel.mqcdn.com/mapquest/travel/wp-content/uploads/2020/06/GettyImages-676934538-e1592461667985-835x480.jpg",
-        },
-        wordData.wordlist_conversation.length && {
-          lessonTitle: "Lesson: Conversation!",
-          lessonIntro: "Learning some phrase for conversation",
-          imageUrl:
-            "https://shipway-consulting.co.uk/wp-content/uploads/2020/05/conversation-image-2.jpg",
-        },
-      ])
-  }, [fetchUrl, language])
-  useEffect(() => {
-    wordData.length != 0 &&
-      setLessonData([
-        wordData.wordlist_greeting.length && {
-          lessonTitle: "Lesson: Greetings!",
-          lessonIntro: "Learning some basic greetings",
-          imageUrl:
-            "https://doqvf81n9htmm.cloudfront.net/data/crop_article/100385/shutterstock_1164809464.jpg_1140x855.jpg",
-        },
-        wordData.wordlist_body.length && {
-          lessonTitle: "Lesson: Know myself!",
-          lessonIntro: "Learning some words related to your body",
-          imageUrl: "https://o.quizlet.com/H0HWHm6uGg7QsmYxDdMiRw_b.jpg",
-        },
-        wordData.wordlist_family.length && {
-          lessonTitle: "Lesson: My Family!",
-          lessonIntro: "Talking about your family, using possessive adjective",
-          imageUrl:
-            "https://www.brisbanekids.com.au/wp-content/uploads/2016/03/bigstock-Happy-Family-Standing-On-The-B-98845208.jpg",
-        },
-        wordData.wordlist_environment.length && {
-          lessonTitle: "Lesson: Environment!",
-          lessonIntro: "Learning some environmental words",
-          imageUrl:
-            "https://travel.mqcdn.com/mapquest/travel/wp-content/uploads/2020/06/GettyImages-676934538-e1592461667985-835x480.jpg",
-        },
-        wordData.wordlist_conversation.length && {
-          lessonTitle: "Lesson: Conversation!",
-          lessonIntro: "Learning some phrase for conversation",
-          imageUrl:
-            "https://shipway-consulting.co.uk/wp-content/uploads/2020/05/conversation-image-2.jpg",
-        },
-      ])
-  }, [wordData])
-
-  // console.log("!!!!!!!!!!!")
-  // console.log(wordData.wordlist_greeting)
   return (
     <>
       <BurgerMenu
@@ -191,7 +102,7 @@ export default function Mainmenu() {
 
             <Row fluid className="cardRow">
               <Col md={{ span: 4, offset: 4 }}>
-                {lessonData.map((lesson) => {
+                {props.lessonData.map((lesson) => {
                   return (
                     <LessonCard
                       title={lesson.lessonTitle}

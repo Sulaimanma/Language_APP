@@ -10,9 +10,20 @@ import ReactTooltip from "react-tooltip"
 import { Link } from "react-router-dom"
 
 export default function LessonCard(props) {
-  const { setGameState, setLanguage, language } = useContext(QuizContext)
+  const { setGameState, setLanguage, language, setModule, module } = useContext(
+    QuizContext
+  )
+
   const [expand, setExpand] = useState(false)
   const [display, setDisplay] = useState(true)
+  const newToLearn = {
+    pathname: "/learn",
+    param1: props.title,
+  }
+  const newToQuiz = {
+    pathname: "/quiz",
+    param1: props.title,
+  }
   useEffect(() => {
     props.display === 0 ? setDisplay(false) : setDisplay(true)
   }, [props.display])
@@ -60,7 +71,7 @@ export default function LessonCard(props) {
           <Col xs={{ span: 4, offset: 1 }}>
             <Image src={option} className={classes.optionImg}></Image>
             <a data-tip data-for="learn">
-              <Link to="/learn">
+              <Link to={newToLearn}>
                 <ImBooks className={classes.learn} />
               </Link>
             </a>
@@ -68,7 +79,7 @@ export default function LessonCard(props) {
               <span>Click to start learning</span>
             </ReactTooltip>
             <a data-tip data-for="quiz">
-              <Link to="/quiz">
+              <Link to={newToQuiz}>
                 <BsFillQuestionCircleFill className={classes.quiz} />
               </Link>
             </a>

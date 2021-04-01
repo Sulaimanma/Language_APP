@@ -12,7 +12,7 @@ import { RiKeyboardFill } from "react-icons/ri"
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
-export default function Quiz() {
+export default function Quiz(props) {
   const { score, setScore, setGameState } = useContext(QuizContext)
   const [currentQuestion, setCurrentQuestion] = useState(1)
   const [optionChosen, setOptionChosen] = useState("")
