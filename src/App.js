@@ -6,7 +6,7 @@ import EndScreen from "./components/EndScreen"
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom"
 
 import React, { useState } from "react"
-import { QuizContext } from "./Helpers/Contexts"
+import { QuizContext } from "./Helpers/Context"
 
 import Select from "./components/Select"
 
@@ -18,7 +18,6 @@ const App = () => {
   // const [userName, setUserName] = useState("");
   const [score, setScore] = useState(0)
   const [language, setLanguage] = useState("Baradha")
-  const [url, setUrl] = useState("111")
 
   return (
     <>
