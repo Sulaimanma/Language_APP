@@ -43,8 +43,8 @@ export default function Learn(props) {
     }
   }
   console.log(props.location.param1)
-  if (props.location.param1 === "Lesson: Greetings!") {
-  }
+  // if (props.location.param1 === "Lesson: Greetings!") {
+  // }
   return (
     <>
       <div className="Quiz">
