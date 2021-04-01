@@ -21,13 +21,39 @@ import { Link } from "react-router-dom"
 import WordTable from "./WordTable/WordTable"
 
 export default function Learn(props) {
-  const { score, setScore, setGameState, wordData, lessonData } = useContext(
-    QuizContext
-  )
+  const {
+    score,
+    setScore,
+    setGameState,
+    wordData,
+    lessonData,
+    language,
+  } = useContext(QuizContext)
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [optionChosen, setOptionChosen] = useState("")
   const [intro, setNointro] = useState(true)
-
+  const [module, setModule] = useState([])
+  const [vocabulary, setVocabulary] = useState([])
+  const [vocabularyGi, setVocabularyGi] = useState([])
+  useEffect(() => {
+    props.location.param1 === "Lesson: Greetings!" &&
+      setModule("wordlist_greeting")
+    module.length != 0 &&
+      setVocabulary(
+        wordData[module].map((word, id) => {
+          return [word.English, word.Gidarjil]
+        })
+      )
+    // module.length != 0 &&
+    //   setVocabularyGi(
+    //     wordData[module].map((word, id) => {
+    //       return word.Gidarjil
+    //     })
+    //   )
+    // Object.keys(wordData).forEach(function(module) {
+    //   arr.push(json[module]);
+    // });
+  }, [props.location.param1, wordData, module])
   const nextQuestion = () => {
     if (Questions[currentQuestion].answer === optionChosen) {
       setScore(score + 1)
@@ -44,7 +70,12 @@ export default function Learn(props) {
     }
   }
   console.log("~~~~~~~~~~~~~~~~~~~~~~~~n")
-  console.log(props.location.param1)
+  console.log(vocabulary)
+
+  // console.log(vocabulary)
+
+  // console.log(props.location.param1)
+
   return (
     <>
       <div className="Quiz">
@@ -105,8 +136,8 @@ export default function Learn(props) {
                 </p>
               </Row>
 
-              <Row>
-                <WordTable />
+              <Row fluid>
+                <WordTable vocabulary={vocabulary} language={language} />
               </Row>
             </div>
           ) : (
