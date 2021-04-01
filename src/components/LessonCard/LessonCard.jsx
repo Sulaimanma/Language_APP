@@ -10,9 +10,16 @@ import ReactTooltip from "react-tooltip"
 import { Link } from "react-router-dom"
 
 export default function LessonCard(props) {
-  const { setGameState, setLanguage, language, setModule, module } = useContext(
-    QuizContext
-  )
+  const {
+    setGameState,
+    setLanguage,
+    language,
+    setModule,
+    module,
+    lessonData,
+    setLessonData,
+    wordData,
+  } = useContext(QuizContext)
 
   const [expand, setExpand] = useState(false)
   const [display, setDisplay] = useState(true)
@@ -24,6 +31,7 @@ export default function LessonCard(props) {
     pathname: "/quiz",
     param1: props.title,
   }
+
   useEffect(() => {
     props.display === 0 ? setDisplay(false) : setDisplay(true)
   }, [props.display])
@@ -60,7 +68,7 @@ export default function LessonCard(props) {
             <ProgressBar
               className={classes.ProgressBar}
               variant="success"
-              now={0}
+              now={props.now}
             />
           </Col>
         </Row>

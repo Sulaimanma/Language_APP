@@ -30,7 +30,7 @@ export default function Learn(props) {
     lessonData,
     language,
   } = useContext(QuizContext)
-  const [currentQuestion, setCurrentQuestion] = useState(0)
+  const [currentQuestion, setCurrentQuestion] = useState(-1)
   const [optionChosen, setOptionChosen] = useState("")
   const [intro, setNointro] = useState(true)
   const [module, setModule] = useState([])
@@ -63,21 +63,16 @@ export default function Learn(props) {
     //   arr.push(json[module]);
     // });
   }, [props.location.param1, wordData, module])
+  const newToMain = {
+    pathname: "/",
+    now: ((currentQuestion + 1) * 100) / vocabulary.length,
+    module: props.location.param1,
+  }
   const nextQuestion = () => {
-    if (Questions[currentQuestion].answer === optionChosen) {
-      setScore(score + 1)
-    }
-
     setCurrentQuestion(currentQuestion + 1)
     setNointro(false)
   }
-  const finishQuiz = () => {
-    if (Questions[currentQuestion].answer === optionChosen) {
-      setScore(score + 1)
 
-      console.log(score)
-    }
-  }
   console.log("~~~~~~~~~~~~~~~~~~~~~~~~n")
   console.log(vocabulary)
 
@@ -127,7 +122,7 @@ export default function Learn(props) {
                 <div className="progressbarDiv">
                   <ProgressBar
                     animated
-                    now={(currentQuestion * 100) / (Questions.length - 1)}
+                    now={((currentQuestion + 1) * 100) / vocabulary.length}
                   />
                 </div>
               </Col>
@@ -138,7 +133,7 @@ export default function Learn(props) {
                   onClick={() => setGameState("menu")}
                 >
                   <div id="iconItem" className="mx-auto">
-                    <Link to="/">
+                    <Link to={newToMain}>
                       <IoClose />
                     </Link>
                   </div>
@@ -175,21 +170,21 @@ export default function Learn(props) {
               </Row>
               <Row>
                 <Col md={{ span: 4, offset: 4 }} className="text-left">
-                  {Questions[currentQuestion].image && (
+                  {wordData[module][currentQuestion].Image && (
                     <div className="QuestionDiv">
                       <Image
-                        src={Questions[currentQuestion].image}
+                        src={wordData[module][currentQuestion].Image}
                         fluid
                         rounded
                         className="questionImg"
                       />
                     </div>
                   )}
-                  {Questions[currentQuestion].video && (
+                  {wordData[module][currentQuestion].Video && (
                     <div className="QuestionDiv">
                       <iframe
                         title="educational_content"
-                        src={Questions[currentQuestion].video}
+                        src={wordData[module][currentQuestion].Video}
                         className="video"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -202,14 +197,14 @@ export default function Learn(props) {
               <Row>
                 <Col md={{ span: 4, offset: 4 }} className="text-left">
                   <div className="wordLearn">
-                    <p>{Questions[currentQuestion].optionA}</p>
+                    <p>{vocabulary[currentQuestion][1]}</p>
                   </div>
                 </Col>
               </Row>
               <Row>
                 <Col md={{ span: 4, offset: 4 }} className="text-left">
                   <div className="wordEnglish">
-                    <p>{Questions[currentQuestion].optionA}</p>
+                    <p>{vocabulary[currentQuestion][0]}</p>
                   </div>
                 </Col>
               </Row>
@@ -224,10 +219,10 @@ export default function Learn(props) {
             className="text-right"
           >
             <div className="nextDiv">
-              {currentQuestion === Questions.length - 1 ? (
-                <Link to="/endscreen">
-                  <Button onClick={finishQuiz} className="next" size="lg">
-                    Finish Quiz
+              {currentQuestion === vocabulary.length - 1 ? (
+                <Link to="/quiz">
+                  <Button className="next" size="lg">
+                    Start Quiz
                   </Button>
                 </Link>
               ) : (

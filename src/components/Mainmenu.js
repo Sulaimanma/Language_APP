@@ -16,7 +16,9 @@ import { WordJSON_Baradha } from "../Helpers/QuestionBank"
 // Amplify.configure(awsconfig)
 
 export default function Mainmenu(props) {
-  const { setGameState, setLanguage, language } = useContext(QuizContext)
+  const { setGameState, setLanguage, language, lessonData } = useContext(
+    QuizContext
+  )
   const [moduleArray, setModuleArray] = useState([])
   const handleChange = (event) => {
     setLanguage(event.target.value)
@@ -102,14 +104,24 @@ export default function Mainmenu(props) {
 
             <Row fluid className="cardRow">
               <Col md={{ span: 4, offset: 4 }}>
-                {props.lessonData.map((lesson) => {
-                  return (
+                {lessonData.map((lesson) => {
+                  return props.location.module === lesson.lessonTitle ? (
                     <LessonCard
                       title={lesson.lessonTitle}
                       intro={lesson.lessonIntro}
                       imgUrl={lesson.imageUrl}
                       language={language}
                       display={lesson}
+                      now={props.location.now}
+                    />
+                  ) : (
+                    <LessonCard
+                      title={lesson.lessonTitle}
+                      intro={lesson.lessonIntro}
+                      imgUrl={lesson.imageUrl}
+                      language={language}
+                      display={lesson}
+                      now={0}
                     />
                   )
                 })}

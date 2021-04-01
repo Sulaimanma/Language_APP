@@ -47,29 +47,34 @@ const App = () => {
           lessonIntro: "Learning some basic greetings",
           imageUrl:
             "https://doqvf81n9htmm.cloudfront.net/data/crop_article/100385/shutterstock_1164809464.jpg_1140x855.jpg",
+          now: 0,
         },
         wordData.wordlist_body.length && {
           lessonTitle: "Lesson: Know myself!",
           lessonIntro: "Learning some words related to your body",
           imageUrl: "https://o.quizlet.com/H0HWHm6uGg7QsmYxDdMiRw_b.jpg",
+          now: 0,
         },
         wordData.wordlist_family.length && {
           lessonTitle: "Lesson: My Family!",
           lessonIntro: "Talking about your family, using possessive adjective",
           imageUrl:
             "https://www.brisbanekids.com.au/wp-content/uploads/2016/03/bigstock-Happy-Family-Standing-On-The-B-98845208.jpg",
+          now: 0,
         },
         wordData.wordlist_environment.length && {
           lessonTitle: "Lesson: Environment!",
           lessonIntro: "Learning some environmental words",
           imageUrl:
             "https://travel.mqcdn.com/mapquest/travel/wp-content/uploads/2020/06/GettyImages-676934538-e1592461667985-835x480.jpg",
+          now: 0,
         },
         wordData.wordlist_conversation.length && {
           lessonTitle: "Lesson: Conversation!",
           lessonIntro: "Learning some phrase for conversation",
           imageUrl:
             "https://shipway-consulting.co.uk/wp-content/uploads/2020/05/conversation-image-2.jpg",
+          now: 0,
         },
       ])
   }, [fetchUrl, language])
@@ -81,29 +86,34 @@ const App = () => {
           lessonIntro: "Learning some basic greetings",
           imageUrl:
             "https://doqvf81n9htmm.cloudfront.net/data/crop_article/100385/shutterstock_1164809464.jpg_1140x855.jpg",
+          now: 0,
         },
         wordData.wordlist_body.length && {
           lessonTitle: "Lesson: Know myself!",
           lessonIntro: "Learning some words related to your body",
           imageUrl: "https://o.quizlet.com/H0HWHm6uGg7QsmYxDdMiRw_b.jpg",
+          now: 0,
         },
         wordData.wordlist_family.length && {
           lessonTitle: "Lesson: My Family!",
           lessonIntro: "Talking about your family, using possessive adjective",
           imageUrl:
             "https://www.brisbanekids.com.au/wp-content/uploads/2016/03/bigstock-Happy-Family-Standing-On-The-B-98845208.jpg",
+          now: 0,
         },
         wordData.wordlist_environment.length && {
           lessonTitle: "Lesson: Environment!",
           lessonIntro: "Learning some environmental words",
           imageUrl:
             "https://travel.mqcdn.com/mapquest/travel/wp-content/uploads/2020/06/GettyImages-676934538-e1592461667985-835x480.jpg",
+          now: 0,
         },
         wordData.wordlist_conversation.length && {
           lessonTitle: "Lesson: Conversation!",
           lessonIntro: "Learning some phrase for conversation",
           imageUrl:
             "https://shipway-consulting.co.uk/wp-content/uploads/2020/05/conversation-image-2.jpg",
+          now: 0,
         },
       ])
   }, [wordData])
@@ -121,6 +131,7 @@ const App = () => {
               setLanguage,
               wordData,
               lessonData,
+              setLessonData,
             }}
           >
             <Switch>
@@ -128,9 +139,7 @@ const App = () => {
               <Route exact path="/select">
                 <Select />
               </Route>
-              <Route exact path="/">
-                <Mainmenu lessonData={lessonData} />
-              </Route>
+              <Route exact path="/" component={Mainmenu}></Route>
               <Route exact path="/endscreen">
                 <EndScreen />
               </Route>
