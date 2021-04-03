@@ -1,27 +1,29 @@
-import React, { useState, useContext } from "react"
+import React, { useState, useContext, useEffect } from "react"
 import { Questions } from "../Helpers/QuestionBank"
 import { QuizContext } from "../Helpers/Context"
 import "../App.css"
+import "./quiz.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Image from "react-bootstrap/Image"
 import { IconContext } from "react-icons"
 import { IoClose } from "react-icons/io5"
 // import { FaRegKeyboard } from "react-icons/fa"
 import { HiOutlineLightBulb } from "react-icons/hi"
-
+import { TiTick } from "react-icons/ti"
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
 export default function Quiz(props) {
-  const { score, setScore, setGameState } = useContext(QuizContext)
+  const { score, setScore, wordData } = useContext(QuizContext)
   const [currentQuestion, setCurrentQuestion] = useState(1)
   const [optionChosen, setOptionChosen] = useState("")
+  const [cont, setCont] = useState(false)
 
   const nextQuestion = () => {
     if (Questions[currentQuestion].answer === optionChosen) {
       setScore(score + 1)
     }
-
+    setCont(false)
     setCurrentQuestion(currentQuestion + 1)
   }
   const finishQuiz = () => {
@@ -30,8 +32,16 @@ export default function Quiz(props) {
 
       console.log(score)
     }
-    setGameState("endscreen")
   }
+  const handleOption = () => {
+    setCont(true)
+  }
+  useEffect(() => {
+    optionChosen.length !== 0 ? setCont(true) : setCont(false)
+    console.log("^^^^^^^^^^^^^^^^^^")
+    console.log(optionChosen)
+    console.log(optionChosen.length !== 0)
+  }, [optionChosen])
 
   console.log(Questions[0].wakkawakka[0])
 
@@ -66,10 +76,7 @@ export default function Quiz(props) {
               </Col>
 
               <Col xs={{ span: 1, offset: 1 }} className="mx-auto-right">
-                <div
-                  className="iconCloseDiv"
-                  onClick={() => setGameState("menu")}
-                >
+                <div className="iconCloseDiv">
                   <div id="iconItem" className="mx-auto">
                     <Link to="/">
                       <IoClose />
@@ -119,7 +126,10 @@ export default function Quiz(props) {
                 <Button
                   fluid
                   variant="light"
-                  onClick={() => setOptionChosen("A")}
+                  onClick={() => {
+                    setOptionChosen("A")
+                    handleOption()
+                  }}
                   className="optionButton"
                   size="lg"
                 >
@@ -128,7 +138,10 @@ export default function Quiz(props) {
 
                 <Button
                   variant="light"
-                  onClick={() => setOptionChosen("B")}
+                  onClick={(e) => {
+                    setOptionChosen("B")
+                    handleOption(e)
+                  }}
                   className="optionButton"
                   size="lg"
                 >
@@ -137,7 +150,10 @@ export default function Quiz(props) {
                 {Questions[currentQuestion].optionC && (
                   <Button
                     variant="light"
-                    onClick={() => setOptionChosen("C")}
+                    onClick={(e) => {
+                      setOptionChosen("C")
+                      handleOption(e)
+                    }}
                     className="optionButton"
                     size="lg"
                   >
@@ -147,7 +163,10 @@ export default function Quiz(props) {
                 {Questions[currentQuestion].optionD && (
                   <Button
                     variant="light"
-                    onClick={() => setOptionChosen("D")}
+                    onClick={(e) => {
+                      setOptionChosen("D")
+                      handleOption(e)
+                    }}
                     className="optionButton"
                     size="lg"
                   >
@@ -159,25 +178,107 @@ export default function Quiz(props) {
           </Row>
         </Container>
         <Row className="nextRow">
-          <Col
-            md={{ span: 4, offset: 8 }}
-            xs={{ span: 6, offset: 3 }}
-            className="text-right"
-          >
-            <div className="nextDiv">
-              {currentQuestion === Questions.length - 1 ? (
-                <Link to="/endscreen">
-                  <Button onClick={finishQuiz} className="next" size="lg">
-                    Finish Quiz
+          <div className="nextDiv">
+            {cont ? (
+              <Container fluid>
+                {Questions[currentQuestion].answer === optionChosen ? (
+                  <Row className="trueFeedback">
+                    <Col xs={1} className="correctLabel">
+                      <div className="tickContainer1">
+                        <TiTick style={{ color: "#4CAF50" }} />
+                      </div>
+                    </Col>
+                    <Col xs={1} className="correctText">
+                      <div className="result">
+                        <h1 className="resultCorrect">Correct</h1>
+                      </div>
+                    </Col>
+                  </Row>
+                ) : (
+                  <>
+                    <Row>
+                      <Col xs={1} style={{ whitespace: "nowrap" }}>
+                        <h1 className="correctAnswer">Correct Answer:</h1>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={1}>
+                        <h1
+                          style={{
+                            fontsize: "1.125rem",
+                            lineheight: "1.7",
+                            fontweight: "500",
+                            color: " #50545c",
+                          }}
+                        >
+                          {Questions[currentQuestion].answer}
+                        </h1>
+                      </Col>
+                    </Row>
+
+                    <Row className="falseFeedback">
+                      <Col xs={2} className="correctLabel">
+                        <div className="tickContainer">
+                          <IoClose style={{ color: "#e2222e" }} />
+                        </div>
+                      </Col>
+                      <div className="result">
+                        <h1 className="resultCorrect1">Incorrect</h1>
+                      </div>
+                    </Row>
+                  </>
+                )}
+
+                {currentQuestion === Questions.length - 1 ? (
+                  Questions[currentQuestion].answer === optionChosen ? (
+                    <Link to="/endscreen">
+                      <Button
+                        onClick={finishQuiz}
+                        className="next"
+                        variant="success"
+                        size="sm"
+                        style={{ fontsize: "17px !important" }}
+                      >
+                        Finish Quiz
+                      </Button>
+                    </Link>
+                  ) : (
+                    <Link to="/endscreen">
+                      <Button
+                        onClick={finishQuiz}
+                        variant="danger"
+                        className="next"
+                        size="sm"
+                        style={{ fontsize: "17px !important" }}
+                      >
+                        Finish Quiz
+                      </Button>
+                    </Link>
+                  )
+                ) : Questions[currentQuestion].answer === optionChosen ? (
+                  <Button
+                    onClick={nextQuestion}
+                    className="next"
+                    variant="success"
+                    size="sm"
+                    style={{ fontsize: "17px !important" }}
+                  >
+                    Continue
                   </Button>
-                </Link>
-              ) : (
-                <Button onClick={nextQuestion} className="next" size="lg">
-                  Next Question
-                </Button>
-              )}
-            </div>
-          </Col>
+                ) : (
+                  <Button
+                    onClick={nextQuestion}
+                    variant="danger"
+                    className="next"
+                    size="sm"
+                    style={{ fontsize: "17px !important" }}
+                  >
+                    Continue
+                  </Button>
+                )}
+              </Container>
+            ) : null}
+          </div>
         </Row>
       </div>
     </>

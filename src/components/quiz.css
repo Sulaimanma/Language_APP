@@ -1,0 +1,59 @@
+.tickContainer {
+  width: 30px;
+  height: 30px;
+  background: #e2070745;
+  border-radius: 44px;
+}
+.tickContainer1 {
+  width: 30px;
+  height: 30px;
+  background: rgba(0, 138, 34, 0.25);
+  border-radius: 44px;
+}
+
+.correctLabel svg {
+  color: rgb(226, 34, 46);
+  position: absolute;
+  left: 20px;
+  top: 4.5px;
+}
+.resultCorrect {
+  color: rgb(76, 175, 80);
+  margin-top: 2px;
+  font-size: 24px;
+  font-family: Nista, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.options {
+  margin-top: 22px !important;
+}
+/* .resultCorrect{
+  color: rgb(76, 175, 80);
+  margin-top: 2px;
+  font-size: 1.3rem;
+  font-family: Nista, Helvetica Neue, Helvetica, Arial, sans-serif;
+} */
+.next {
+  margin-top: 7px !important;
+}
+.resultCorrect1 {
+  color: rgb(226, 34, 46);
+  margin-top: 2px;
+  font-size: 24px;
+  font-family: Nista, Helvetica Neue, Helvetica, Arial, sans-serif;
+  position: absolute;
+  left: 15%;
+}
+.correctAnswer {
+  color: #666e7e;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.falseFeedback {
+  border-top-style: ridge;
+  padding-top: 10px;
+}
+.next {
+  font-size: 17px;
+}

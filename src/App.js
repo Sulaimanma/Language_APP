@@ -8,8 +8,6 @@ import { Switch, Route, BrowserRouter as Router } from "react-router-dom"
 import React, { useEffect, useState } from "react"
 import { QuizContext } from "./Helpers/Context"
 
-import Select from "./components/Select"
-
 import LessonCard from "./components/LessonCard/LessonCard"
 import Learn from "./components/Learn"
 import axios from "axios"
@@ -136,9 +134,7 @@ const App = () => {
           >
             <Switch>
               <Route exact path="/learn" component={Learn}></Route>
-              <Route exact path="/select">
-                <Select />
-              </Route>
+
               <Route exact path="/" component={Mainmenu}></Route>
               <Route exact path="/endscreen">
                 <EndScreen />

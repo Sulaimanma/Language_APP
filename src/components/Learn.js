@@ -59,12 +59,7 @@ export default function Learn(props) {
           return [word.English, word.Gidarjil]
         })
       )
-    // module.length != 0 &&
-    //   setVocabularyGi(
-    //     wordData[module].map((word, id) => {
-    //       return word.Gidarjil
-    //     })
-    //   )
+
     // Object.keys(wordData).forEach(function(module) {
     //   arr.push(json[module]);
     // });

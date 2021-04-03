@@ -120,6 +120,7 @@ export default function Mainmenu(props) {
                         language={language}
                         display={lesson}
                         now={100}
+                        complete={handleComplete()}
                       />
                     )
                   } else if (
@@ -134,6 +135,7 @@ export default function Mainmenu(props) {
                         language={language}
                         display={lesson}
                         now={props.location.now}
+                        complete={handleComplete()}
                       />
                     )
                   } else {
@@ -145,6 +147,7 @@ export default function Mainmenu(props) {
                         language={language}
                         display={lesson}
                         now={0}
+                        complete={handleComplete()}
                       />
                     )
                   }

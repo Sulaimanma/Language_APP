@@ -65,11 +65,13 @@ export default function LessonCard(props) {
             </div>
           </Col>
           <Col md={4}>
-            <ProgressBar
-              className={classes.ProgressBar}
-              variant="success"
-              now={props.now}
-            />
+            {props.complete === true ? null : (
+              <ProgressBar
+                className={classes.ProgressBar}
+                variant="success"
+                now={props.now}
+              />
+            )}
           </Col>
         </Row>
       )}
