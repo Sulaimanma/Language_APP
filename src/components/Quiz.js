@@ -171,9 +171,7 @@ export default function Quiz(props) {
           <Row>
             <Col md={{ span: 4, offset: 4 }} xs={12} className="text-left">
               <div className="question">
-                {quizQuestion && (
-                  <h3>{quizQuestion[currentQuestion - 1].prompt}</h3>
-                )}
+                <h3>{Questions[currentQuestion].prompt}</h3>
               </div>
             </Col>
           </Row>
