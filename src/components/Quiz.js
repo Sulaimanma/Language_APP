@@ -18,6 +18,9 @@ export default function Quiz(props) {
   const [currentQuestion, setCurrentQuestion] = useState(1)
   const [optionChosen, setOptionChosen] = useState("")
   const [cont, setCont] = useState(false)
+  const [module, setModule] = useState()
+  const [quizQuestion, setQuizQuestion] = useState([])
+  const [quizOption, setQuizOption] = useState([])
 
   const nextQuestion = () => {
     if (Questions[currentQuestion].answer === optionChosen) {
@@ -29,26 +32,104 @@ export default function Quiz(props) {
   const finishQuiz = () => {
     if (Questions[currentQuestion].answer === optionChosen) {
       setScore(score + 1)
-
-      console.log(score)
     }
   }
   const handleOption = () => {
     setCont(true)
   }
+  const shuffle = (array) => {
+    var currentIndex = array.length,
+      temporaryValue,
+      randomIndex
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex)
+      currentIndex -= 1
+
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex]
+      array[currentIndex] = array[randomIndex]
+      array[randomIndex] = temporaryValue
+    }
+
+    return array
+  }
+  const removeItemOnce = (arr, value) => {
+    var index = arr.indexOf(value)
+    if (index > -1) {
+      arr.splice(index, 1)
+    }
+    return arr
+  }
+
+  useEffect(() => {
+    props.location.param1 === "Lesson: Greetings!" &&
+      setModule("wordlist_greeting")
+    props.location.param1 === "Lesson: Know myself!" &&
+      setModule("wordlist_body")
+    props.location.param1 === "Lesson: My Family!" &&
+      setModule("wordlist_family")
+    props.location.param1 === "Lesson: Environment!" &&
+      setModule("wordlist_environment")
+    props.location.param1 === "Lesson: Conversation!" &&
+      setModule("wordlist_conversation")
+  }, [props.location.param1])
+
+  useEffect(() => {
+    console.log(module)
+    if (module) {
+      var quiz = wordData[module].map((word, id) => {
+        const randomOption = removeItemOnce(
+          wordData[module].map((word, id) => {
+            return word.Gidarjil
+          }),
+          word.Gidarjil
+        )[
+          Math.floor(
+            Math.random() *
+              removeItemOnce(
+                wordData[module].map((word, id) => {
+                  return word.Gidarjil
+                }),
+                word.Gidarjil
+              ).length
+          )
+        ]
+
+        return {
+          exist: 1,
+          prompt: `What is "${word.English}" in ${wordData.language} language?`,
+          image: word.Image,
+          video: word.Video,
+          audio: word.Audio,
+          options: shuffle([word.Gidarjil].concat(randomOption)),
+
+          // optionC: "Na",
+          // optionD: "Gira",
+          answer: word.Gidarjil,
+        }
+      })
+    }
+
+    setQuizQuestion(quiz)
+    // Object.keys(wordData).forEach(function(module) {
+    //   arr.push(json[module]);
+    // });
+  }, [module, wordData, props.location.param1])
+  // console.log("arrrrrrrayyyyyyyyyyyyyyy")
+  // quizQuestion && console.log(quizQuestion[0])
+
   useEffect(() => {
     optionChosen.length !== 0 ? setCont(true) : setCont(false)
-    console.log("^^^^^^^^^^^^^^^^^^")
-    console.log(optionChosen)
-    console.log(optionChosen.length !== 0)
   }, [optionChosen])
-
-  console.log(Questions[0].wakkawakka[0])
 
   return (
     <>
       <div className="Quiz">
         <Container fluid className="quizContainer">
+          {quizQuestion && console.log(quizQuestion[0])}
           <IconContext.Provider
             value={{
               className: "menu-icons",
@@ -90,13 +171,15 @@ export default function Quiz(props) {
           <Row>
             <Col md={{ span: 4, offset: 4 }} xs={12} className="text-left">
               <div className="question">
-                <h3>{Questions[currentQuestion].prompt}</h3>
+                {quizQuestion && (
+                  <h3>{quizQuestion[currentQuestion - 1].prompt}</h3>
+                )}
               </div>
             </Col>
           </Row>
           <Row>
             <Col md={4} className="float-left">
-              {Questions[currentQuestion].image && (
+              {Questions[currentQuestion].length != 0 && (
                 <div className="QuestionDiv">
                   <Image
                     src={Questions[currentQuestion].image}

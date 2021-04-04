@@ -139,9 +139,7 @@ const App = () => {
               <Route exact path="/endscreen">
                 <EndScreen />
               </Route>
-              <Route exact path="/quiz">
-                <Quiz wordData={wordData} />
-              </Route>
+              <Route path="/quiz" component={Quiz}></Route>
               <Route path="/test">
                 <LessonCard />
               </Route>
