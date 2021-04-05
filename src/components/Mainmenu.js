@@ -36,11 +36,8 @@ export default function Mainmenu(props) {
             <label>
               <h3>Pick the Language You Want to Learn:</h3>
               <select value={language} onChange={handleChange}>
-                <option value="Wakka Wakka">Wakka Wakka</option>
                 <option value="Baradha">Baradha</option>
-                <option value="Bayali" disabled>
-                  Bayali
-                </option>
+                <option value="Bayali">Bayali</option>
                 <option value="Bidjara" disabled>
                   Bidjara
                 </option>
@@ -69,7 +66,7 @@ export default function Mainmenu(props) {
                 <option value="Wadjingu" disabled>
                   Wadjingu
                 </option>
-
+                <option value="Wakka Wakka">Wakka Wakka</option>
                 <option value="Woppaburra" disabled>
                   Woppaburra
                 </option>
