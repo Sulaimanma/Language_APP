@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react"
+import React, { useState, useContext, useEffect, useMemo } from "react"
 import { Questions } from "../Helpers/QuestionBank"
 import { QuizContext } from "../Helpers/Context"
 import "../App.css"
@@ -19,18 +19,44 @@ export default function Quiz(props) {
   const [optionChosen, setOptionChosen] = useState("")
   const [cont, setCont] = useState(false)
   const [module, setModule] = useState()
-  const [quizQuestion, setQuizQuestion] = useState([])
-  const [quizOption, setQuizOption] = useState([])
+
+  // const [quizQuestion, setQuizQuestion] = useState([
+  //   {
+  //     exist: "",
+  //     prompt: "",
+  //     image: "",
+  //     video: "",
+  //     audio: "",
+  //     options: "",
+
+  //     // optionC: "Na",
+  //     // optionD: "Gira",
+  //     answer: "",
+  //   },
+  //   {
+  //     exist: "",
+  //     prompt: "",
+  //     image: "",
+  //     video: "",
+  //     audio: "",
+  //     options: "",
+
+  //     // optionC: "Na",
+  //     // optionD: "Gira",
+  //     answer: "",
+  //   },
+  // ])
+  // const [quizOption, setQuizOption] = useState([])
 
   const nextQuestion = () => {
-    if (Questions[currentQuestion].answer === optionChosen) {
+    if (quizQ[currentQuestion - 1].answer === optionChosen) {
       setScore(score + 1)
     }
     setCont(false)
     setCurrentQuestion(currentQuestion + 1)
   }
   const finishQuiz = () => {
-    if (Questions[currentQuestion].answer === optionChosen) {
+    if (quizQ[currentQuestion - 1].answer === optionChosen) {
       setScore(score + 1)
     }
   }
@@ -65,6 +91,8 @@ export default function Quiz(props) {
   }
 
   useEffect(() => {
+    console.log("parammmmmmmmmmmm1")
+    console.log(props.location.param1)
     props.location.param1 === "Lesson: Greetings!" &&
       setModule("wordlist_greeting")
     props.location.param1 === "Lesson: Know myself!" &&
@@ -75,10 +103,46 @@ export default function Quiz(props) {
       setModule("wordlist_environment")
     props.location.param1 === "Lesson: Conversation!" &&
       setModule("wordlist_conversation")
-  }, [props.location.param1])
 
-  useEffect(() => {
+    console.log("Moduleeeeeeeeeeeeeee")
     console.log(module)
+    // if (module) {
+    //   var quiz = wordData[module].map((word, id) => {
+    //     const randomOption = removeItemOnce(
+    //       wordData[module].map((word, id) => {
+    //         return word.Gidarjil
+    //       }),
+    //       word.Gidarjil
+    //     )[
+    //       Math.floor(
+    //         Math.random() *
+    //           removeItemOnce(
+    //             wordData[module].map((word, id) => {
+    //               return word.Gidarjil
+    //             }),
+    //             word.Gidarjil
+    //           ).length
+    //       )
+    //     ]
+
+    //     return {
+    //       exist: 1,
+    //       prompt: `What is "${word.English}" in ${wordData.language} language?`,
+    //       image: word.Image,
+    //       video: word.Video,
+    //       audio: word.Audio,
+    //       options: shuffle([word.Gidarjil].concat(randomOption)),
+
+    //       // optionC: "Na",
+    //       // optionD: "Gira",
+    //       answer: word.Gidarjil,
+    //     }
+    //   })
+    // }
+
+    // setQuizQuestion(quiz)
+  }, [props.location.param1, module, wordData])
+  const quizQ = useMemo(() => {
     if (module) {
       var quiz = wordData[module].map((word, id) => {
         const randomOption = removeItemOnce(
@@ -113,21 +177,22 @@ export default function Quiz(props) {
       })
     }
 
-    setQuizQuestion(quiz)
-    // Object.keys(wordData).forEach(function(module) {
-    //   arr.push(json[module]);
-    // });
-  }, [module, wordData, props.location.param1])
-  // console.log("arrrrrrrayyyyyyyyyyyyyyy")
-  // quizQuestion && console.log(quizQuestion[0])
+    return quiz
+  }, [module, wordData])
+
+  // Object.keys(wordData).forEach(function(module) {
+  //   arr.push(json[module]);
+  // });
 
   useEffect(() => {
     optionChosen.length !== 0 ? setCont(true) : setCont(false)
   }, [optionChosen])
-
+  console.log("arrrrrrrayyyyyyyyyyyyyyy")
+  quizQ && console.log(quizQ)
   return (
     <>
       <div className="Quiz">
+        {quizQ && console.log(quizQ[0].prompt)}
         <Container fluid className="quizContainer">
           <IconContext.Provider
             value={{
@@ -148,10 +213,12 @@ export default function Quiz(props) {
               </Col>
               <Col md={{ span: 6, offset: 1 }} xs={9}>
                 <div className="progressbarDiv">
-                  <ProgressBar
-                    animated
-                    now={(currentQuestion * 100) / (Questions.length - 1)}
-                  />
+                  {quizQ && (
+                    <ProgressBar
+                      animated
+                      now={(currentQuestion * 100) / quizQ.length}
+                    />
+                  )}
                 </div>
               </Col>
 
@@ -170,27 +237,27 @@ export default function Quiz(props) {
           <Row>
             <Col md={{ span: 4, offset: 4 }} xs={12} className="text-left">
               <div className="question">
-                <h3>{Questions[currentQuestion].prompt}</h3>
+                {quizQ && <h3>{quizQ[currentQuestion - 1].prompt}</h3>}
               </div>
             </Col>
           </Row>
           <Row>
             <Col md={4} className="float-left">
-              {Questions[currentQuestion].length != 0 && (
+              {quizQ && quizQ[currentQuestion - 1].image.length != 0 && (
                 <div className="QuestionDiv">
                   <Image
-                    src={Questions[currentQuestion].image}
+                    src={quizQ[currentQuestion - 1].image}
                     fluid
                     rounded
                     className="questionImg"
                   />
                 </div>
               )}
-              {Questions[currentQuestion].video && (
+              {quizQ && quizQ[currentQuestion - 1].video.length != 0 && (
                 <div className="QuestionDiv">
                   <iframe
                     title="educational_content"
-                    src={Questions[currentQuestion].video}
+                    src={quizQ[currentQuestion - 1].video}
                     className="video"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -203,54 +270,31 @@ export default function Quiz(props) {
           <Row>
             <Col md={{ span: 4, offset: 4 }} className="text-left">
               <div className="options">
-                <Button
-                  fluid
-                  variant="light"
-                  onClick={() => {
-                    setOptionChosen("A")
-                    handleOption()
-                  }}
-                  className="optionButton"
-                  size="lg"
-                >
-                  {Questions[currentQuestion].optionA}
-                </Button>
-
-                <Button
-                  variant="light"
-                  onClick={(e) => {
-                    setOptionChosen("B")
-                    handleOption(e)
-                  }}
-                  className="optionButton"
-                  size="lg"
-                >
-                  {Questions[currentQuestion].optionB}
-                </Button>
-                {Questions[currentQuestion].optionC && (
+                {quizQ && quizQ[currentQuestion - 1].options.length != 0 && (
                   <Button
+                    fluid
                     variant="light"
-                    onClick={(e) => {
-                      setOptionChosen("C")
-                      handleOption(e)
+                    onClick={() => {
+                      setOptionChosen(quizQ[currentQuestion - 1].options[0])
+                      handleOption()
                     }}
                     className="optionButton"
                     size="lg"
                   >
-                    {Questions[currentQuestion].optionC}
+                    {quizQ[currentQuestion - 1].options[0]}
                   </Button>
                 )}
-                {Questions[currentQuestion].optionD && (
+                {quizQ && quizQ[currentQuestion - 1].options.length != 0 && (
                   <Button
                     variant="light"
-                    onClick={(e) => {
-                      setOptionChosen("D")
-                      handleOption(e)
+                    onClick={() => {
+                      setOptionChosen(quizQ[currentQuestion - 1].options[1])
+                      handleOption()
                     }}
                     className="optionButton"
                     size="lg"
                   >
-                    {Questions[currentQuestion].optionD}
+                    {quizQ[currentQuestion - 1].options[1]}
                   </Button>
                 )}
               </div>
@@ -261,101 +305,107 @@ export default function Quiz(props) {
           <div className="nextDiv">
             {cont ? (
               <Container fluid>
-                {Questions[currentQuestion].answer === optionChosen ? (
-                  <Row className="trueFeedback">
-                    <Col xs={1} className="correctLabel">
-                      <div className="tickContainer1">
-                        <TiTick style={{ color: "#4CAF50" }} />
-                      </div>
-                    </Col>
-                    <Col xs={1} className="correctText">
-                      <div className="result">
-                        <h1 className="resultCorrect">Correct</h1>
-                      </div>
-                    </Col>
-                  </Row>
-                ) : (
-                  <>
-                    <Row>
-                      <Col xs={1} style={{ whitespace: "nowrap" }}>
-                        <h1 className="correctAnswer">Correct Answer:</h1>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col xs={1}>
-                        <h1
-                          style={{
-                            fontsize: "1.125rem",
-                            lineheight: "1.7",
-                            fontweight: "500",
-                            color: " #50545c",
-                          }}
-                        >
-                          {Questions[currentQuestion].answer}
-                        </h1>
-                      </Col>
-                    </Row>
-
-                    <Row className="falseFeedback">
-                      <Col xs={2} className="correctLabel">
-                        <div className="tickContainer">
-                          <IoClose style={{ color: "#e2222e" }} />
+                {quizQ &&
+                  quizQ[currentQuestion - 1].answer.length != 0 &&
+                  (quizQ[currentQuestion - 1].answer === optionChosen ? (
+                    <Row className="trueFeedback">
+                      <Col xs={1} className="correctLabel">
+                        <div className="tickContainer1">
+                          <TiTick style={{ color: "#4CAF50" }} />
                         </div>
                       </Col>
-                      <div className="result">
-                        <h1 className="resultCorrect1">Incorrect</h1>
-                      </div>
+                      <Col xs={1} className="correctText">
+                        <div className="result">
+                          <h1 className="resultCorrect">Correct</h1>
+                        </div>
+                      </Col>
                     </Row>
-                  </>
-                )}
-
-                {currentQuestion === Questions.length - 1 ? (
-                  Questions[currentQuestion].answer === optionChosen ? (
-                    <Link to="/endscreen">
-                      <Button
-                        onClick={finishQuiz}
-                        className="next"
-                        variant="success"
-                        size="sm"
-                        style={{ fontsize: "17px !important" }}
-                      >
-                        Finish Quiz
-                      </Button>
-                    </Link>
                   ) : (
-                    <Link to="/endscreen">
-                      <Button
-                        onClick={finishQuiz}
-                        variant="danger"
-                        className="next"
-                        size="sm"
-                        style={{ fontsize: "17px !important" }}
+                    <>
+                      <Row>
+                        <Col xs={1} style={{ whitespace: "nowrap" }}>
+                          <h1 className="correctAnswer">Correct Answer:</h1>
+                        </Col>
+                      </Row>
+                      <Row>
+                        <Col xs={1}>
+                          <h1 className="correctAnswer1">
+                            {quizQ[currentQuestion - 1].answer}
+                          </h1>
+                        </Col>
+                      </Row>
+
+                      <Row className="falseFeedback">
+                        <Col xs={2} className="correctLabel">
+                          <div className="tickContainer">
+                            <IoClose style={{ color: "#e2222e" }} />
+                          </div>
+                        </Col>
+                        <div className="result">
+                          <h1 className="resultCorrect1">Incorrect</h1>
+                        </div>
+                      </Row>
+                    </>
+                  ))}
+                {quizQ &&
+                  quizQ[currentQuestion - 1].answer.length != 0 &&
+                  (currentQuestion === quizQ.length ? (
+                    quizQ[currentQuestion - 1].answer === optionChosen ? (
+                      <Link
+                        to={{
+                          pathname: "/endscreen",
+                          param1: quizQ.length,
+                        }}
                       >
-                        Finish Quiz
-                      </Button>
-                    </Link>
-                  )
-                ) : Questions[currentQuestion].answer === optionChosen ? (
-                  <Button
-                    onClick={nextQuestion}
-                    className="next"
-                    variant="success"
-                    size="sm"
-                    style={{ fontsize: "17px !important" }}
-                  >
-                    Continue
-                  </Button>
-                ) : (
-                  <Button
-                    onClick={nextQuestion}
-                    variant="danger"
-                    className="next"
-                    size="sm"
-                    style={{ fontsize: "17px !important" }}
-                  >
-                    Continue
-                  </Button>
-                )}
+                        <Button
+                          onClick={finishQuiz}
+                          className="next"
+                          variant="success"
+                          size="sm"
+                          style={{ fontsize: "17px !important" }}
+                        >
+                          Finish Quiz
+                        </Button>
+                      </Link>
+                    ) : (
+                      <Link
+                        to={{
+                          pathname: "/endscreen",
+                          param1: quizQ.length,
+                        }}
+                      >
+                        <Button
+                          onClick={finishQuiz}
+                          variant="danger"
+                          className="next"
+                          size="sm"
+                          style={{ fontsize: "17px !important" }}
+                        >
+                          Finish Quiz
+                        </Button>
+                      </Link>
+                    )
+                  ) : quizQ[currentQuestion - 1].answer === optionChosen ? (
+                    <Button
+                      onClick={nextQuestion}
+                      className="next"
+                      variant="success"
+                      size="sm"
+                      style={{ fontsize: "17px !important" }}
+                    >
+                      Continue
+                    </Button>
+                  ) : (
+                    <Button
+                      onClick={nextQuestion}
+                      variant="danger"
+                      className="next"
+                      size="sm"
+                      style={{ fontsize: "17px !important" }}
+                    >
+                      Continue
+                    </Button>
+                  ))}
               </Container>
             ) : null}
           </div>

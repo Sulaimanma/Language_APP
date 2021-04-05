@@ -6,7 +6,7 @@ import { Button } from "react-bootstrap"
 import "../App.css"
 import { Link } from "react-router-dom"
 
-export default function EndScreen() {
+export default function EndScreen(props) {
   const { score, setScore } = useContext(QuizContext)
   const restartQuiz = () => {
     setScore(0)
@@ -14,13 +14,14 @@ export default function EndScreen() {
 
   return (
     <div className="EndScreen">
-      <h1>Quiz finshed</h1>
+      <h1>Congrats!You finished the quiz!</h1>
+
       <h1>
-        {score}/{Questions.length - 1}
+        Your score:{score}/{props.location.param1}
       </h1>
-      <Link to="/quiz">
+      <Link to="/">
         <Button onClick={restartQuiz} size="lg">
-          Restart Quiz
+          Continue
         </Button>
       </Link>
     </div>

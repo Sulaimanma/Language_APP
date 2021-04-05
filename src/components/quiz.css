@@ -57,3 +57,10 @@
 .next {
   font-size: 17px;
 }
+.correctAnswer1 {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #50545c;
+  white-space: nowrap !important;
+}

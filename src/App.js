@@ -136,9 +136,7 @@ const App = () => {
               <Route exact path="/learn" component={Learn}></Route>
 
               <Route exact path="/" component={Mainmenu}></Route>
-              <Route exact path="/endscreen">
-                <EndScreen />
-              </Route>
+              <Route exact path="/endscreen" component={EndScreen}></Route>
               <Route path="/quiz" component={Quiz}></Route>
               <Route path="/test">
                 <LessonCard />

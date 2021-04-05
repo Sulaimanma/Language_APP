@@ -221,7 +221,7 @@ export default function Learn(props) {
           >
             <div className="nextDiv">
               {currentQuestion === vocabulary.length - 1 ? (
-                <Link to="/quiz">
+                <Link to={{ pathname: "/quiz", param1: props.location.param1 }}>
                   <Button className="next" size="lg">
                     Start Quiz
                   </Button>
