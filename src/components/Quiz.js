@@ -129,7 +129,6 @@ export default function Quiz(props) {
     <>
       <div className="Quiz">
         <Container fluid className="quizContainer">
-          {quizQuestion && console.log(quizQuestion[0])}
           <IconContext.Provider
             value={{
               className: "menu-icons",
