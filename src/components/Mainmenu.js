@@ -40,15 +40,9 @@ export default function Mainmenu(props) {
                 <option value="Baradha">Baradha</option>
                 <option value="Bayali">Bayali</option>
                 <option value="Bidjara">Bidjara</option>
-                <option value="Butchulla" disabled>
-                  Butchulla
-                </option>
-                <option value="Dharumbal" disabled>
-                  Dharumbal
-                </option>
-                <option value="Gangulu" disabled>
-                  Gangulu
-                </option>
+                <option value="Butchulla">Butchulla</option>
+                <option value="Dharumbal">Dharumbal</option>
+                <option value="Gangulu">Gangulu</option>
                 <option value="Gooreng Gooreng" disabled>
                   Gooreng Gooreng
                 </option>

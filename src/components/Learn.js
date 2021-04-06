@@ -1,13 +1,13 @@
-import React, { useState, useContext, useEffect, useRef } from "react"
+import React, { useState, useContext, useEffect, useRef } from "react";
 
-import { QuizContext } from "../Helpers/Context"
-import "./learn.css"
-import "bootstrap/dist/css/bootstrap.min.css"
-import Image from "react-bootstrap/Image"
-import { IconContext } from "react-icons"
-import { IoClose } from "react-icons/io5"
+import { QuizContext } from "../Helpers/Context";
+import "./learn.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Image from "react-bootstrap/Image";
+import { IconContext } from "react-icons";
+import { IoClose } from "react-icons/io5";
 // import { FaRegKeyboard } from "react-icons/fa"
-import { HiOutlineLightBulb } from "react-icons/hi"
+import { HiOutlineLightBulb } from "react-icons/hi";
 
 import {
   Container,
@@ -17,9 +17,9 @@ import {
   ProgressBar,
   Popover,
   Overlay,
-} from "react-bootstrap"
-import { Link } from "react-router-dom"
-import WordTable from "./WordTable/WordTable"
+} from "react-bootstrap";
+import { Link } from "react-router-dom";
+import WordTable from "./WordTable/WordTable";
 
 export default function Learn(props) {
   const {
@@ -27,55 +27,55 @@ export default function Learn(props) {
     wordData,
 
     language,
-  } = useContext(QuizContext)
-  const [currentQuestion, setCurrentQuestion] = useState(-1)
+  } = useContext(QuizContext);
+  const [currentQuestion, setCurrentQuestion] = useState(-1);
 
-  const [intro, setNointro] = useState(true)
-  const [module, setModule] = useState([])
-  const [vocabulary, setVocabulary] = useState([])
+  const [intro, setNointro] = useState(true);
+  const [module, setModule] = useState([]);
+  const [vocabulary, setVocabulary] = useState([]);
 
-  const [show, setShow] = useState(false)
-  const [target, setTarget] = useState(null)
-  const ref = useRef(null)
+  const [show, setShow] = useState(false);
+  const [target, setTarget] = useState(null);
+  const ref = useRef(null);
 
-  const handleClick = (event) => {
-    setShow(!show)
-    setTarget(event.target)
-  }
+  const handleClick = event => {
+    setShow(!show);
+    setTarget(event.target);
+  };
   useEffect(() => {
     props.location.param1 === "Lesson: Greetings!" &&
-      setModule("wordlist_greeting")
+      setModule("wordlist_greeting");
     props.location.param1 === "Lesson: Know myself!" &&
-      setModule("wordlist_body")
+      setModule("wordlist_body");
     props.location.param1 === "Lesson: My Family!" &&
-      setModule("wordlist_family")
+      setModule("wordlist_family");
     props.location.param1 === "Lesson: Environment!" &&
-      setModule("wordlist_environment")
+      setModule("wordlist_environment");
     props.location.param1 === "Lesson: Conversation!" &&
-      setModule("wordlist_conversation")
+      setModule("wordlist_conversation");
     module.length !== 0 &&
       setVocabulary(
         wordData[module].map((word, id) => {
-          return [word.English, word.Gidarjil]
+          return [word.English, word.Gidarjil];
         })
-      )
+      );
 
     // Object.keys(wordData).forEach(function(module) {
     //   arr.push(json[module]);
     // });
-  }, [props.location.param1, wordData, module])
+  }, [props.location.param1, wordData, module]);
   const newToMain = {
     pathname: "/",
     now: ((currentQuestion + 1) * 100) / vocabulary.length,
     module: props.location.param1,
-  }
+  };
   const nextQuestion = () => {
-    setCurrentQuestion(currentQuestion + 1)
-    setNointro(false)
-  }
+    setCurrentQuestion(currentQuestion + 1);
+    setNointro(false);
+  };
 
-  console.log("~~~~~~~~~~~~~~~~~~~~~~~~n")
-  console.log(vocabulary)
+  console.log("~~~~~~~~~~~~~~~~~~~~~~~~n");
+  console.log(vocabulary);
 
   // console.log(vocabulary)
 
@@ -149,7 +149,7 @@ export default function Learn(props) {
               </Row>
               <Row>
                 <p className="introText">
-                  Welcome to the Language Course! <br />
+                  Welcome to the {language} Course! <br />
                 </p>
               </Row>
               <Row>
@@ -236,5 +236,5 @@ export default function Learn(props) {
         </Row>
       </div>
     </div>
-  )
+  );
 }

@@ -379,3 +379,324 @@ export const WordJSON_Bidjara = {
   ],
   wordlist_conversation: [],
 };
+export const WordJSON_Butchulla = {
+  language: "Butchulla",
+  wordlist_greeting: [],
+  wordlist_body: [],
+  wordlist_family: [],
+  wordlist_environment: [
+    {
+      English: "Snake",
+      Gidarjil: "Murang",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Fish",
+      Gidarjil: "Gurul",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Grass ",
+      Gidarjil: "Djila",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Water ",
+      Gidarjil: "Bala",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Kangaroo",
+      Gidarjil: "Guruman",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/kangaroo.JPG",
+      Audio: "",
+      Video: "",
+    },
+  ],
+  wordlist_conversation: [],
+};
+export const WordJSON_Dharumbal = {
+  language: "Dharumbal",
+  wordlist_greeting: [],
+  wordlist_body: [
+    {
+      English: "Nose",
+      Gidarjil: "Wuru",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Hand",
+      Gidarjil: "Bangan",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Eye",
+      Gidarjil: "Mil",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Ear",
+      Gidarjil: "Bina",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Head",
+      Gidarjil: "ŋari",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
+      Audio: "",
+      Video: "",
+    },
+  ],
+  wordlist_family: [
+    {
+      English: "Father",
+      Gidarjil: "Bina",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Mother",
+      Gidarjil: "ŋaja",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Sister",
+      Gidarjil: "ŋaburu",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Brother",
+      Gidarjil: "migaN",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
+      Audio: "",
+      Video: "",
+    },
+  ],
+  wordlist_environment: [
+    {
+      English: "Snake",
+      Gidarjil: "Balgungar ",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Fish",
+      Gidarjil: "guja",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Grass ",
+      Gidarjil: "Gara",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Water ",
+      Gidarjil: "Gali",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Sun",
+      Gidarjil: "Arhi",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
+      Audio: "",
+      Video: "",
+    },
+  ],
+  wordlist_conversation: [],
+};
+export const WordJSON_Gangulu = {
+  language: "Gangulu",
+  wordlist_greeting: [
+    {
+      English: "Hello",
+      Gidarjil: "Gooboo warri",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/hello.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Sorry",
+      Gidarjil: "Madi",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/sorry.jpg",
+      Audio: "",
+      Video: "",
+    },
+  ],
+  wordlist_body: [
+    {
+      English: "Nose",
+      Gidarjil: "Wuda",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Hand",
+      Gidarjil: "Mala",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Eye",
+      Gidarjil: "Dili",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Ear",
+      Gidarjil: "Maŋa ",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Head",
+      Gidarjil: "Gada",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
+      Audio: "",
+      Video: "",
+    },
+  ],
+  wordlist_family: [
+    {
+      English: "Father",
+      Gidarjil: "Yabu",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Mother",
+      Gidarjil: "Yaŋa",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Sister",
+      Gidarjil: "Gudunu",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Elder Brother",
+      Gidarjil: "Gadana",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
+      Audio: "",
+      Video: "",
+    },
+
+    {
+      English: "Younger Brother",
+      Gidarjil: "Waburu",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/younger brother.jpg",
+      Audio: "",
+      Video: "",
+    },
+  ],
+  wordlist_environment: [
+    {
+      English: "Snake",
+      Gidarjil: "Munda",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Fish",
+      Gidarjil: "Wina",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Grass ",
+      Gidarjil: "Wagura",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Water ",
+      Gidarjil: "Gamu",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+      Audio: "",
+      Video: "",
+    },
+    {
+      English: "Sun",
+      Gidarjil: "Gari",
+      Image:
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
+      Audio: "",
+      Video: "",
+    },
+  ],
+  wordlist_conversation: [],
+};
