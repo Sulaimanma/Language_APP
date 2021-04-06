@@ -43,30 +43,16 @@ export default function Mainmenu(props) {
                 <option value="Butchulla">Butchulla</option>
                 <option value="Dharumbal">Dharumbal</option>
                 <option value="Gangulu">Gangulu</option>
-                <option value="Gooreng Gooreng" disabled>
-                  Gooreng Gooreng
-                </option>
-                <option value="Gurang" disabled>
-                  Gurang
-                </option>
+                <option value="Gooreng Gooreng">Gooreng Gooreng</option>
+                <option value="Gurang">Gurang</option>
                 <option value="Meerooni" disabled>
                   Meerooni
                 </option>
-                <option value="Taribelang" disabled>
-                  Taribelang
-                </option>
-                <option value="Tulua" disabled>
-                  Tulua
-                </option>
-                <option value="Wadjingu" disabled>
-                  Wadjingu
-                </option>
-                <option value="Wakka Wakka" disabled>
-                  Wakka Wakka
-                </option>
-                <option value="Woppaburra" disabled>
-                  Woppaburra
-                </option>
+                <option value="Taribelang">Taribelang</option>
+                <option value="Tulua">Tulua</option>
+                <option value="Wadjingu">Wadjingu</option>
+                <option value="Wakka Wakka">Wakka Wakka</option>
+                <option value="Woppaburra">Woppaburra</option>
                 <option value="Yinman" disabled>
                   Yinman
                 </option>
