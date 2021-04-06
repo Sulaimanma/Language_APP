@@ -1,14 +1,15 @@
-import React, { useContext } from "react"
-import { QuizContext } from "../Helpers/Context"
-import "../App.css"
-import Button from "react-bootstrap/Button"
-import "bootstrap/dist/css/bootstrap.min.css"
-import { Container, Row, Col, Image } from "react-bootstrap"
+import React, { useContext } from "react";
+import { QuizContext } from "../Helpers/Context";
+import "../App.css";
+import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Container, Row, Col, Image } from "react-bootstrap";
 
-import { IconContext } from "react-icons"
+import { IconContext } from "react-icons";
 
-import { BurgerMenu } from "./BurgerMenu/BurgerMenu"
-import LessonCard from "./LessonCard/LessonCard"
+import { BurgerMenu } from "./BurgerMenu/BurgerMenu";
+import LessonCard from "./LessonCard/LessonCard";
+import { Link } from "react-router-dom";
 
 // import Amplify, { Storage } from "aws-amplify"
 // import awsconfig from "../aws-exports"
@@ -18,14 +19,14 @@ import LessonCard from "./LessonCard/LessonCard"
 export default function Mainmenu(props) {
   const { setGameState, setLanguage, language, lessonData } = useContext(
     QuizContext
-  )
+  );
 
   const handleComplete = () => {
-    return props.location.now === 100 ? true : false
-  }
-  const handleChange = (event) => {
-    setLanguage(event.target.value)
-  }
+    return props.location.now === 100 ? true : false;
+  };
+  const handleChange = event => {
+    setLanguage(event.target.value);
+  };
 
   return (
     <>
@@ -38,9 +39,7 @@ export default function Mainmenu(props) {
               <select value={language} onChange={handleChange}>
                 <option value="Baradha">Baradha</option>
                 <option value="Bayali">Bayali</option>
-                <option value="Bidjara" disabled>
-                  Bidjara
-                </option>
+                <option value="Bidjara">Bidjara</option>
                 <option value="Butchulla" disabled>
                   Butchulla
                 </option>
@@ -50,7 +49,9 @@ export default function Mainmenu(props) {
                 <option value="Gangulu" disabled>
                   Gangulu
                 </option>
-                <option value="Gooreng Gooreng">Gooreng Gooreng</option>
+                <option value="Gooreng Gooreng" disabled>
+                  Gooreng Gooreng
+                </option>
                 <option value="Gurang" disabled>
                   Gurang
                 </option>
@@ -66,7 +67,9 @@ export default function Mainmenu(props) {
                 <option value="Wadjingu" disabled>
                   Wadjingu
                 </option>
-                <option value="Wakka Wakka">Wakka Wakka</option>
+                <option value="Wakka Wakka" disabled>
+                  Wakka Wakka
+                </option>
                 <option value="Woppaburra" disabled>
                   Woppaburra
                 </option>
@@ -75,9 +78,6 @@ export default function Mainmenu(props) {
                 </option>
               </select>
             </label>
-            <Button variant="primary" onClick={() => setGameState("quiz")}>
-              Learn Now!
-            </Button>
           </div>
         }
       >
@@ -119,7 +119,7 @@ export default function Mainmenu(props) {
                         now={100}
                         complete={handleComplete()}
                       />
-                    )
+                    );
                   } else if (
                     props.location.module === lesson.lessonTitle &&
                     handleComplete() !== true
@@ -134,7 +134,7 @@ export default function Mainmenu(props) {
                         now={props.location.now}
                         complete={handleComplete()}
                       />
-                    )
+                    );
                   } else {
                     return (
                       <LessonCard
@@ -146,7 +146,7 @@ export default function Mainmenu(props) {
                         now={0}
                         complete={handleComplete()}
                       />
-                    )
+                    );
                   }
                 })}
               </Col>{" "}
@@ -155,5 +155,5 @@ export default function Mainmenu(props) {
         </div>
       </BurgerMenu>
     </>
-  )
+  );
 }

@@ -66,4 +66,5 @@
 }
 .questionImg {
   max-height: 40vh !important;
+  max-width: 80vw !important ;
 }

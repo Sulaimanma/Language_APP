@@ -1,24 +1,37 @@
-import React, { useState, useContext, useEffect, useMemo } from "react"
-import { Questions } from "../Helpers/QuestionBank"
-import { QuizContext } from "../Helpers/Context"
-import "../App.css"
-import "./quiz.css"
-import "bootstrap/dist/css/bootstrap.min.css"
-import Image from "react-bootstrap/Image"
-import { IconContext } from "react-icons"
-import { IoClose } from "react-icons/io5"
+import React, { useState, useContext, useEffect, useMemo, useRef } from "react";
+import { Questions } from "../Helpers/QuestionBank";
+import { QuizContext } from "../Helpers/Context";
+import "../App.css";
+import "./quiz.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Image from "react-bootstrap/Image";
+import { IconContext } from "react-icons";
+import { IoClose } from "react-icons/io5";
 // import { FaRegKeyboard } from "react-icons/fa"
-import { HiOutlineLightBulb } from "react-icons/hi"
-import { TiTick } from "react-icons/ti"
-import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap"
-import { Link } from "react-router-dom"
+import { HiOutlineLightBulb } from "react-icons/hi";
+import { TiTick } from "react-icons/ti";
+import WordTable from "./WordTable/WordTable";
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  ProgressBar,
+  Popover,
+  Overlay,
+} from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Quiz(props) {
-  const { score, setScore, wordData } = useContext(QuizContext)
-  const [currentQuestion, setCurrentQuestion] = useState(1)
-  const [optionChosen, setOptionChosen] = useState("")
-  const [cont, setCont] = useState(false)
-  const [module, setModule] = useState()
+  const { score, setScore, wordData, language } = useContext(QuizContext);
+  const [currentQuestion, setCurrentQuestion] = useState(1);
+  const [optionChosen, setOptionChosen] = useState("");
+  const [cont, setCont] = useState(false);
+  const [module, setModule] = useState();
+  const [vocabulary, setVocabulary] = useState([]);
+  const [show, setShow] = useState(false);
+  const [target, setTarget] = useState(null);
+  const ref = useRef(null);
 
   // const [quizQuestion, setQuizQuestion] = useState([
   //   {
@@ -47,65 +60,74 @@ export default function Quiz(props) {
   //   },
   // ])
   // const [quizOption, setQuizOption] = useState([])
-
+  const handleClick = event => {
+    setShow(!show);
+    setTarget(event.target);
+  };
   const nextQuestion = () => {
     if (quizQ[currentQuestion - 1].answer === optionChosen) {
-      setScore(score + 1)
+      setScore(score + 1);
     }
-    setCont(false)
-    setCurrentQuestion(currentQuestion + 1)
-  }
+    setCont(false);
+    setCurrentQuestion(currentQuestion + 1);
+  };
   const finishQuiz = () => {
     if (quizQ[currentQuestion - 1].answer === optionChosen) {
-      setScore(score + 1)
+      setScore(score + 1);
     }
-  }
+  };
   const handleOption = () => {
-    setCont(true)
-  }
-  const shuffle = (array) => {
+    setCont(true);
+  };
+  const shuffle = array => {
     var currentIndex = array.length,
       temporaryValue,
-      randomIndex
+      randomIndex;
 
     // While there remain elements to shuffle...
     while (0 !== currentIndex) {
       // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex)
-      currentIndex -= 1
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
 
       // And swap it with the current element.
-      temporaryValue = array[currentIndex]
-      array[currentIndex] = array[randomIndex]
-      array[randomIndex] = temporaryValue
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
     }
 
-    return array
-  }
+    return array;
+  };
   const removeItemOnce = (arr, value) => {
-    var index = arr.indexOf(value)
+    var index = arr.indexOf(value);
     if (index > -1) {
-      arr.splice(index, 1)
+      arr.splice(index, 1);
     }
-    return arr
-  }
+    return arr;
+  };
 
   useEffect(() => {
-    console.log("parammmmmmmmmmmm1")
-    console.log(props.location.param1)
+    console.log("parammmmmmmmmmmm1");
+    console.log(props.location.param1);
     props.location.param1 === "Lesson: Greetings!" &&
-      setModule("wordlist_greeting")
+      setModule("wordlist_greeting");
     props.location.param1 === "Lesson: Know myself!" &&
-      setModule("wordlist_body")
+      setModule("wordlist_body");
     props.location.param1 === "Lesson: My Family!" &&
-      setModule("wordlist_family")
+      setModule("wordlist_family");
     props.location.param1 === "Lesson: Environment!" &&
-      setModule("wordlist_environment")
+      setModule("wordlist_environment");
     props.location.param1 === "Lesson: Conversation!" &&
-      setModule("wordlist_conversation")
+      setModule("wordlist_conversation");
 
-    console.log("Moduleeeeeeeeeeeeeee")
-    console.log(module)
+    console.log("Moduleeeeeeeeeeeeeee");
+    console.log(module);
+    module &&
+      setVocabulary(
+        wordData[module].map((word, id) => {
+          return [word.English, word.Gidarjil];
+        })
+      );
     // if (module) {
     //   var quiz = wordData[module].map((word, id) => {
     //     const randomOption = removeItemOnce(
@@ -141,13 +163,13 @@ export default function Quiz(props) {
     // }
 
     // setQuizQuestion(quiz)
-  }, [props.location.param1, module, wordData])
+  }, [props.location.param1, module, wordData]);
   const quizQ = useMemo(() => {
     if (module) {
       var quiz = wordData[module].map((word, id) => {
         const randomOption = removeItemOnce(
           wordData[module].map((word, id) => {
-            return word.Gidarjil
+            return word.Gidarjil;
           }),
           word.Gidarjil
         )[
@@ -155,12 +177,12 @@ export default function Quiz(props) {
             Math.random() *
               removeItemOnce(
                 wordData[module].map((word, id) => {
-                  return word.Gidarjil
+                  return word.Gidarjil;
                 }),
                 word.Gidarjil
               ).length
           )
-        ]
+        ];
 
         return {
           exist: 1,
@@ -173,22 +195,22 @@ export default function Quiz(props) {
           // optionC: "Na",
           // optionD: "Gira",
           answer: word.Gidarjil,
-        }
-      })
+        };
+      });
     }
 
-    return quiz
-  }, [module, wordData])
+    return quiz;
+  }, [module, wordData]);
 
   // Object.keys(wordData).forEach(function(module) {
   //   arr.push(json[module]);
   // });
 
   useEffect(() => {
-    optionChosen.length !== 0 ? setCont(true) : setCont(false)
-  }, [optionChosen])
-  console.log("arrrrrrrayyyyyyyyyyyyyyy")
-  quizQ && console.log(quizQ)
+    optionChosen.length !== 0 ? setCont(true) : setCont(false);
+  }, [optionChosen]);
+  console.log("arrrrrrrayyyyyyyyyyyyyyy");
+  quizQ && console.log(quizQ);
   return (
     <>
       <div className="Quiz">
@@ -204,10 +226,27 @@ export default function Quiz(props) {
             <Row className="d-flex justify-content-center">
               <Col md={2} xs={1} className="mx-auto">
                 <div className="iconMenu">
-                  <div className="iconItem">
-                    <Link to="/endscreen">
-                      <HiOutlineLightBulb className="bulb" />
-                    </Link>
+                  <div className="iconItem" onClick={handleClick}>
+                    <HiOutlineLightBulb className="bulb" />
+                    <Overlay
+                      show={show}
+                      target={target}
+                      placement="bottom"
+                      container={ref.current}
+                      containerPadding={20}
+                    >
+                      <Popover id="popover-contained">
+                        <Popover.Title as="h3" style={{ color: "#007bff" }}>
+                          Vocabulary
+                        </Popover.Title>
+                        <Popover.Content>
+                          <WordTable
+                            vocabulary={vocabulary}
+                            language={language}
+                          />
+                        </Popover.Content>
+                      </Popover>
+                    </Overlay>
                   </div>
                 </div>
               </Col>
@@ -275,8 +314,8 @@ export default function Quiz(props) {
                     fluid
                     variant="light"
                     onClick={() => {
-                      setOptionChosen(quizQ[currentQuestion - 1].options[0])
-                      handleOption()
+                      setOptionChosen(quizQ[currentQuestion - 1].options[0]);
+                      handleOption();
                     }}
                     className="optionButton"
                     size="lg"
@@ -288,8 +327,8 @@ export default function Quiz(props) {
                   <Button
                     variant="light"
                     onClick={() => {
-                      setOptionChosen(quizQ[currentQuestion - 1].options[1])
-                      handleOption()
+                      setOptionChosen(quizQ[currentQuestion - 1].options[1]);
+                      handleOption();
                     }}
                     className="optionButton"
                     size="lg"
@@ -412,5 +451,5 @@ export default function Quiz(props) {
         </Row>
       </div>
     </>
-  )
+  );
 }

@@ -1,9 +1,9 @@
-import React, { useContext } from "react"
-import classes from "./sidebar.module.scss"
-import { IoIosOptions } from "react-icons/io"
+import React, { useContext } from "react";
+import classes from "./sidebar.module.scss";
+import { IoIosOptions } from "react-icons/io";
 // import { FaSignOutAlt, FaSignInAlt, FaInfoCircle } from "react-icons/fa";
-import { scaleRotate as Menu } from "react-burger-menu" //scaleRotate
-import { QuizContext } from "../../Helpers/Context"
+import { scaleRotate as Menu } from "react-burger-menu"; //scaleRotate
+import { QuizContext } from "../../Helpers/Context";
 
 // import { Menulist } from "./Menulist/Menulist";
 // import { Link } from "react-router-dom";
@@ -14,7 +14,7 @@ import { QuizContext } from "../../Helpers/Context"
 // import { PROFILE_URL_GET } from '../../functions/apiEndpoint';
 
 // const axios = require('axios');
-export const Sidebar = (props) => {
+export const Sidebar = props => {
   //   const { state } = useContext(Context);
   //   const { isLogin, userProfile, userImg, defaultImg, setDefaultImg } = state;
   //   const [logoURL, setURL] = useState(defaultImg);
@@ -54,7 +54,7 @@ export const Sidebar = (props) => {
   //   }, [userImg, isLogin, setDefaultImg]);
 
   // useEffect(() => {}, [userProfile])
-  const { language } = useContext(QuizContext)
+  const { language } = useContext(QuizContext);
 
   return (
     <Menu
@@ -73,5 +73,5 @@ export const Sidebar = (props) => {
         <div className={classes.menu}>{props.language}</div>
       </div>
     </Menu>
-  )
-}
+  );
+};
