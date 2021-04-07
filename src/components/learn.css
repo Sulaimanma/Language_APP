@@ -177,8 +177,6 @@
   background: #f2f7fd;
 }
 
-@media only screen and (max-width: 551px) {
-}
 /* .Menu button,
 .Quiz button,
 .EndScreen button {
@@ -228,4 +226,21 @@ h1 {
 }
 .wordEnglish {
   color: grey;
+}
+@media only screen and (max-width: 330px) {
+  .quizContainer {
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 4px;
+  }
+  .closeCol {
+    margin-left: 0px;
+  }
+  .iconItem {
+    width: 20px;
+  }
+  .iconCloseDiv {
+    margin-left: 20px;
+    margin-top: 2px;
+  }
 }

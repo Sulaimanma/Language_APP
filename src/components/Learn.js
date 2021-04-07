@@ -128,14 +128,14 @@ export default function Learn(props) {
                 </div>
               </Col>
 
-              <Col xs={{ span: 1, offset: 1 }}>
+              <Col xs={{ span: 1, offset: 1 }} className="closeCol">
                 <div
                   className="iconCloseDiv"
                   onClick={() => setGameState("menu")}
                 >
                   <div id="iconItem" className="mx-auto">
                     <Link to={newToMain}>
-                      <IoClose />
+                      <IoClose className="close" />
                     </Link>
                   </div>
                 </div>
