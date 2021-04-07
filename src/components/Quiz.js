@@ -418,6 +418,7 @@ export default function Quiz(props) {
                           variant="danger"
                           className="next"
                           size="sm"
+                          id="next"
                           style={{ fontsize: "17px !important" }}
                         >
                           Finish Quiz
@@ -440,6 +441,7 @@ export default function Quiz(props) {
                       variant="danger"
                       className="next"
                       size="sm"
+                      id="next"
                       style={{ fontsize: "17px !important" }}
                     >
                       Continue

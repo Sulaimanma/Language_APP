@@ -234,6 +234,12 @@
   .languagetext {
     font-size: 19px;
   }
+  .pick {
+    text-align: left;
+  }
+  .pick select {
+    margin-left: 3px;
+  }
 }
 /* .Menu button,
 .Quiz button,
