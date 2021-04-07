@@ -53,7 +53,7 @@ export default function LessonCard(props) {
               src={props.imgUrl}
             ></Image>
           </Col>
-          <Col md={6} xs={8}>
+          <Col md={6} xs={8} className={classes.TextCol}>
             <div className={classes.TextDiv}>
               <Row>
                 {" "}

@@ -243,4 +243,18 @@ h1 {
     margin-left: 20px;
     margin-top: 2px;
   }
+  .introText {
+    font-size: 15px;
+  }
+  .introText1 {
+    font-size: 13px;
+  }
+  .bulbIntro {
+    font-size: 30px;
+    margin-top: 0;
+  }
+}
+.QuestionDiv {
+  display: flex;
+  justify-content: center;
 }

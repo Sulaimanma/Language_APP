@@ -38,6 +38,9 @@
 }
 
 @media only screen and (max-width: 550px) {
+  .TextCol {
+    margin-left: 90px;
+  }
   .CardDiv {
   }
   .ImageDiv {
@@ -103,10 +106,11 @@
   .ImageDiv {
     width: 50px;
     height: 50px;
-    text-align: left !important;
+    text-align: left;
     align-items: flex-start;
     margin-left: 0px;
   }
+
   .TextDiv {
     margin-left: 37px;
     width: 205px;

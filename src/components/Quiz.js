@@ -261,7 +261,7 @@ export default function Quiz(props) {
                 </div>
               </Col>
 
-              <Col xs={{ span: 1, offset: 1 }} className="mx-auto-right">
+              <Col xs={{ span: 1, offset: 1 }} className="closeCol">
                 <div className="iconCloseDiv">
                   <div id="iconItem" className="mx-auto">
                     <Link to="/">
@@ -276,7 +276,11 @@ export default function Quiz(props) {
           <Row>
             <Col md={{ span: 4, offset: 4 }} xs={12} className="text-left">
               <div className="question">
-                {quizQ && <h3>{quizQ[currentQuestion - 1].prompt}</h3>}
+                {quizQ && (
+                  <h3 className="questionText">
+                    {quizQ[currentQuestion - 1].prompt}
+                  </h3>
+                )}
               </div>
             </Col>
           </Row>

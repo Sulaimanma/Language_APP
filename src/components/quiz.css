@@ -96,3 +96,33 @@
     transform: translate3d(4px, 0, 0);
   }
 }
+@media only screen and (max-width: 330px) {
+  .quizContainer {
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 4px;
+  }
+  .closeCol {
+    margin-left: 0px;
+  }
+  .iconItem {
+    width: 20px;
+  }
+  .iconCloseDiv {
+    margin-left: 10px !important;
+    margin-top: 0px !important;
+  }
+  .introText {
+    font-size: 15px;
+  }
+  .introText1 {
+    font-size: 13px;
+  }
+  .bulbIntro {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .questionText {
+    font-size: 20px !important;
+  }
+}
