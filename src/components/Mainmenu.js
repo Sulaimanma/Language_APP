@@ -71,7 +71,7 @@ export default function Mainmenu(props) {
               <div className="languagediv">
                 <div className="countryicon">
                   <Image
-                    src="https://www.independenceaustralia.com/uploads/images/Corporate/aboriginal.png"
+                    src="https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/aboriginal.png"
                     rounded
                     className="countryiconImg"
                   />
@@ -81,7 +81,7 @@ export default function Mainmenu(props) {
             </IconContext.Provider>
 
             <Row fluid className="cardRow">
-              <Col md={{ span: 4, offset: 4 }}>
+              <Col md={{ span: 4, offset: 4 }} className="cardCol">
                 {lessonData.map((lesson, id) => {
                   if (
                     props.location.module === lesson.lessonTitle &&

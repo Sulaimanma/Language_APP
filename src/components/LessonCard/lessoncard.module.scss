@@ -99,3 +99,46 @@
     }
   }
 }
+@media only screen and (max-width: 330px) {
+  .ImageDiv {
+    width: 50px;
+    height: 50px;
+    text-align: left !important;
+    align-items: flex-start;
+    margin-left: 0px;
+  }
+  .TextDiv {
+    margin-left: 37px;
+    width: 205px;
+    margin-top: 20px;
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  .CardDiv {
+    width: 88vw;
+    height: 30vh;
+  }
+  .optionDiv {
+    height: 70px !important;
+    .optionImg {
+      width: 96px;
+      height: 35px;
+      margin-top: 15px;
+    }
+    .learn {
+      font-size: 23px;
+      left: 24%;
+      bottom: 38%;
+    }
+    .quiz {
+      font-size: 23px;
+      left: 85%;
+      bottom: 38%;
+    }
+  }
+}

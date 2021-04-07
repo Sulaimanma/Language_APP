@@ -101,3 +101,12 @@
     text-align: left !important;
   }
 }
+@media only screen and (max-width: 330px) {
+  .burgerIcon {
+    width: 34px !important;
+    height: 30px !important;
+  }
+  .bm-menu-wrap {
+    width: 200px !important;
+  }
+}

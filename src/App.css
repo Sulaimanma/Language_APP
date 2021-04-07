@@ -275,3 +275,33 @@ h1 {
 #nextQuestion {
   width: 200px;
 }
+@media only screen and (max-width: 330px) {
+  .languagediv {
+  }
+  .countryicon {
+    width: 100px;
+    margin-top: 15px;
+  }
+  .countryiconImg {
+    width: 40px;
+    height: 30px;
+    margin-left: 70px;
+  }
+  .languagetext {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  .lessonContainer {
+    width: 100vw;
+    overflow-x: hidden;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .cardRow {
+    width: 91vw;
+  }
+  .cardCol {
+    padding-right: 4px !important;
+    padding-left: 4px !important;
+  }
+}
