@@ -41,7 +41,7 @@
   font-size: 24px;
   font-family: Nista, Helvetica Neue, Helvetica, Arial, sans-serif;
   position: absolute;
-  left: 15%;
+  left: 14%;
 }
 .correctAnswer {
   color: #666e7e;
@@ -150,6 +150,7 @@
     margin-top: 4px !important;
   }
   .questionImg {
-    max-height: 34vh !important;
+    min-width: 100px !important;
+    max-height: 170px !important;
   }
 }
