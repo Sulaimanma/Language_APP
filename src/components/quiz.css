@@ -65,8 +65,8 @@
   white-space: nowrap !important;
 }
 .questionImg {
-  max-height: 40vh !important;
-  max-width: 80vw !important ;
+  max-height: 40vh;
+  max-width: 80vw;
 }
 #next {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
@@ -123,6 +123,33 @@
     margin-top: 0;
   }
   .questionText {
-    font-size: 20px !important;
+    font-size: 16px !important;
+  }
+  .question {
+    margin-top: 9px !important;
+  }
+  .optionButton {
+    font-size: 13px;
+  }
+  .resultCorrect1 {
+    left: 14%;
+  }
+  .correctAnswer {
+    font-size: 13px;
+  }
+  .correctAnswer1 {
+    position: absolute;
+    left: 530%;
+    bottom: -5px;
+  }
+  .feedbackContainer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .options {
+    margin-top: 4px !important;
+  }
+  .questionImg {
+    max-height: 34vh !important;
   }
 }

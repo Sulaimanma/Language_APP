@@ -347,7 +347,7 @@ export default function Quiz(props) {
         <Row className="nextRow">
           <div className="nextDiv">
             {cont ? (
-              <Container fluid>
+              <Container className="feedbackContainer">
                 {quizQ &&
                   quizQ[currentQuestion - 1].answer.length != 0 &&
                   (quizQ[currentQuestion - 1].answer === optionChosen ? (
