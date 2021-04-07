@@ -151,6 +151,8 @@
   }
   .questionImg {
     min-width: 100px !important;
+    max-width: 200px !important;
     max-height: 170px !important;
+    min-height: 50px !important;
   }
 }
