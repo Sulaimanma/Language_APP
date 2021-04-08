@@ -20,7 +20,7 @@ import {
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import WordTable from "./WordTable/WordTable";
-
+import ReactAudioPlayer from "react-audio-player";
 export default function Learn(props) {
   const {
     setGameState,
@@ -194,6 +194,17 @@ export default function Learn(props) {
                     </div>
                   )}
                 </Col>
+              </Row>
+              <Row>
+                {wordData[module][currentQuestion].Audio && (
+                  <div className="AudioDiv">
+                    <ReactAudioPlayer
+                      autoPlay={true}
+                      controls
+                      src={wordData[module][currentQuestion].Audio}
+                    />
+                  </div>
+                )}
               </Row>
               <Row>
                 <Col md={{ span: 4, offset: 4 }} className="text-left">

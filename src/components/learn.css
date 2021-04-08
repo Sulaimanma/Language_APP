@@ -58,7 +58,7 @@
 /* Question Image */
 
 .questionImg {
-  min-width: 30vw;
+  min-width: 19vw;
   max-width: 80vw;
   max-height: 40vh;
 }
@@ -129,6 +129,11 @@
   max-height: 90vw;
 }
 
+.AudioDiv {
+  width: 337px;
+  height: 41px;
+  margin-top: 10px;
+}
 @media only screen and (max-width: 768px) {
   .options {
     width: 100;

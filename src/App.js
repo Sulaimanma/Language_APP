@@ -1,43 +1,43 @@
-import "./App.css"
+import "./App.css";
 
-import Mainmenu from "./components/Mainmenu"
-import Quiz from "./components/Quiz"
-import EndScreen from "./components/EndScreen"
-import { Switch, Route, BrowserRouter as Router } from "react-router-dom"
+import Mainmenu from "./components/Mainmenu";
+import Quiz from "./components/Quiz";
+import EndScreen from "./components/EndScreen";
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 
-import React, { useEffect, useState } from "react"
-import { QuizContext } from "./Helpers/Context"
+import React, { useEffect, useState } from "react";
+import { QuizContext } from "./Helpers/Context";
 
-import LessonCard from "./components/LessonCard/LessonCard"
-import Learn from "./components/Learn"
-import axios from "axios"
+// import LessonCard from "./components/LessonCard/LessonCard";
+import Learn from "./components/Learn";
+import axios from "axios";
 
 const App = () => {
-  const [gameState, setGameState] = useState("menu")
+  const [gameState, setGameState] = useState("menu");
   // const [userName, setUserName] = useState("");
-  const [score, setScore] = useState(0)
-  const [language, setLanguage] = useState("Baradha")
-  const [wordData, setWordData] = useState([])
-  const [lessonData, setLessonData] = useState([])
+  const [score, setScore] = useState(0);
+  const [language, setLanguage] = useState("Baradha");
+  const [wordData, setWordData] = useState([]);
+  const [lessonData, setLessonData] = useState([]);
 
-  const fetchUrl = `https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/wordlist/${language}.json`
-  const fetch_word = (fetchUrl) => {
+  const fetchUrl = `https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/wordlist/${language}.json`;
+  const fetch_word = fetchUrl => {
     axios
       .get(fetchUrl)
-      .then((res) => {
-        const data = res.data
-        setWordData(data)
+      .then(res => {
+        const data = res.data;
+        setWordData(data);
       })
-      .catch((error) => {
+      .catch(error => {
         // handle your errors here
-        console.error(error)
-      })
-  }
-  console.log(language)
-  console.log("%%%%%%%%%%%%%")
-  console.log(wordData)
+        console.error(error);
+      });
+  };
+  console.log(language);
+  console.log("%%%%%%%%%%%%%");
+  console.log(wordData);
   useEffect(() => {
-    fetch_word(fetchUrl)
+    fetch_word(fetchUrl);
     wordData.length !== 0 &&
       setLessonData([
         wordData.wordlist_greeting.length && {
@@ -74,8 +74,8 @@ const App = () => {
             "https://shipway-consulting.co.uk/wp-content/uploads/2020/05/conversation-image-2.jpg",
           now: 0,
         },
-      ])
-  }, [fetchUrl, language])
+      ]);
+  }, [fetchUrl, language]);
   useEffect(() => {
     wordData.length !== 0 &&
       setLessonData([
@@ -113,8 +113,9 @@ const App = () => {
             "https://shipway-consulting.co.uk/wp-content/uploads/2020/05/conversation-image-2.jpg",
           now: 0,
         },
-      ])
-  }, [wordData])
+      ]);
+  }, [wordData]);
+
   return (
     <>
       <Router>
@@ -138,9 +139,7 @@ const App = () => {
               <Route exact path="/" component={Mainmenu}></Route>
               <Route exact path="/endscreen" component={EndScreen}></Route>
               <Route exact path="/quiz" component={Quiz}></Route>
-              <Route path="/test">
-                <LessonCard />
-              </Route>
+              <Route path="/test"></Route>
             </Switch>
             {/* {gameState === "select" && <Select />}
             {gameState === "learn" && <BasicTable />}{" "}
@@ -151,7 +150,7 @@ const App = () => {
         </div>
       </Router>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
