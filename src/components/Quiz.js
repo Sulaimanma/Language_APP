@@ -21,6 +21,7 @@ import {
   Overlay,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import ReactAudioPlayer from "react-audio-player";
 
 export default function Quiz(props) {
   const { score, setScore, wordData, language } = useContext(QuizContext);
@@ -33,33 +34,6 @@ export default function Quiz(props) {
   const [target, setTarget] = useState(null);
   const ref = useRef(null);
 
-  // const [quizQuestion, setQuizQuestion] = useState([
-  //   {
-  //     exist: "",
-  //     prompt: "",
-  //     image: "",
-  //     video: "",
-  //     audio: "",
-  //     options: "",
-
-  //     // optionC: "Na",
-  //     // optionD: "Gira",
-  //     answer: "",
-  //   },
-  //   {
-  //     exist: "",
-  //     prompt: "",
-  //     image: "",
-  //     video: "",
-  //     audio: "",
-  //     options: "",
-
-  //     // optionC: "Na",
-  //     // optionD: "Gira",
-  //     answer: "",
-  //   },
-  // ])
-  // const [quizOption, setQuizOption] = useState([])
   const handleClick = event => {
     setShow(!show);
     setTarget(event.target);
@@ -309,6 +283,17 @@ export default function Quiz(props) {
                 </div>
               )}
             </Col>
+          </Row>
+          <Row>
+            {quizQ && quizQ[currentQuestion - 1].audio.length != 0 && (
+              <div className="AudioDiv">
+                <ReactAudioPlayer
+                  autoPlay={true}
+                  controls
+                  src={quizQ[currentQuestion - 1].audio}
+                />
+              </div>
+            )}
           </Row>
           <Row>
             <Col md={{ span: 4, offset: 4 }} className="text-left">
