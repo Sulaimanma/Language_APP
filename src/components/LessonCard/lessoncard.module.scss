@@ -1,6 +1,7 @@
 .ImageDiv {
   width: 90px;
   height: 90px;
+  object-fit: cover;
   //   margin-top: 9px;
 }
 .CardDiv {
@@ -45,6 +46,7 @@
   }
   .ImageDiv {
     margin-top: 10px;
+    object-fit: cover;
   }
   .TextDiv {
     margin-top: 10px;
@@ -104,11 +106,12 @@
 }
 @media only screen and (max-width: 330px) {
   .ImageDiv {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     text-align: left;
     align-items: flex-start;
-    margin-left: 0px;
+    margin-left: -5px;
+    object-fit: cover;
   }
 
   .TextDiv {
