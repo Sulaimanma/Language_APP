@@ -709,7 +709,7 @@ export const WordJSON_Gooreng_Gooreng = {
       Image:
         "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/thank you.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng_Gooreng/wordlist_greeting/Galangan.wav",
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_greeting/Galangan.wav",
       Video: "",
     },
     {
@@ -718,7 +718,7 @@ export const WordJSON_Gooreng_Gooreng = {
       Image:
         "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/sorry.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng_Gooreng/wordlist_greeting/Ganang+ganang.wav",
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_greeting/Ganang+ganang.wav",
       Video: "",
     },
     {
@@ -727,7 +727,7 @@ export const WordJSON_Gooreng_Gooreng = {
       Image:
         "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/goodbye.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng_Gooreng/wordlist_greeting/Jau.wav",
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_greeting/Jau.wav",
       Video: "",
     },
   ],
@@ -738,7 +738,7 @@ export const WordJSON_Gooreng_Gooreng = {
       Image:
         "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng_Gooreng/wordlist_body/Muru.wav",
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_body/Muru.wav",
       Video: "",
     },
     {
@@ -747,7 +747,7 @@ export const WordJSON_Gooreng_Gooreng = {
       Image:
         "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng_Gooreng/wordlist_body/Biru.wav",
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_body/Biru.wav",
       Video: "",
     },
     {
@@ -756,7 +756,7 @@ export const WordJSON_Gooreng_Gooreng = {
       Image:
         "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng_Gooreng/wordlist_body/Mil.wav",
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_body/Mil.wav",
       Video: "",
     },
     {
@@ -765,7 +765,7 @@ export const WordJSON_Gooreng_Gooreng = {
       Image:
         "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng_Gooreng/wordlist_body/Bina.wav",
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_body/Bina.wav",
       Video: "",
     },
     {
@@ -774,7 +774,7 @@ export const WordJSON_Gooreng_Gooreng = {
       Image:
         "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng_Gooreng/wordlist_body/Warul.wav",
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_body/Warul.wav",
       Video: "",
     },
   ],
@@ -785,7 +785,7 @@ export const WordJSON_Gooreng_Gooreng = {
       Image:
         "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng_Gooreng/wordlist_family/Baba.wav",
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_family/Baba.wav",
       Video: "",
     },
     {
@@ -802,7 +802,7 @@ export const WordJSON_Gooreng_Gooreng = {
       Image:
         "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng_Gooreng/wordlist_family/Wodjim.wav",
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_family/Wodjim.wav",
       Video: "",
     },
     {
@@ -811,7 +811,7 @@ export const WordJSON_Gooreng_Gooreng = {
       Image:
         "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng_Gooreng/wordlist_family/Djadja.wav",
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_family/Djadja.wav",
       Video: "",
     },
     {
@@ -828,7 +828,7 @@ export const WordJSON_Gooreng_Gooreng = {
       Image:
         "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/grandmother.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng_Gooreng/wordlist_family/Mugeng.wav",
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_family/Mugeng.wav",
       Video: "",
     },
   ],
@@ -847,7 +847,7 @@ export const WordJSON_Gooreng_Gooreng = {
       Image:
         "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng_Gooreng/wordlist_environment/Gurul.wav",
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_environment/Gurul.wav",
       Video: "",
     },
     {
@@ -872,7 +872,7 @@ export const WordJSON_Gooreng_Gooreng = {
       Image:
         "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng_Gooreng/wordlist_environment/Ginmayny.wav",
+        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_environment/Ginmayny.wav",
       Video: "",
     },
   ],
