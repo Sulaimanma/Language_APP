@@ -264,6 +264,7 @@ h1 {
     max-height: 170px !important;
     min-height: 20px !important;
     object-fit: contain;
+    height: auto;
   }
 }
 .QuestionDiv {
