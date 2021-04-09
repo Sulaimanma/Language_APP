@@ -21,7 +21,7 @@ import {
   Overlay,
 } from "react-bootstrap"
 import { Link } from "react-router-dom"
-// import ReactAudioPlayer from "react-audio-player";
+import ReactAudioPlayer from "react-audio-player"
 
 export default function Quiz(props) {
   const { score, setScore, wordData, language } = useContext(QuizContext)
@@ -287,9 +287,11 @@ export default function Quiz(props) {
           <Row>
             {quizQ && quizQ[currentQuestion - 1].audio.length != 0 && (
               <div className="AudioDiv">
-                <audio controls autoplay>
-                  <source src={quizQ[currentQuestion - 1].audio} />
-                </audio>
+                <ReactAudioPlayer
+                  autoPlay={true}
+                  controls
+                  src={quizQ[currentQuestion - 1].audio}
+                />
               </div>
             )}
           </Row>
