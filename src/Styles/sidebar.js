@@ -21,11 +21,13 @@ export const menuStyles = {
   },
   bmCrossButton: {
     top: "1rem",
-    right: "1rem",
+    left: "10rem",
+    width: "41px",
+    height: "41px",
   },
   bmCross: {
     background: "#fff",
-    height: "1.5rem",
+    height: "2rem",
   },
   bmMenuWrap: {
     position: "fixed",
@@ -35,6 +37,7 @@ export const menuStyles = {
   bmMenu: {
     background: "#1A1A1A",
     boxShadow: ".5px .5px 10px #1A1A1A",
+    width: "70%",
   },
   bmMorphShape: {
     fill: "#373a47",
@@ -50,4 +53,4 @@ export const menuStyles = {
     zIndex: "1999",
     background: "rgba(0, 0, 0, 0.5)",
   },
-};
+}

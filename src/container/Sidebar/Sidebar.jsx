@@ -1,60 +1,12 @@
-import React, { useContext } from "react";
-import classes from "./sidebar.module.scss";
-import { IoIosOptions } from "react-icons/io";
-// import { FaSignOutAlt, FaSignInAlt, FaInfoCircle } from "react-icons/fa";
-import { scaleRotate as Menu } from "react-burger-menu"; //scaleRotate
-import { QuizContext } from "../../Helpers/Context";
+import React, { useContext } from "react"
+import classes from "./sidebar.module.scss"
+import { IoIosOptions } from "react-icons/io"
 
-// import { Menulist } from "./Menulist/Menulist";
-// import { Link } from "react-router-dom";
-// import { Context } from "../../Context";
-// import CopyRight from "../../components/CopyRight/CopyRight";
-// import { getProfileImg } from "../../functions/getProfileImg";
-// import { getAuth } from "../../functions/authentication";
-// import { PROFILE_URL_GET } from '../../functions/apiEndpoint';
+import { scaleRotate as Menu } from "react-burger-menu" //scaleRotate
+import { QuizContext } from "../../Helpers/Context"
 
-// const axios = require('axios');
-export const Sidebar = props => {
-  //   const { state } = useContext(Context);
-  //   const { isLogin, userProfile, userImg, defaultImg, setDefaultImg } = state;
-  //   const [logoURL, setURL] = useState(defaultImg);
-
-  // const token = getAuth();
-
-  //   const CheckImgExists = imgurl => {
-  //     return new Promise(function (resolve, reject) {
-  //       var ImgObj = new Image();
-  //       ImgObj.src = imgurl;
-  //       ImgObj.onload = function (res) {
-  //         resolve(res);
-  //       };
-  //       ImgObj.onerror = function (err) {
-  //         reject(err);
-  //       };
-  //     });
-  //   };
-
-  //   useEffect(() => {
-  //     if (isLogin) {
-  //       if (userImg) {
-  //         let nextUrl = getProfileImg(userImg);
-  //         CheckImgExists(nextUrl)
-  //           .then(() => {
-  //             setURL(nextUrl);
-  //           })
-  //           .catch(() => {
-  //             setDefaultImg(
-  //               Math.round(Math.random())
-  //                 ? require("../../images/female.png")
-  //                 : require("../../images/male.png")
-  //             );
-  //           });
-  //       }
-  //     }
-  //   }, [userImg, isLogin, setDefaultImg]);
-
-  // useEffect(() => {}, [userProfile])
-  const { language } = useContext(QuizContext);
+export const Sidebar = (props) => {
+  const { language } = useContext(QuizContext)
 
   return (
     <Menu
@@ -73,5 +25,5 @@ export const Sidebar = props => {
         <div className={classes.menu}>{props.language}</div>
       </div>
     </Menu>
-  );
-};
+  )
+}
