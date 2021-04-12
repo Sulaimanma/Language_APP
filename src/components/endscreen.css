@@ -1,0 +1,21 @@
+@media only screen and (max-width: 330px) {
+  .continueDiv {
+    height: 130px;
+    width: 100%;
+    background-color: #116eee;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    font-size: small;
+  }
+  .continueDiv button {
+    position: absolute;
+    bottom: 8px;
+    color: #116eee;
+    border-radius: 40px;
+    width: 85%;
+    left: 26px;
+    height: 26%;
+    padding-top: 0px;
+  }
+}

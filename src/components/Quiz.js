@@ -81,8 +81,6 @@ export default function Quiz(props) {
   }
 
   useEffect(() => {
-    console.log("parammmmmmmmmmmm1")
-    console.log(props.location.param1)
     props.location.param1 === "Lesson: Greetings!" &&
       setModule("wordlist_greeting")
     props.location.param1 === "Lesson: Know myself!" &&
@@ -93,50 +91,12 @@ export default function Quiz(props) {
       setModule("wordlist_environment")
     props.location.param1 === "Lesson: Conversation!" &&
       setModule("wordlist_conversation")
-
-    console.log("Moduleeeeeeeeeeeeeee")
-    console.log(module)
     module &&
       setVocabulary(
         wordData[module].map((word, id) => {
           return [word.English, word.Gidarjil]
         })
       )
-    // if (module) {
-    //   var quiz = wordData[module].map((word, id) => {
-    //     const randomOption = removeItemOnce(
-    //       wordData[module].map((word, id) => {
-    //         return word.Gidarjil
-    //       }),
-    //       word.Gidarjil
-    //     )[
-    //       Math.floor(
-    //         Math.random() *
-    //           removeItemOnce(
-    //             wordData[module].map((word, id) => {
-    //               return word.Gidarjil
-    //             }),
-    //             word.Gidarjil
-    //           ).length
-    //       )
-    //     ]
-
-    //     return {
-    //       exist: 1,
-    //       prompt: `What is "${word.English}" in ${wordData.language} language?`,
-    //       image: word.Image,
-    //       video: word.Video,
-    //       audio: word.Audio,
-    //       options: shuffle([word.Gidarjil].concat(randomOption)),
-
-    //       // optionC: "Na",
-    //       // optionD: "Gira",
-    //       answer: word.Gidarjil,
-    //     }
-    //   })
-    // }
-
-    // setQuizQuestion(quiz)
   }, [props.location.param1, module, wordData])
   const quizQ = useMemo(() => {
     if (module) {
