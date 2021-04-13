@@ -20,7 +20,7 @@ export const menuStyles = {
     transition: "all 0.3s",
   },
   bmCrossButton: {
-    top: "1rem",
+    top: "4rem",
     left: "10rem",
     width: "41px",
     height: "41px",
@@ -53,4 +53,4 @@ export const menuStyles = {
     zIndex: "1999",
     background: "rgba(0, 0, 0, 0.5)",
   },
-}
+};
