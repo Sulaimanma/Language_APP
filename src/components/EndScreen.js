@@ -1,18 +1,18 @@
-import React, { useContext } from "react"
-import { QuizContext } from "../Helpers/Context"
-import "bootstrap/dist/css/bootstrap.min.css"
-import { Row, Col } from "react-bootstrap"
-import { Button } from "react-bootstrap"
-import "../App.css"
-import { Link } from "react-router-dom"
-import "./endscreen.css"
-import { TiTick } from "react-icons/ti"
+import React, { useContext } from "react";
+import { QuizContext } from "../Helpers/Context";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Row, Col } from "react-bootstrap";
+import { Button } from "react-bootstrap";
+import "../App.css";
+import { Link } from "react-router-dom";
+import "./endscreen.css";
+import { TiTick } from "react-icons/ti";
 
 export default function EndScreen(props) {
-  const { score, setScore } = useContext(QuizContext)
+  const { score, setScore } = useContext(QuizContext);
   const restartQuiz = () => {
-    setScore(0)
-  }
+    setScore(0);
+  };
 
   return (
     <div className="EndScreen">
@@ -20,6 +20,7 @@ export default function EndScreen(props) {
       <h1>
         Your score:{score}/{props.location.param1}
       </h1>
+
       <Row className="continueDiv">
         <Col xs={{ span: 2 }}>
           <div
@@ -69,5 +70,5 @@ export default function EndScreen(props) {
         </Link>
       </Row>
     </div>
-  )
+  );
 }

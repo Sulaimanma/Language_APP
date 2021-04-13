@@ -1,0 +1,33 @@
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* slideup */
+.slideup-enter {
+  height: 0px;
+}
+.slideup-enter-active {
+  height: 162.23px;
+  -webkit-transition: height 0.5s ease;
+}
+.slideup-exit {
+  height: 162.23px;
+}
+.slideup-exit-active {
+  height: 0px;
+  -webkit-transition: height 0.5s ease;
+}
