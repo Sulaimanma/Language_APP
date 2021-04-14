@@ -145,12 +145,10 @@ export default function Quiz(props) {
   useEffect(() => {
     optionChosen.length !== 0 ? setCont(true) : setCont(false);
   }, [optionChosen]);
-  console.log("arrrrrrrayyyyyyyyyyyyyyy");
-  quizQ && console.log(quizQ);
+
   return (
     <>
       <div className="Quiz">
-        {quizQ && console.log(quizQ[0].prompt)}
         <Container fluid className="quizContainer">
           <IconContext.Provider
             value={{
