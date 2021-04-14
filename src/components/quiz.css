@@ -103,9 +103,6 @@
   margin-top: 10px;
 }
 @media only screen and (max-width: 330px) {
-  .Quiz {
-    overflow-x: hidden;
-  }
   .quizContainer {
     padding-right: 0;
     padding-left: 0;
@@ -166,8 +163,5 @@
     object-fit: contain;
   }
   .continueDiv {
-  }
-  .nextRow {
-    overflow-x: hidden;
   }
 }
