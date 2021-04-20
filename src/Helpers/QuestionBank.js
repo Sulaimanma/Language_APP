@@ -34,7 +34,7 @@ export const Questions = [
     optionD: "Diang",
     answer: "D",
   },
-];
+]
 export const WordJSON_Baradha = {
   language: "Baradha",
   wordlist_greeting: [
@@ -100,7 +100,7 @@ export const WordJSON_Baradha = {
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Bayali = {
   language: "Bayali",
   wordlist_greeting: [],
@@ -239,7 +239,7 @@ export const WordJSON_Bayali = {
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Bidjara = {
   language: "Bidjara",
   wordlist_greeting: [],
@@ -378,7 +378,7 @@ export const WordJSON_Bidjara = {
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Butchulla = {
   language: "Butchulla",
   wordlist_greeting: [],
@@ -427,7 +427,7 @@ export const WordJSON_Butchulla = {
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Dharumbal = {
   language: "Dharumbal",
   wordlist_greeting: [],
@@ -550,7 +550,7 @@ export const WordJSON_Dharumbal = {
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Gangulu = {
   language: "Gangulu",
   wordlist_greeting: [
@@ -699,7 +699,7 @@ export const WordJSON_Gangulu = {
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Gooreng_Gooreng = {
   language: "Gooreng Gooreng",
   wordlist_greeting: [
@@ -877,7 +877,7 @@ export const WordJSON_Gooreng_Gooreng = {
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Gurang = {
   language: "Gurang",
   wordlist_greeting: [
@@ -1045,7 +1045,7 @@ export const WordJSON_Gurang = {
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Taribelang = {
   language: "Taribelang",
   wordlist_greeting: [
@@ -1201,7 +1201,7 @@ export const WordJSON_Taribelang = {
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Tulua = {
   language: "Tulua",
   wordlist_greeting: [],
@@ -1356,7 +1356,7 @@ export const WordJSON_Tulua = {
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Wadjingu = {
   language: "Wadjingu",
   wordlist_greeting: [],
@@ -1504,7 +1504,7 @@ export const WordJSON_Wadjingu = {
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Wakka_Wakka = {
   language: "Wakka Wakka",
   wordlist_greeting: [],
@@ -1652,7 +1652,7 @@ export const WordJSON_Wakka_Wakka = {
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Woppaburra = {
   language: "Woppaburra",
   wordlist_greeting: [],
@@ -1760,7 +1760,7 @@ export const WordJSON_Woppaburra = {
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Yinman = {
   language: "Yinman",
   wordlist_greeting: [],
@@ -1900,4 +1900,21 @@ export const WordJSON_Yinman = {
     },
   ],
   wordlist_conversation: [],
-};
+}
+export const PCCC_GeoJson = {
+  type: "FeatureCollection",
+  features: [
+    {
+      type: "Feature",
+      properties: {
+        site_name: "Baradha",
+        attribute: "",
+      },
+      geometry: {
+        coordinates: [149.141232, -21.893883],
+        type: "Point",
+      },
+      id: "1",
+    },
+  ],
+}
