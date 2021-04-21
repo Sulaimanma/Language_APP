@@ -34,6 +34,7 @@ export default function Quiz(props) {
   const [vocabulary, setVocabulary] = useState([]);
   const [show, setShow] = useState(false);
   const [target, setTarget] = useState(null);
+
   const ref = useRef(null);
 
   const handleClick = event => {
@@ -198,7 +199,7 @@ export default function Quiz(props) {
               <Col xs={{ span: 1, offset: 1 }} className="closeCol">
                 <div className="iconCloseDiv">
                   <div id="iconItem" className="mx-auto">
-                    <Link to="/">
+                    <Link to="/mainmenu">
                       <IoClose />
                     </Link>
                   </div>

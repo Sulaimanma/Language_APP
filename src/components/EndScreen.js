@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { QuizContext } from "../Helpers/Context";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, ProgressBar } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import "../App.css";
 import { Link } from "react-router-dom";
@@ -16,7 +16,6 @@ export default function EndScreen(props) {
 
   return (
     <div className="EndScreen">
-      <Row style={{ marginTop: "20px", background: "black" }}></Row>
       <h1>
         Your score:{score}/{props.location.param1}
       </h1>
@@ -63,7 +62,7 @@ export default function EndScreen(props) {
             You completed this lesson!
           </p>
         </Col>
-        <Link to="/">
+        <Link to="/mainmenu">
           <Button variant="light" onClick={restartQuiz} size="lg">
             Continue
           </Button>

@@ -34,7 +34,7 @@ export const Questions = [
     optionD: "Diang",
     answer: "D",
   },
-]
+];
 export const WordJSON_Baradha = {
   language: "Baradha",
   wordlist_greeting: [
@@ -100,7 +100,7 @@ export const WordJSON_Baradha = {
     },
   ],
   wordlist_conversation: [],
-}
+};
 export const WordJSON_Bayali = {
   language: "Bayali",
   wordlist_greeting: [],
@@ -239,7 +239,7 @@ export const WordJSON_Bayali = {
     },
   ],
   wordlist_conversation: [],
-}
+};
 export const WordJSON_Bidjara = {
   language: "Bidjara",
   wordlist_greeting: [],
@@ -378,7 +378,7 @@ export const WordJSON_Bidjara = {
     },
   ],
   wordlist_conversation: [],
-}
+};
 export const WordJSON_Butchulla = {
   language: "Butchulla",
   wordlist_greeting: [],
@@ -427,7 +427,7 @@ export const WordJSON_Butchulla = {
     },
   ],
   wordlist_conversation: [],
-}
+};
 export const WordJSON_Dharumbal = {
   language: "Dharumbal",
   wordlist_greeting: [],
@@ -550,7 +550,7 @@ export const WordJSON_Dharumbal = {
     },
   ],
   wordlist_conversation: [],
-}
+};
 export const WordJSON_Gangulu = {
   language: "Gangulu",
   wordlist_greeting: [
@@ -699,7 +699,7 @@ export const WordJSON_Gangulu = {
     },
   ],
   wordlist_conversation: [],
-}
+};
 export const WordJSON_Gooreng_Gooreng = {
   language: "Gooreng Gooreng",
   wordlist_greeting: [
@@ -877,7 +877,7 @@ export const WordJSON_Gooreng_Gooreng = {
     },
   ],
   wordlist_conversation: [],
-}
+};
 export const WordJSON_Gurang = {
   language: "Gurang",
   wordlist_greeting: [
@@ -1045,7 +1045,7 @@ export const WordJSON_Gurang = {
     },
   ],
   wordlist_conversation: [],
-}
+};
 export const WordJSON_Taribelang = {
   language: "Taribelang",
   wordlist_greeting: [
@@ -1201,7 +1201,7 @@ export const WordJSON_Taribelang = {
     },
   ],
   wordlist_conversation: [],
-}
+};
 export const WordJSON_Tulua = {
   language: "Tulua",
   wordlist_greeting: [],
@@ -1356,7 +1356,7 @@ export const WordJSON_Tulua = {
     },
   ],
   wordlist_conversation: [],
-}
+};
 export const WordJSON_Wadjingu = {
   language: "Wadjingu",
   wordlist_greeting: [],
@@ -1504,7 +1504,7 @@ export const WordJSON_Wadjingu = {
     },
   ],
   wordlist_conversation: [],
-}
+};
 export const WordJSON_Wakka_Wakka = {
   language: "Wakka Wakka",
   wordlist_greeting: [],
@@ -1652,7 +1652,7 @@ export const WordJSON_Wakka_Wakka = {
     },
   ],
   wordlist_conversation: [],
-}
+};
 export const WordJSON_Woppaburra = {
   language: "Woppaburra",
   wordlist_greeting: [],
@@ -1760,7 +1760,7 @@ export const WordJSON_Woppaburra = {
     },
   ],
   wordlist_conversation: [],
-}
+};
 export const WordJSON_Yinman = {
   language: "Yinman",
   wordlist_greeting: [],
@@ -1900,7 +1900,7 @@ export const WordJSON_Yinman = {
     },
   ],
   wordlist_conversation: [],
-}
+};
 export const PCCC_GeoJson = {
   type: "FeatureCollection",
   features: [
@@ -1911,10 +1911,190 @@ export const PCCC_GeoJson = {
         attribute: "",
       },
       geometry: {
-        coordinates: [149.141232, -21.893883],
+        coordinates: [149.135747, -21.945526],
         type: "Point",
       },
       id: "1",
     },
+    {
+      type: "Feature",
+      properties: {
+        site_name: "Bayali",
+        attribute: "",
+      },
+      geometry: {
+        coordinates: [151.118336, -23.549463],
+        type: "Point",
+      },
+      id: "2",
+    },
+    {
+      type: "Feature",
+      properties: {
+        site_name: "Bidjara",
+        attribute: "",
+      },
+      geometry: {
+        coordinates: [147.15589, -24.904379],
+        type: "Point",
+      },
+      id: "3",
+    },
+    {
+      type: "Feature",
+      properties: {
+        site_name: "Butchulla",
+        attribute: "",
+      },
+      geometry: {
+        coordinates: [153.034683, -25.330982],
+        type: "Point",
+      },
+      id: "4",
+    },
+    {
+      type: "Feature",
+      properties: {
+        site_name: "Dharumbal",
+        attribute: "",
+      },
+      geometry: {
+        coordinates: [150.059222, -22.712711],
+        type: "Point",
+      },
+      id: "5",
+    },
+    {
+      type: "Feature",
+      properties: {
+        site_name: "Gangulu",
+        attribute: "",
+      },
+      geometry: {
+        coordinates: [150.15767, -24.173568],
+        type: "Point",
+      },
+      id: "6",
+    },
+    {
+      type: "Feature",
+      properties: {
+        site_name: "Gooreng Gooreng",
+        attribute: "",
+      },
+      geometry: {
+        coordinates: [151.791712, -24.904676],
+        type: "Point",
+      },
+      id: "7",
+    },
+    // {
+    //   type: "Feature",
+    //   properties: {
+    //     site_name: "Gurang",
+    //     attribute: "",
+    //   },
+    //   geometry: {
+    //     coordinates: [151.791712, -24.904676],
+    //     type: "Point",
+    //   },
+    //   id: "8",
+    // },
+    {
+      type: "Feature",
+      properties: {
+        site_name: "Taribelang",
+        attribute: "",
+      },
+      geometry: {
+        coordinates: [152.034261, -24.79002],
+        type: "Point",
+      },
+      id: "9",
+    },
+    {
+      type: "Feature",
+      properties: {
+        site_name: "Tulua",
+        attribute: "",
+      },
+      geometry: {
+        coordinates: [151.000465, -24.379777],
+        type: "Point",
+      },
+      id: "10",
+    },
+    {
+      type: "Feature",
+      properties: {
+        site_name: "Wadjingu",
+        attribute: "",
+      },
+      geometry: {
+        coordinates: [149.30851, -24.731342],
+        type: "Point",
+      },
+      id: "11",
+    },
+    {
+      type: "Feature",
+      properties: {
+        site_name: "Wakka Wakka",
+        attribute: "",
+      },
+      geometry: {
+        coordinates: [151.894692, -26.440819],
+        type: "Point",
+      },
+      id: "12",
+    },
+    {
+      type: "Feature",
+      properties: {
+        site_name: "Woppaburra",
+        attribute: "",
+      },
+      geometry: {
+        coordinates: [150.900387, -23.078941],
+        type: "Point",
+      },
+      id: "13",
+    },
+    // {
+    //   type: "Feature",
+    //   properties: {
+    //     site_name: "Yinman",
+    //     attribute: "",
+    //   },
+    //   geometry: {
+    //     coordinates: [150.900387, -23.078941],
+    //     type: "Point",
+    //   },
+    //   id: "14",
+    // },
+    // {
+    //   type: "Feature",
+    //   properties: {
+    //     site_name: "Gurang",
+    //     attribute: "",
+    //   },
+    //   geometry: {
+    //     coordinates: [150.900387, -23.078941],
+    //     type: "Point",
+    //   },
+    //   id: "15",
+    // },
+    // {
+    //   type: "Feature",
+    //   properties: {
+    //     site_name: "Meerooni",
+    //     attribute: "",
+    //   },
+    //   geometry: {
+    //     coordinates: [150.900387, -23.078941],
+    //     type: "Point",
+    //   },
+    //   id: "16",
+    // },
   ],
-}
+};
