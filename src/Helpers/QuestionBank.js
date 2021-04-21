@@ -2060,18 +2060,18 @@ export const PCCC_GeoJson = {
       },
       id: "13",
     },
-    // {
-    //   type: "Feature",
-    //   properties: {
-    //     site_name: "Yinman",
-    //     attribute: "",
-    //   },
-    //   geometry: {
-    //     coordinates: [150.900387, -23.078941],
-    //     type: "Point",
-    //   },
-    //   id: "14",
-    // },
+    {
+      type: "Feature",
+      properties: {
+        site_name: "Yinman",
+        attribute: "",
+      },
+      geometry: {
+        coordinates: [149.79264, -25.654133],
+        type: "Point",
+      },
+      id: "14",
+    },
     // {
     //   type: "Feature",
     //   properties: {
