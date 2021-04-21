@@ -24,7 +24,8 @@
     "react-transition-group": "^4.4.1",
     "sass": "^1.32.8",
     "styled-components": "^5.2.2",
-    "web-vitals": "^1.1.1"
+    "web-vitals": "^1.1.1",
+    "worker-loader": "^3.0.8"
   },
   "scripts": {
     "start": "react-scripts start",

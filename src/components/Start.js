@@ -7,7 +7,12 @@ import { Link } from "react-router-dom";
 import "./start.css";
 import { TiTick } from "react-icons/ti";
 import ReactMapGl, { Marker } from "react-map-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
+import mapboxgl from "mapbox-gl";
+
 import { PCCC_GeoJson } from "../Helpers/QuestionBank";
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 export default function Start(props) {
   const { language, setLanguage } = useContext(QuizContext);
   const [selectedLanguage, setSelectedLanguage] = useState(null);
