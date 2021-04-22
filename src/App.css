@@ -323,7 +323,7 @@ h1 {
   overflow-x: hidden;
   padding-left: 0%;
   padding-right: 0%;
-  overflow-y: scroll;
+
   -ms-overflow-style: none !important; /* IE and Edge */
   scrollbar-width: none !important; /* Firefox */
 }
