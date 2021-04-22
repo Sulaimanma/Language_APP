@@ -288,7 +288,10 @@ h1 {
     margin-left: 0px;
     margin-top: 6px;
     position: absolute;
-    left: 27px;
+    left: 38px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
   }
   .countryiconImg {
     width: 75px;
