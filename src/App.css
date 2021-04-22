@@ -285,13 +285,14 @@ h1 {
   }
   .select {
     position: absolute;
-    right: 15px;
-    top: 18px;
+    right: 20px;
+    top: 22px;
+    z-index: 3;
   }
   .countryicon {
     margin-left: 0px;
     margin-top: 6px;
-    position: absolute;
+    position: fixed;
     left: 38px;
     display: flex;
     flex-direction: row;
@@ -306,23 +307,22 @@ h1 {
   }
   .languagetext {
     margin-top: 14px;
-    font-size: 14px;
+    font-size: 17px;
     text-decoration: none;
     cursor: pointer;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: -webkit-pictograph;
   }
-  .lessonContainer {
-    width: 100vw;
-    overflow-x: hidden;
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-  .cardRow {
-    width: 100vw;
-  }
-  .cardCol {
-    padding-right: 4px !important;
-    padding-left: 20px !important;
-  }
+}
+.lessonContainer {
+  width: 100vw;
+  overflow-x: hidden;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.cardRow {
+  width: 100vw;
+}
+.cardCol {
+  padding-right: 4px !important;
+  padding-left: 20px !important;
 }
