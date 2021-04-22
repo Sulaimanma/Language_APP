@@ -213,7 +213,7 @@
     overflow-x: hidden;
   }
   .cardRow {
-    margin-top: 50px;
+    margin-top: 55px;
     margin-bottom: 27px;
     width: 95vw;
   }
@@ -222,12 +222,16 @@
     left: 0;
     top: 0;
     background: #f2f7fd;
-    z-index: 2;
+    z-index: 1;
     width: 100vw;
   }
   .countryicon {
     margin-top: 14px;
     margin-left: 67px;
+    height: max-content;
+    width: 310px;
+    overflow-x: hidden;
+    background: #f2f7fd;
   }
 
   .languagetext {
