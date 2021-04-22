@@ -293,7 +293,7 @@ h1 {
     margin-left: 0px;
     margin-top: 6px;
     position: fixed;
-    left: 34px;
+    left: 17px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -307,7 +307,7 @@ h1 {
   }
   .languagetext {
     margin-top: 14px;
-    font-size: 17px;
+    font-size: 14px;
     text-decoration: none;
     cursor: pointer;
     font-family: -webkit-pictograph;
