@@ -85,7 +85,7 @@ export default function Mainmenu(props) {
                   />
                 </Link>
 
-                <Link to="/">
+                <Link to="/" style={{ textDecoration: "none" }}>
                   <p className="languagetext">{language}</p>
                 </Link>
               </div>
