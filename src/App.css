@@ -285,9 +285,10 @@ h1 {
     top: 18px;
   }
   .countryicon {
-    width: 100px;
-    margin-top: 5px;
-    margin-left: 66px;
+    margin-left: 0px;
+    margin-top: 6px;
+    position: absolute;
+    left: 27px;
   }
   .countryiconImg {
     width: 75px;
