@@ -321,6 +321,13 @@ h1 {
 }
 .cardRow {
   width: 100vw;
+  margin-top: 50px !important;
+  overflow-y: scroll;
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+}
+.cardRow ::-webkit-scrollbar {
+  display: none !important;
 }
 .cardCol {
   padding-right: 4px !important;
