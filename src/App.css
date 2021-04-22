@@ -218,7 +218,7 @@
     width: 95vw;
   }
   .languagediv {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     background: #f2f7fd;
