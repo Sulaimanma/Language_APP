@@ -1,10 +1,16 @@
 import "./App.css";
+import "./components/style.css";
 
 import Mainmenu from "./components/Mainmenu";
 import Quiz from "./components/Quiz";
 import EndScreen from "./components/EndScreen";
-import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-
+import {
+  Switch,
+  Route,
+  BrowserRouter as Router,
+  useLocation,
+} from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import React, { useEffect, useState } from "react";
 import { QuizContext } from "./Helpers/Context";
 
@@ -118,41 +124,50 @@ const App = () => {
         },
       ]);
   }, [wordData]);
-
+  let location = useLocation();
+  const timeout = {};
   return (
     <>
-      <Router>
-        <div className="Home">
-          <QuizContext.Provider
-            value={{
-              gameState,
-              setGameState,
-              score,
-              setScore,
-              language,
-              setLanguage,
-              wordData,
-              lessonData,
-              setLessonData,
-            }}
-          >
-            <Switch>
-              <Route exact path="/learn" component={Learn}></Route>
-              <Route exact path="/" component={Start}></Route>
+      <div className="Home">
+        <QuizContext.Provider
+          value={{
+            gameState,
+            setGameState,
+            score,
+            setScore,
+            language,
+            setLanguage,
+            wordData,
+            lessonData,
+            setLessonData,
+          }}
+        >
+          <TransitionGroup>
+            {/*
+            This is no different than other usage of
+            <CSSTransition>, just make sure to pass
+            `location` to `Switch` so it can match
+            the old location as it animates out.
+          */}
+            <CSSTransition key={location.key} classNames="swipe" timeout={600}>
+              <Switch location={location}>
+                <Route exact path="/learn" component={Learn}></Route>
+                <Route exact path="/" component={Start}></Route>
 
-              <Route exact path="/mainmenu" component={Mainmenu}></Route>
-              <Route exact path="/endscreen" component={EndScreen}></Route>
-              <Route exact path="/quiz" component={Quiz}></Route>
-              <Route path="/test"></Route>
-            </Switch>
-            {/* {gameState === "select" && <Select />}
+                <Route exact path="/mainmenu" component={Mainmenu}></Route>
+                <Route exact path="/endscreen" component={EndScreen}></Route>
+                <Route exact path="/quiz" component={Quiz}></Route>
+                <Route path="/test"></Route>
+              </Switch>
+            </CSSTransition>
+          </TransitionGroup>
+          {/* {gameState === "select" && <Select />}
             {gameState === "learn" && <BasicTable />}{" "}
             {gameState === "menu" && <Mainmenu />}
             {gameState === "quiz" && <Quiz />}{" "}
             {gameState === "endscreen" && <EndScreen />}{" "} */}
-          </QuizContext.Provider>{" "}
-        </div>
-      </Router>
+        </QuizContext.Provider>{" "}
+      </div>
     </>
   );
 };

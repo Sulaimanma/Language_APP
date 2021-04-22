@@ -79,7 +79,7 @@ export default function Mainmenu(props) {
               <div className="countryicon">
                 <Link to="/">
                   <Image
-                    src="https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/aboriginal.png"
+                    src="https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/logo.png"
                     rounded
                     className="countryiconImg"
                   />
