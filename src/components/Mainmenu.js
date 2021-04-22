@@ -71,8 +71,8 @@ export default function Mainmenu(props) {
           >
             <div className="languagediv">
               <div className="select">
-                <Link to="/" style={{ background: "#f2f7fd" }}>
-                  <IoIosOptions />
+                <Link to="/">
+                  <IoIosOptions style={{ background: "#f2f7fd" }} />
                 </Link>
               </div>
 
