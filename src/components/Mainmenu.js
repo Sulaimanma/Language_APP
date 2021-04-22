@@ -77,12 +77,17 @@ export default function Mainmenu(props) {
               </div>
 
               <div className="countryicon">
-                <Image
-                  src="https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/aboriginal.png"
-                  rounded
-                  className="countryiconImg"
-                />
-                <p className="languagetext">{language}</p>
+                <Link to="/">
+                  <Image
+                    src="https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/aboriginal.png"
+                    rounded
+                    className="countryiconImg"
+                  />
+                </Link>
+
+                <Link to="/">
+                  <p className="languagetext">{language}</p>
+                </Link>
               </div>
             </div>
           </IconContext.Provider>
