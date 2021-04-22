@@ -1909,6 +1909,7 @@ export const PCCC_GeoJson = {
       properties: {
         site_name: "Baradha",
         attribute: "",
+        color: "#AAAA00",
       },
       geometry: {
         coordinates: [149.135747, -21.945526],
@@ -1921,6 +1922,7 @@ export const PCCC_GeoJson = {
       properties: {
         site_name: "Bayali",
         attribute: "",
+        color: "#7A2414",
       },
       geometry: {
         coordinates: [151.118336, -23.549463],
@@ -1933,6 +1935,7 @@ export const PCCC_GeoJson = {
       properties: {
         site_name: "Bidjara",
         attribute: "",
+        color: "#644E1B",
       },
       geometry: {
         coordinates: [147.15589, -24.904379],
@@ -1945,6 +1948,7 @@ export const PCCC_GeoJson = {
       properties: {
         site_name: "Butchulla",
         attribute: "",
+        color: "#1B3B8F",
       },
       geometry: {
         coordinates: [153.034683, -25.330982],
@@ -1957,6 +1961,7 @@ export const PCCC_GeoJson = {
       properties: {
         site_name: "Dharumbal",
         attribute: "",
+        color: "#6679AB",
       },
       geometry: {
         coordinates: [150.059222, -22.712711],
@@ -1969,6 +1974,7 @@ export const PCCC_GeoJson = {
       properties: {
         site_name: "Gangulu",
         attribute: "",
+        color: "#967528",
       },
       geometry: {
         coordinates: [150.15767, -24.173568],
@@ -1981,6 +1987,7 @@ export const PCCC_GeoJson = {
       properties: {
         site_name: "Gooreng Gooreng",
         attribute: "",
+        color: "#9B655A",
       },
       geometry: {
         coordinates: [151.791712, -24.904676],
@@ -2004,7 +2011,9 @@ export const PCCC_GeoJson = {
       type: "Feature",
       properties: {
         site_name: "Taribelang",
+
         attribute: "",
+        color: "#FFFF00",
       },
       geometry: {
         coordinates: [152.034261, -24.79002],
@@ -2017,6 +2026,7 @@ export const PCCC_GeoJson = {
       properties: {
         site_name: "Tulua",
         attribute: "",
+        color: "#FFFF80",
       },
       geometry: {
         coordinates: [151.000465, -24.379777],
@@ -2029,6 +2039,7 @@ export const PCCC_GeoJson = {
       properties: {
         site_name: "Wadjingu",
         attribute: "",
+        color: "#BD9088",
       },
       geometry: {
         coordinates: [149.30851, -24.731342],
@@ -2041,6 +2052,7 @@ export const PCCC_GeoJson = {
       properties: {
         site_name: "Wakka Wakka",
         attribute: "",
+        color: "#B9A575",
       },
       geometry: {
         coordinates: [151.894692, -26.440819],
@@ -2053,6 +2065,7 @@ export const PCCC_GeoJson = {
       properties: {
         site_name: "Woppaburra",
         attribute: "",
+        color: "#91A0C7",
       },
       geometry: {
         coordinates: [150.900387, -23.078941],
@@ -2065,6 +2078,7 @@ export const PCCC_GeoJson = {
       properties: {
         site_name: "Yinman",
         attribute: "",
+        color: "#B5C2E3",
       },
       geometry: {
         coordinates: [149.79264, -25.654133],

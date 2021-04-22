@@ -18,7 +18,7 @@
   top: -3em;
   left: -2.1em;
   border-radius: 100%;
-  background-color: #deb7af;
+  /* background-color: #deb7af; */
   animation-name: wave;
   animation-duration: 1500ms;
   transition: all 1000ms ease-in-out;

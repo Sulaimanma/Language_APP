@@ -49,7 +49,10 @@ export default function Start(props) {
                   setLanguage(region.properties.site_name);
                 }}
               >
-                <div className="wave"></div>
+                <div
+                  className="wave"
+                  style={{ backgroundColor: `${region.properties.color}` }}
+                ></div>
                 <div className="LanguageName">
                   {region.properties.site_name}
                 </div>
