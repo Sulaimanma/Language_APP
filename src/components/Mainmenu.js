@@ -10,6 +10,7 @@ import { IconContext } from "react-icons";
 import { BurgerMenu } from "./BurgerMenu/BurgerMenu";
 import LessonCard from "./LessonCard/LessonCard";
 import { Link } from "react-router-dom";
+import { IoIosOptions } from "react-icons/io";
 
 // import Amplify, { Storage } from "aws-amplify"
 // import awsconfig from "../aws-exports"
@@ -30,7 +31,7 @@ export default function Mainmenu(props) {
 
   return (
     <>
-      <BurgerMenu
+      {/* <BurgerMenu
         nonSticky={false}
         language={
           <div>
@@ -58,80 +59,84 @@ export default function Mainmenu(props) {
             </label>
           </div>
         }
-      >
-        <div className="Menu">
-          <Container fluid className="lessonContainer">
-            <IconContext.Provider
-              value={{
-                className: "menu-icons",
-                size: "1.7rem",
-                color: "#666e7e",
-              }}
-            >
-              <div className="languagediv">
-                <div className="countryicon">
-                  <Image
-                    src="https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/aboriginal.png"
-                    rounded
-                    className="countryiconImg"
-                  />
-                  <p className="languagetext">{language}</p>
-                </div>
-              </div>
-            </IconContext.Provider>
+      > */}
+      <div className="Menu">
+        <Container fluid className="lessonContainer">
+          <IconContext.Provider
+            value={{
+              className: "menu-icons",
+              size: "1.7rem",
+              color: "#666e7e",
+            }}
+          >
+            <div className="languagediv">
+              <Link to="/">
+                <IoIosOptions className="select" />
+              </Link>
 
-            <Row fluid className="cardRow">
-              <Col md={{ span: 4, offset: 4 }} className="cardCol">
-                {lessonData.map((lesson, id) => {
-                  if (
-                    props.location.module === lesson.lessonTitle &&
-                    handleComplete() === true
-                  ) {
-                    return (
-                      <LessonCard
-                        title={lesson.lessonTitle}
-                        intro={lesson.lessonIntro}
-                        imgUrl={lesson.imageUrl}
-                        language={language}
-                        display={lesson}
-                        now={100}
-                        complete={handleComplete()}
-                      />
-                    );
-                  } else if (
-                    props.location.module === lesson.lessonTitle &&
-                    handleComplete() !== true
-                  ) {
-                    return (
-                      <LessonCard
-                        title={lesson.lessonTitle}
-                        intro={lesson.lessonIntro}
-                        imgUrl={lesson.imageUrl}
-                        language={language}
-                        display={lesson}
-                        now={props.location.now}
-                        complete={handleComplete()}
-                      />
-                    );
-                  } else {
-                    return (
-                      <LessonCard
-                        title={lesson.lessonTitle}
-                        intro={lesson.lessonIntro}
-                        imgUrl={lesson.imageUrl}
-                        language={language}
-                        display={lesson}
-                        now={0}
-                        complete={handleComplete()}
-                      />
-                    );
-                  }
-                })}
-              </Col>{" "}
-            </Row>
-          </Container>
-        </div>
-      </BurgerMenu>
+              <div className="countryicon">
+                <Image
+                  src="https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/aboriginal.png"
+                  rounded
+                  className="countryiconImg"
+                />
+                <p className="languagetext">{language}</p>
+              </div>
+            </div>
+          </IconContext.Provider>
+
+          <Row fluid className="cardRow">
+            <Col md={{ span: 4, offset: 4 }} className="cardCol">
+              {lessonData.map((lesson, id) => {
+                if (
+                  props.location.module === lesson.lessonTitle &&
+                  handleComplete() === true
+                ) {
+                  return (
+                    <LessonCard
+                      title={lesson.lessonTitle}
+                      intro={lesson.lessonIntro}
+                      imgUrl={lesson.imageUrl}
+                      language={language}
+                      display={lesson}
+                      now={100}
+                      complete={handleComplete()}
+                    />
+                  );
+                } else if (
+                  props.location.module === lesson.lessonTitle &&
+                  handleComplete() !== true
+                ) {
+                  return (
+                    <LessonCard
+                      title={lesson.lessonTitle}
+                      intro={lesson.lessonIntro}
+                      imgUrl={lesson.imageUrl}
+                      language={language}
+                      display={lesson}
+                      now={props.location.now}
+                      complete={handleComplete()}
+                    />
+                  );
+                } else {
+                  return (
+                    <LessonCard
+                      title={lesson.lessonTitle}
+                      intro={lesson.lessonIntro}
+                      imgUrl={lesson.imageUrl}
+                      language={language}
+                      display={lesson}
+                      now={0}
+                      complete={handleComplete()}
+                    />
+                  );
+                }
+              })}
+            </Col>{" "}
+          </Row>
+        </Container>
+      </div>
+      {/* </BurgerMenu> */}
     </>
   );
 }
