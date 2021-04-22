@@ -287,12 +287,13 @@ h1 {
   .countryicon {
     width: 100px;
     margin-top: 5px;
+    margin-left: 66px;
   }
   .countryiconImg {
     width: 75px;
     height: auto;
     margin-top: 5px;
-    margin-left: 66px;
+
     cursor: pointer;
   }
   .languagetext {
