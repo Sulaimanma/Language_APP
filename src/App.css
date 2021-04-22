@@ -328,15 +328,12 @@ h1 {
   overflow-x: hidden;
   padding-left: 0%;
   padding-right: 0%;
-}
-.cardRow {
-  width: 100vw;
-  margin-top: 50px !important;
   overflow-y: scroll;
   -ms-overflow-style: none !important; /* IE and Edge */
   scrollbar-width: none !important; /* Firefox */
 }
-.cardRow ::-webkit-scrollbar {
+
+.lessonContainer::-webkit-scrollbar {
   display: none !important;
 }
 .cardCol {
