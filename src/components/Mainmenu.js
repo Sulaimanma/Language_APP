@@ -70,9 +70,11 @@ export default function Mainmenu(props) {
             }}
           >
             <div className="languagediv">
-              <Link to="/">
-                <IoIosOptions className="select" />
-              </Link>
+              <div className="select">
+                <Link to="/">
+                  <IoIosOptions />
+                </Link>
+              </div>
 
               <div className="countryicon">
                 <Image

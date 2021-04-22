@@ -128,7 +128,7 @@ export default function Learn(props) {
                   className="iconCloseDiv"
                   onClick={() => setGameState("menu")}
                 >
-                  <div id="iconItem" className="mx-auto">
+                  <div id="iconItemClose" className="mx-auto">
                     <Link to={newToMain}>
                       <IoClose className="close" />
                     </Link>

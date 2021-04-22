@@ -243,6 +243,12 @@ h1 {
   }
   .iconItem {
     width: 20px;
+    margin-left: 20px !important;
+  }
+  #iconItemClose {
+    position: absolute;
+    left: 5px;
+    top: 2px;
   }
   .iconCloseDiv {
     margin-left: 20px;
