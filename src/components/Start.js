@@ -23,7 +23,7 @@ export default function Start(props) {
     longitude: 150.15767,
     width: "100vw",
     height: "100vh",
-    zoom: 6,
+    zoom: 5,
   });
 
   return (
