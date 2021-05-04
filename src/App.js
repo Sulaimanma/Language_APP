@@ -40,9 +40,7 @@ const App = () => {
         console.error(error);
       });
   };
-  console.log(language);
-  console.log("%%%%%%%%%%%%%");
-  console.log(wordData);
+ 
   useEffect(() => {
     fetch_word(fetchUrl);
     wordData.length !== 0 &&

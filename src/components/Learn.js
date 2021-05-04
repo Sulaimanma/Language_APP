@@ -69,8 +69,8 @@ export default function Learn(props) {
     setNointro(false);
   };
 
-  console.log("~~~~~~~~~~~~~~~~~~~~~~~~n");
-  console.log(vocabulary);
+  // console.log("~~~~~~~~~~~~~~~~~~~~~~~~n");
+  // console.log(vocabulary);
 
   // console.log(vocabulary)
 

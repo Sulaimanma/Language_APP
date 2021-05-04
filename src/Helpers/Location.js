@@ -17,6 +17,6 @@ export default function Location() {
     };
   });
 
-  console.log(geoJson);
+  // console.log(geoJson);
   return <div></div>;
 }
