@@ -1,87 +1,87 @@
-import "./App.css";
-import "./components/style.css";
+import "./App.css"
+import "./components/style.css"
 
-import Mainmenu from "./components/Mainmenu";
-import Quiz from "./components/Quiz";
-import EndScreen from "./components/EndScreen";
+import Mainmenu from "./components/Mainmenu"
+import Quiz from "./components/Quiz"
+import EndScreen from "./components/EndScreen"
 import {
   Switch,
   Route,
   BrowserRouter as Router,
   useLocation,
-} from "react-router-dom";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
-import React, { useEffect, useState } from "react";
-import { QuizContext } from "./Helpers/Context";
+} from "react-router-dom"
+import { TransitionGroup, CSSTransition } from "react-transition-group"
+import React, { useEffect, useState } from "react"
+import { QuizContext } from "./Helpers/Context"
 
 // import LessonCard from "./components/LessonCard/LessonCard";
-import Learn from "./components/Learn";
-import axios from "axios";
-import Start from "./components/Start";
+import Learn from "./components/Learn"
+import axios from "axios"
+import Start from "./components/Start"
 
 const App = () => {
-  const [gameState, setGameState] = useState("menu");
+  const [gameState, setGameState] = useState("menu")
   // const [userName, setUserName] = useState("");
-  const [score, setScore] = useState(0);
-  const [language, setLanguage] = useState("Gooreng Gooreng");
-  const [wordData, setWordData] = useState([]);
-  const [lessonData, setLessonData] = useState([]);
+  const [score, setScore] = useState(0)
+  const [language, setLanguage] = useState("Gooreng Gooreng")
+  const [wordData, setWordData] = useState([])
+  const [lessonData, setLessonData] = useState([])
 
-  const fetchUrl = `https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/wordlist/${language}.json`;
-  const fetch_word = fetchUrl => {
+  const fetchUrl = `https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/wordlist/${language}.json`
+  const fetch_word = (fetchUrl) => {
     axios
       .get(fetchUrl)
-      .then(res => {
-        const data = res.data;
-        setWordData(data);
+      .then((res) => {
+        const data = res.data
+        setWordData(data)
       })
-      .catch(error => {
+      .catch((error) => {
         // handle your errors here
-        console.error(error);
-      });
-  };
- 
+        console.error(error)
+      })
+  }
+
   useEffect(() => {
-    fetch_word(fetchUrl);
+    fetch_word(fetchUrl)
     wordData.length !== 0 &&
       setLessonData([
         wordData.wordlist_greeting.length && {
           lessonTitle: "Lesson: Greetings!",
           lessonIntro: "Learning some basic greetings",
           imageUrl:
-            "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/greeting.jpg",
+            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/greeting.jpg",
           now: 0,
         },
         wordData.wordlist_body.length && {
           lessonTitle: "Lesson: Know myself!",
           lessonIntro: "Learning some words related to your body",
           imageUrl:
-            "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/body.jpg",
+            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/body.jpg",
           now: 0,
         },
         wordData.wordlist_family.length && {
           lessonTitle: "Lesson: My Family!",
           lessonIntro: "Talking about your family, using possessive adjective",
           imageUrl:
-            "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/family.jpg",
+            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/family.jpg",
           now: 0,
         },
         wordData.wordlist_environment.length && {
           lessonTitle: "Lesson: Environment!",
           lessonIntro: "Learning some environmental words",
           imageUrl:
-            "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/environment.jpg",
+            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/environment.jpg",
           now: 0,
         },
         wordData.wordlist_conversation.length && {
           lessonTitle: "Lesson: Conversation!",
           lessonIntro: "Learning some phrase for conversation",
           imageUrl:
-            "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/conversation.jpg",
+            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/conversation.jpg",
           now: 0,
         },
-      ]);
-  }, [fetchUrl, language]);
+      ])
+  }, [fetchUrl, language])
   useEffect(() => {
     wordData.length !== 0 &&
       setLessonData([
@@ -89,41 +89,41 @@ const App = () => {
           lessonTitle: "Lesson: Greetings!",
           lessonIntro: "Learning some basic greetings",
           imageUrl:
-            "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/greeting.jpg",
+            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/greeting.jpg",
           now: 0,
         },
         wordData.wordlist_body.length && {
           lessonTitle: "Lesson: Know myself!",
           lessonIntro: "Learning some words related to your body",
           imageUrl:
-            "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/body.jpg",
+            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/body.jpg",
           now: 0,
         },
         wordData.wordlist_family.length && {
           lessonTitle: "Lesson: My Family!",
           lessonIntro: "Talking about your family, using possessive adjective",
           imageUrl:
-            "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/family.jpg",
+            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/family.jpg",
           now: 0,
         },
         wordData.wordlist_environment.length && {
           lessonTitle: "Lesson: Environment!",
           lessonIntro: "Learning some environmental words",
           imageUrl:
-            "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/environment.jpg",
+            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/environment.jpg",
           now: 0,
         },
         wordData.wordlist_conversation.length && {
           lessonTitle: "Lesson: Conversation!",
           lessonIntro: "Learning some phrase for conversation",
           imageUrl:
-            "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/icon/conversation.jpg",
+            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/conversation.jpg",
           now: 0,
         },
-      ]);
-  }, [wordData]);
-  let location = useLocation();
-  const timeout = {};
+      ])
+  }, [wordData])
+  let location = useLocation()
+  const timeout = {}
   return (
     <>
       <div className="Home">
@@ -167,7 +167,7 @@ const App = () => {
         </QuizContext.Provider>{" "}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App

@@ -34,7 +34,7 @@ export const Questions = [
     optionD: "Diang",
     answer: "D",
   },
-];
+]
 export const WordJSON_Baradha = {
   language: "Baradha",
   wordlist_greeting: [
@@ -42,7 +42,7 @@ export const WordJSON_Baradha = {
       English: "Hello",
       Gidarjil: "Binbi gari",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/hello.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/greeting/hello.jpg",
       Audio: "",
       Video: "",
     },
@@ -50,7 +50,7 @@ export const WordJSON_Baradha = {
       English: "Hello friend",
       Gidarjil: "Binbi gari yaba",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/hello+friend.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/greeting/hello+friend.jpg",
       Audio: "",
       Video: "",
     },
@@ -62,7 +62,7 @@ export const WordJSON_Baradha = {
       English: "Bird",
       Gidarjil: "Dhibila",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/bird.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/bird.jpg",
       Audio: "",
       Video: "",
     },
@@ -70,7 +70,7 @@ export const WordJSON_Baradha = {
       English: "Fish",
       Gidarjil: "Wina",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
       Audio: "",
       Video: "",
     },
@@ -78,7 +78,7 @@ export const WordJSON_Baradha = {
       English: "Grass ",
       Gidarjil: "Wagura",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
       Audio: "",
       Video: "",
     },
@@ -86,7 +86,7 @@ export const WordJSON_Baradha = {
       English: "Water ",
       Gidarjil: "Gamu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
       Audio: "",
       Video: "",
     },
@@ -94,13 +94,13 @@ export const WordJSON_Baradha = {
       English: "Sun",
       Gidarjil: "Gari",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
       Audio: "",
       Video: "",
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Bayali = {
   language: "Bayali",
   wordlist_greeting: [],
@@ -109,7 +109,7 @@ export const WordJSON_Bayali = {
       English: "Nose",
       Gidarjil: "Piree",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
       Audio: "",
       Video: "",
     },
@@ -117,7 +117,7 @@ export const WordJSON_Bayali = {
       English: "Hand",
       Gidarjil: "Mooloom",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
       Audio: "",
       Video: "",
     },
@@ -125,7 +125,7 @@ export const WordJSON_Bayali = {
       English: "Eye",
       Gidarjil: "Mill",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
       Audio: "",
       Video: "",
     },
@@ -133,7 +133,7 @@ export const WordJSON_Bayali = {
       English: "Ear",
       Gidarjil: "Bidna",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
       Audio: "",
       Video: "",
     },
@@ -141,7 +141,7 @@ export const WordJSON_Bayali = {
       English: "Head",
       Gidarjil: "Karun",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
       Audio: "",
       Video: "",
     },
@@ -151,7 +151,7 @@ export const WordJSON_Bayali = {
       English: "Father",
       Gidarjil: "Meegan",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
       Audio: "",
       Video: "",
     },
@@ -159,7 +159,7 @@ export const WordJSON_Bayali = {
       English: "Mother",
       Gidarjil: "Yaya",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
       Audio: "",
       Video: "",
     },
@@ -167,7 +167,7 @@ export const WordJSON_Bayali = {
       English: "Elder Sister",
       Gidarjil: "Darwar",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
       Audio: "",
       Video: "",
     },
@@ -175,7 +175,7 @@ export const WordJSON_Bayali = {
       English: "Elder Brother",
       Gidarjil: "Marm",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
       Audio: "",
       Video: "",
     },
@@ -183,7 +183,7 @@ export const WordJSON_Bayali = {
       English: "Younger Sister",
       Gidarjil: "Koondoolan",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/young sister.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/young sister.png",
       Audio: "",
       Video: "",
     },
@@ -191,7 +191,7 @@ export const WordJSON_Bayali = {
       English: "Younger Brother",
       Gidarjil: "Weegool",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/younger brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/younger brother.jpg",
       Audio: "",
       Video: "",
     },
@@ -201,7 +201,7 @@ export const WordJSON_Bayali = {
       English: "Snake",
       Gidarjil: "Darm",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
       Audio: "",
       Video: "",
     },
@@ -209,7 +209,7 @@ export const WordJSON_Bayali = {
       English: "Fish",
       Gidarjil: "Goodna",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
       Audio: "",
       Video: "",
     },
@@ -217,7 +217,7 @@ export const WordJSON_Bayali = {
       English: "Grass ",
       Gidarjil: "Bowan",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
       Audio: "",
       Video: "",
     },
@@ -225,7 +225,7 @@ export const WordJSON_Bayali = {
       English: "Water ",
       Gidarjil: "Koongo",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
       Audio: "",
       Video: "",
     },
@@ -233,13 +233,13 @@ export const WordJSON_Bayali = {
       English: "Sun",
       Gidarjil: "Gaɲ",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
       Audio: "",
       Video: "",
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Bidjara = {
   language: "Bidjara",
   wordlist_greeting: [],
@@ -248,7 +248,7 @@ export const WordJSON_Bidjara = {
       English: "Nose",
       Gidarjil: "Guwu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
       Audio: "",
       Video: "",
     },
@@ -256,7 +256,7 @@ export const WordJSON_Bidjara = {
       English: "Hand",
       Gidarjil: "Marda",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
       Audio: "",
       Video: "",
     },
@@ -264,7 +264,7 @@ export const WordJSON_Bidjara = {
       English: "Eye",
       Gidarjil: "Dhili",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
       Audio: "",
       Video: "",
     },
@@ -272,7 +272,7 @@ export const WordJSON_Bidjara = {
       English: "Ear",
       Gidarjil: "Manga",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
       Audio: "",
       Video: "",
     },
@@ -280,7 +280,7 @@ export const WordJSON_Bidjara = {
       English: "Head",
       Gidarjil: " Dhun-gu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
       Audio: "",
       Video: "",
     },
@@ -290,7 +290,7 @@ export const WordJSON_Bidjara = {
       English: "Father",
       Gidarjil: "Yabu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
       Audio: "",
       Video: "",
     },
@@ -298,7 +298,7 @@ export const WordJSON_Bidjara = {
       English: "Mother",
       Gidarjil: "Yanga",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
       Audio: "",
       Video: "",
     },
@@ -306,7 +306,7 @@ export const WordJSON_Bidjara = {
       English: "Elder Sister",
       Gidarjil: "Bari",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
       Audio: "",
       Video: "",
     },
@@ -314,7 +314,7 @@ export const WordJSON_Bidjara = {
       English: "Elder Brother",
       Gidarjil: "Dhagu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
       Audio: "",
       Video: "",
     },
@@ -322,7 +322,7 @@ export const WordJSON_Bidjara = {
       English: "Younger Sister",
       Gidarjil: "Wabuganu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/young sister.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/young sister.png",
       Audio: "",
       Video: "",
     },
@@ -330,7 +330,7 @@ export const WordJSON_Bidjara = {
       English: "Younger Brother",
       Gidarjil: "Wabu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/younger brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/younger brother.jpg",
       Audio: "",
       Video: "",
     },
@@ -340,7 +340,7 @@ export const WordJSON_Bidjara = {
       English: "Snake",
       Gidarjil: "Munda",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
       Audio: "",
       Video: "",
     },
@@ -348,7 +348,7 @@ export const WordJSON_Bidjara = {
       English: "Fish",
       Gidarjil: "Guyu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
       Audio: "",
       Video: "",
     },
@@ -356,7 +356,7 @@ export const WordJSON_Bidjara = {
       English: "Grass ",
       Gidarjil: "Wudhun",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
       Audio: "",
       Video: "",
     },
@@ -364,7 +364,7 @@ export const WordJSON_Bidjara = {
       English: "Water ",
       Gidarjil: "Gamu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
       Audio: "",
       Video: "",
     },
@@ -372,13 +372,13 @@ export const WordJSON_Bidjara = {
       English: "Sun",
       Gidarjil: "Buwany",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
       Audio: "",
       Video: "",
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Butchulla = {
   language: "Butchulla",
   wordlist_greeting: [],
@@ -389,7 +389,7 @@ export const WordJSON_Butchulla = {
       English: "Snake",
       Gidarjil: "Murang",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
       Audio: "",
       Video: "",
     },
@@ -397,7 +397,7 @@ export const WordJSON_Butchulla = {
       English: "Fish",
       Gidarjil: "Gurul",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
       Audio: "",
       Video: "",
     },
@@ -405,7 +405,7 @@ export const WordJSON_Butchulla = {
       English: "Grass ",
       Gidarjil: "Djila",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
       Audio: "",
       Video: "",
     },
@@ -413,7 +413,7 @@ export const WordJSON_Butchulla = {
       English: "Water ",
       Gidarjil: "Bala",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
       Audio: "",
       Video: "",
     },
@@ -421,13 +421,13 @@ export const WordJSON_Butchulla = {
       English: "Kangaroo",
       Gidarjil: "Guruman",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/kangaroo.JPG",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/kangaroo.JPG",
       Audio: "",
       Video: "",
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Dharumbal = {
   language: "Dharumbal",
   wordlist_greeting: [],
@@ -436,7 +436,7 @@ export const WordJSON_Dharumbal = {
       English: "Nose",
       Gidarjil: "Wuru",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
       Audio: "",
       Video: "",
     },
@@ -444,7 +444,7 @@ export const WordJSON_Dharumbal = {
       English: "Hand",
       Gidarjil: "Bangan",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
       Audio: "",
       Video: "",
     },
@@ -452,7 +452,7 @@ export const WordJSON_Dharumbal = {
       English: "Eye",
       Gidarjil: "Mil",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
       Audio: "",
       Video: "",
     },
@@ -460,7 +460,7 @@ export const WordJSON_Dharumbal = {
       English: "Ear",
       Gidarjil: "Bina",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
       Audio: "",
       Video: "",
     },
@@ -468,7 +468,7 @@ export const WordJSON_Dharumbal = {
       English: "Head",
       Gidarjil: "ŋari",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
       Audio: "",
       Video: "",
     },
@@ -478,7 +478,7 @@ export const WordJSON_Dharumbal = {
       English: "Father",
       Gidarjil: "Bina",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
       Audio: "",
       Video: "",
     },
@@ -486,7 +486,7 @@ export const WordJSON_Dharumbal = {
       English: "Mother",
       Gidarjil: "ŋaja",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
       Audio: "",
       Video: "",
     },
@@ -494,7 +494,7 @@ export const WordJSON_Dharumbal = {
       English: "Sister",
       Gidarjil: "ŋaburu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
       Audio: "",
       Video: "",
     },
@@ -502,7 +502,7 @@ export const WordJSON_Dharumbal = {
       English: "Brother",
       Gidarjil: "migaN",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
       Audio: "",
       Video: "",
     },
@@ -512,7 +512,7 @@ export const WordJSON_Dharumbal = {
       English: "Snake",
       Gidarjil: "Balgungar ",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
       Audio: "",
       Video: "",
     },
@@ -520,7 +520,7 @@ export const WordJSON_Dharumbal = {
       English: "Fish",
       Gidarjil: "guja",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
       Audio: "",
       Video: "",
     },
@@ -528,7 +528,7 @@ export const WordJSON_Dharumbal = {
       English: "Grass ",
       Gidarjil: "Gara",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
       Audio: "",
       Video: "",
     },
@@ -536,7 +536,7 @@ export const WordJSON_Dharumbal = {
       English: "Water ",
       Gidarjil: "Gali",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
       Audio: "",
       Video: "",
     },
@@ -544,13 +544,13 @@ export const WordJSON_Dharumbal = {
       English: "Sun",
       Gidarjil: "Arhi",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
       Audio: "",
       Video: "",
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Gangulu = {
   language: "Gangulu",
   wordlist_greeting: [
@@ -558,7 +558,7 @@ export const WordJSON_Gangulu = {
       English: "Hello",
       Gidarjil: "Gooboo warri",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/hello.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/greeting/hello.jpg",
       Audio: "",
       Video: "",
     },
@@ -566,7 +566,7 @@ export const WordJSON_Gangulu = {
       English: "Sorry",
       Gidarjil: "Madi",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/sorry.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/greeting/sorry.jpg",
       Audio: "",
       Video: "",
     },
@@ -576,7 +576,7 @@ export const WordJSON_Gangulu = {
       English: "Nose",
       Gidarjil: "Wuda",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
       Audio: "",
       Video: "",
     },
@@ -584,7 +584,7 @@ export const WordJSON_Gangulu = {
       English: "Hand",
       Gidarjil: "Mala",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
       Audio: "",
       Video: "",
     },
@@ -592,7 +592,7 @@ export const WordJSON_Gangulu = {
       English: "Eye",
       Gidarjil: "Dili",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
       Audio: "",
       Video: "",
     },
@@ -600,7 +600,7 @@ export const WordJSON_Gangulu = {
       English: "Ear",
       Gidarjil: "Maŋa ",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
       Audio: "",
       Video: "",
     },
@@ -608,7 +608,7 @@ export const WordJSON_Gangulu = {
       English: "Head",
       Gidarjil: "Gada",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
       Audio: "",
       Video: "",
     },
@@ -618,7 +618,7 @@ export const WordJSON_Gangulu = {
       English: "Father",
       Gidarjil: "Yabu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
       Audio: "",
       Video: "",
     },
@@ -626,7 +626,7 @@ export const WordJSON_Gangulu = {
       English: "Mother",
       Gidarjil: "Yaŋa",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
       Audio: "",
       Video: "",
     },
@@ -634,7 +634,7 @@ export const WordJSON_Gangulu = {
       English: "Sister",
       Gidarjil: "Gudunu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
       Audio: "",
       Video: "",
     },
@@ -642,7 +642,7 @@ export const WordJSON_Gangulu = {
       English: "Elder Brother",
       Gidarjil: "Gadana",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
       Audio: "",
       Video: "",
     },
@@ -651,7 +651,7 @@ export const WordJSON_Gangulu = {
       English: "Younger Brother",
       Gidarjil: "Waburu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/younger brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/younger brother.jpg",
       Audio: "",
       Video: "",
     },
@@ -661,7 +661,7 @@ export const WordJSON_Gangulu = {
       English: "Snake",
       Gidarjil: "Munda",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
       Audio: "",
       Video: "",
     },
@@ -669,7 +669,7 @@ export const WordJSON_Gangulu = {
       English: "Fish",
       Gidarjil: "Wina",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
       Audio: "",
       Video: "",
     },
@@ -677,7 +677,7 @@ export const WordJSON_Gangulu = {
       English: "Grass ",
       Gidarjil: "Wagura",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
       Audio: "",
       Video: "",
     },
@@ -685,7 +685,7 @@ export const WordJSON_Gangulu = {
       English: "Water ",
       Gidarjil: "Gamu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
       Audio: "",
       Video: "",
     },
@@ -693,13 +693,13 @@ export const WordJSON_Gangulu = {
       English: "Sun",
       Gidarjil: "Gari",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
       Audio: "",
       Video: "",
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Gooreng_Gooreng = {
   language: "Gooreng Gooreng",
   wordlist_greeting: [
@@ -707,27 +707,27 @@ export const WordJSON_Gooreng_Gooreng = {
       English: "Thank you",
       Gidarjil: "Galangan",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/thank you.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/greeting/thank you.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_greeting/Galangan.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_greeting/Galangan.wav",
       Video: "",
     },
     {
       English: "Sorry",
       Gidarjil: "Ganang ganang",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/sorry.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/greeting/sorry.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_greeting/Ganang+ganang.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_greeting/Ganang+ganang.wav",
       Video: "",
     },
     {
       English: "Goodbye",
       Gidarjil: "Jau",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/goodbye.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/greeting/goodbye.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_greeting/Jau.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_greeting/Jau.wav",
       Video: "",
     },
   ],
@@ -736,45 +736,45 @@ export const WordJSON_Gooreng_Gooreng = {
       English: "Nose",
       Gidarjil: "Muru",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_body/Muru.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_body/Muru.wav",
       Video: "",
     },
     {
       English: "Hand",
       Gidarjil: "Biru",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_body/Biru.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_body/Biru.wav",
       Video: "",
     },
     {
       English: "Eye",
       Gidarjil: "Mil",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_body/Mil.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_body/Mil.wav",
       Video: "",
     },
     {
       English: "Ear",
       Gidarjil: "Bina",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_body/Bina.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_body/Bina.wav",
       Video: "",
     },
     {
       English: "Head",
       Gidarjil: "Warul",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_body/Warul.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_body/Warul.wav",
       Video: "",
     },
   ],
@@ -783,16 +783,16 @@ export const WordJSON_Gooreng_Gooreng = {
       English: "Father",
       Gidarjil: "Baba",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_family/Baba.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_family/Baba.wav",
       Video: "",
     },
     {
       English: "Mother",
       Gidarjil: "Yaayaa",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
       Audio: "",
       Video: "",
     },
@@ -800,25 +800,25 @@ export const WordJSON_Gooreng_Gooreng = {
       English: "Sister",
       Gidarjil: "Wodjim",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_family/Wodjim.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_family/Wodjim.wav",
       Video: "",
     },
     {
       English: "Brother",
       Gidarjil: "Djadja",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_family/Djadja.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_family/Djadja.wav",
       Video: "",
     },
     {
       English: "Grandfather",
       Gidarjil: "Ngadja",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/grandfather.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/grandfather.jpg",
       Audio: "",
       Video: "",
     },
@@ -826,9 +826,9 @@ export const WordJSON_Gooreng_Gooreng = {
       English: "Grandmother",
       Gidarjil: "Mugeng",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/grandmother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/grandmother.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_family/Mugeng.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_family/Mugeng.wav",
       Video: "",
     },
   ],
@@ -837,7 +837,7 @@ export const WordJSON_Gooreng_Gooreng = {
       English: "Snake",
       Gidarjil: "Wangay",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
       Audio: "",
       Video: "",
     },
@@ -845,16 +845,16 @@ export const WordJSON_Gooreng_Gooreng = {
       English: "Fish",
       Gidarjil: "Gurul",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_environment/Gurul.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_environment/Gurul.wav",
       Video: "",
     },
     {
       English: "Grass ",
       Gidarjil: "Ban",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
       Audio: "",
       Video: "",
     },
@@ -862,7 +862,7 @@ export const WordJSON_Gooreng_Gooreng = {
       English: "Water ",
       Gidarjil: "Gung",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
       Audio: "",
       Video: "",
     },
@@ -870,14 +870,14 @@ export const WordJSON_Gooreng_Gooreng = {
       English: "Sun",
       Gidarjil: "Ginmayny",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_environment/Ginmayny.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gooreng+Gooreng/wordlist_environment/Ginmayny.wav",
       Video: "",
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Gurang = {
   language: "Gurang",
   wordlist_greeting: [
@@ -885,9 +885,9 @@ export const WordJSON_Gurang = {
       English: "Thank you",
       Gidarjil: "Galaŋan",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/thank you.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/greeting/thank you.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_greeting/Gala%C5%8Ban.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_greeting/Gala%C5%8Ban.wav",
       Video: "",
     },
 
@@ -895,9 +895,9 @@ export const WordJSON_Gurang = {
       English: "Hello",
       Gidarjil: "Kau",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/hello.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/greeting/hello.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_greeting/Kau.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_greeting/Kau.wav",
       Video: "",
     },
   ],
@@ -906,7 +906,7 @@ export const WordJSON_Gurang = {
       English: "Nose",
       Gidarjil: "Muu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
       Audio: "",
       Video: "",
     },
@@ -914,25 +914,25 @@ export const WordJSON_Gurang = {
       English: "Hand",
       Gidarjil: "Birroo",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_body/Birroo.mp3",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_body/Birroo.mp3",
       Video: "",
     },
     {
       English: "Eye",
       Gidarjil: "Miill",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_body/Miill.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_body/Miill.wav",
       Video: "",
     },
     {
       English: "Ear",
       Gidarjil: "Gal-",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
       Audio: "",
       Video: "",
     },
@@ -940,7 +940,7 @@ export const WordJSON_Gurang = {
       English: "Head",
       Gidarjil: "Gubu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
       Audio: "",
       Video: "",
     },
@@ -950,7 +950,7 @@ export const WordJSON_Gurang = {
       English: "Father",
       Gidarjil: "Papa",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
       Audio: "",
       Video: "",
     },
@@ -958,7 +958,7 @@ export const WordJSON_Gurang = {
       English: "Mother",
       Gidarjil: "Ya",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
       Audio: "",
       Video: "",
     },
@@ -966,36 +966,36 @@ export const WordJSON_Gurang = {
       English: "Elder sister",
       Gidarjil: "Watyim",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_family/Watyim.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_family/Watyim.wav",
       Video: "",
     },
     {
       English: "Elder brother",
       Gidarjil: "Tya tya",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_family/Tya+tya.mp3",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_family/Tya+tya.mp3",
       Video: "",
     },
     {
       English: "Grandfather(paternal)",
       Gidarjil: "Maibin",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/grandfather.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/grandfather.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_family/Maibin.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_family/Maibin.wav",
       Video: "",
     },
     {
       English: "Grandmother(paternal)",
       Gidarjil: "Kommí",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/grandmother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/grandmother.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_family/Komm%C3%AD.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_family/Komm%C3%AD.wav",
       Video: "",
     },
   ],
@@ -1004,16 +1004,16 @@ export const WordJSON_Gurang = {
       English: "Snake(whip)",
       Gidarjil: "Yuró",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_environment/Yur%C3%B3.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_environment/Yur%C3%B3.wav",
       Video: "",
     },
     {
       English: "Fish",
       Gidarjil: "Ganyil",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
       Audio: "",
       Video: "",
     },
@@ -1021,16 +1021,16 @@ export const WordJSON_Gurang = {
       English: "Grass ",
       Gidarjil: "Bán",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_environment/B%C3%A1n.mp3",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_environment/B%C3%A1n.mp3",
       Video: "",
     },
     {
       English: "Water ",
       Gidarjil: "Kung",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
       Audio: "",
       Video: "",
     },
@@ -1038,14 +1038,14 @@ export const WordJSON_Gurang = {
       English: "Sun",
       Gidarjil: "Kinmaiɲ",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
       Audio:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_environment/Kinmai%C9%B2.wav",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/audio/Gurang/wordlist_environment/Kinmai%C9%B2.wav",
       Video: "",
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Taribelang = {
   language: "Taribelang",
   wordlist_greeting: [
@@ -1053,7 +1053,7 @@ export const WordJSON_Taribelang = {
       English: "Hello",
       Gidarjil: "Yeegee",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/hello.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/greeting/hello.jpg",
       Audio: "",
       Video: "",
     },
@@ -1061,7 +1061,7 @@ export const WordJSON_Taribelang = {
       English: "I don't know",
       Gidarjil: "Woodthala gam",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/greeting/I+don't+know.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/greeting/I+don't+know.jpg",
       Audio: "",
       Video: "",
     },
@@ -1071,7 +1071,7 @@ export const WordJSON_Taribelang = {
       English: "Nose",
       Gidarjil: "Mooroo",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
       Audio: "",
       Video: "",
     },
@@ -1079,7 +1079,7 @@ export const WordJSON_Taribelang = {
       English: "Hand",
       Gidarjil: "Birrii",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
       Audio: "",
       Video: "",
     },
@@ -1087,7 +1087,7 @@ export const WordJSON_Taribelang = {
       English: "Eye",
       Gidarjil: "Dhilli",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
       Audio: "",
       Video: "",
     },
@@ -1095,7 +1095,7 @@ export const WordJSON_Taribelang = {
       English: "Ear",
       Gidarjil: "Biinaŋ",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
       Audio: "",
       Video: "",
     },
@@ -1103,7 +1103,7 @@ export const WordJSON_Taribelang = {
       English: "Head",
       Gidarjil: "Gaam",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
       Audio: "",
       Video: "",
     },
@@ -1113,7 +1113,7 @@ export const WordJSON_Taribelang = {
       English: "Father",
       Gidarjil: "Baabun",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
       Audio: "",
       Video: "",
     },
@@ -1121,7 +1121,7 @@ export const WordJSON_Taribelang = {
       English: "Mother",
       Gidarjil: "Ya",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1129,7 +1129,7 @@ export const WordJSON_Taribelang = {
       English: "Elder sister",
       Gidarjil: "Yaabuwin",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
       Audio: "",
       Video: "",
     },
@@ -1137,7 +1137,7 @@ export const WordJSON_Taribelang = {
       English: "Elder brother",
       Gidarjil: "Nhuwan",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1145,7 +1145,7 @@ export const WordJSON_Taribelang = {
       English: "Grandfather(paternal)",
       Gidarjil: "Mibiiban",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/grandfather.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/grandfather.jpg",
       Audio: "",
       Video: "",
     },
@@ -1153,7 +1153,7 @@ export const WordJSON_Taribelang = {
       English: "Grandmother(paternal)",
       Gidarjil: "Gamambiram",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/grandmother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/grandmother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1163,7 +1163,7 @@ export const WordJSON_Taribelang = {
       English: "Snake",
       Gidarjil: "Moonda",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
       Audio: "",
       Video: "",
     },
@@ -1171,7 +1171,7 @@ export const WordJSON_Taribelang = {
       English: "Fish",
       Gidarjil: "Daam",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
       Audio: "",
       Video: "",
     },
@@ -1179,7 +1179,7 @@ export const WordJSON_Taribelang = {
       English: "Grass ",
       Gidarjil: "Baan",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
       Audio: "",
       Video: "",
     },
@@ -1187,7 +1187,7 @@ export const WordJSON_Taribelang = {
       English: "Water ",
       Gidarjil: "Gumoo",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
       Audio: "",
       Video: "",
     },
@@ -1195,13 +1195,13 @@ export const WordJSON_Taribelang = {
       English: "Sun",
       Gidarjil: "Bigii",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
       Audio: "",
       Video: "",
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Tulua = {
   language: "Tulua",
   wordlist_greeting: [],
@@ -1210,7 +1210,7 @@ export const WordJSON_Tulua = {
       English: "Nose",
       Gidarjil: "Maddu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
       Audio: "",
       Video: "",
     },
@@ -1218,7 +1218,7 @@ export const WordJSON_Tulua = {
       English: "Hand",
       Gidarjil: "Bi:ri:",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
       Audio: "",
       Video: "",
     },
@@ -1226,7 +1226,7 @@ export const WordJSON_Tulua = {
       English: "Eye",
       Gidarjil: "Mi:l ",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
       Audio: "",
       Video: "",
     },
@@ -1234,7 +1234,7 @@ export const WordJSON_Tulua = {
       English: "Ear",
       Gidarjil: "Benna(ŋ)",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
       Audio: "",
       Video: "",
     },
@@ -1242,7 +1242,7 @@ export const WordJSON_Tulua = {
       English: "Head",
       Gidarjil: "Ga:m",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
       Audio: "",
       Video: "",
     },
@@ -1252,7 +1252,7 @@ export const WordJSON_Tulua = {
       English: "Father",
       Gidarjil: "Bi:yere ",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
       Audio: "",
       Video: "",
     },
@@ -1260,7 +1260,7 @@ export const WordJSON_Tulua = {
       English: "Mother",
       Gidarjil: "ŋa:ba",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1268,7 +1268,7 @@ export const WordJSON_Tulua = {
       English: "Elder sister",
       Gidarjil: "Yawuna",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
       Audio: "",
       Video: "",
     },
@@ -1276,7 +1276,7 @@ export const WordJSON_Tulua = {
       English: "Elder brother",
       Gidarjil: "Ga:gu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1284,7 +1284,7 @@ export const WordJSON_Tulua = {
       English: "Grandfather",
       Gidarjil: "Bi:yere",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/grandfather.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/grandfather.jpg",
       Audio: "",
       Video: "",
     },
@@ -1292,7 +1292,7 @@ export const WordJSON_Tulua = {
       English: "Grandmother(paternal)",
       Gidarjil: "Gugu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/grandmother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/grandmother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1300,7 +1300,7 @@ export const WordJSON_Tulua = {
       English: "Younger Sister",
       Gidarjil: "Gundalgan",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/young sister.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/young sister.png",
       Audio: "",
       Video: "",
     },
@@ -1308,7 +1308,7 @@ export const WordJSON_Tulua = {
       English: "Younger Brother",
       Gidarjil: "Margun",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/younger brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/younger brother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1318,7 +1318,7 @@ export const WordJSON_Tulua = {
       English: "Snake",
       Gidarjil: "Wun.qu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
       Audio: "",
       Video: "",
     },
@@ -1326,7 +1326,7 @@ export const WordJSON_Tulua = {
       English: "Fish",
       Gidarjil: "Gurul",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
       Audio: "",
       Video: "",
     },
@@ -1334,7 +1334,7 @@ export const WordJSON_Tulua = {
       English: "Grass ",
       Gidarjil: "Ba:n",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
       Audio: "",
       Video: "",
     },
@@ -1342,7 +1342,7 @@ export const WordJSON_Tulua = {
       English: "Water ",
       Gidarjil: "Guŋu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
       Audio: "",
       Video: "",
     },
@@ -1350,13 +1350,13 @@ export const WordJSON_Tulua = {
       English: "Sun",
       Gidarjil: "Guwegan",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
       Audio: "",
       Video: "",
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Wadjingu = {
   language: "Wadjingu",
   wordlist_greeting: [],
@@ -1365,7 +1365,7 @@ export const WordJSON_Wadjingu = {
       English: "Nose",
       Gidarjil: "Guu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
       Audio: "",
       Video: "",
     },
@@ -1374,7 +1374,7 @@ export const WordJSON_Wadjingu = {
       English: "Eye",
       Gidarjil: "Dili",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
       Audio: "",
       Video: "",
     },
@@ -1382,7 +1382,7 @@ export const WordJSON_Wadjingu = {
       English: "Ear",
       Gidarjil: "Maŋa",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
       Audio: "",
       Video: "",
     },
@@ -1390,7 +1390,7 @@ export const WordJSON_Wadjingu = {
       English: "Head",
       Gidarjil: "Gada",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
       Audio: "",
       Video: "",
     },
@@ -1400,7 +1400,7 @@ export const WordJSON_Wadjingu = {
       English: "Father",
       Gidarjil: "Yabu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
       Audio: "",
       Video: "",
     },
@@ -1408,7 +1408,7 @@ export const WordJSON_Wadjingu = {
       English: "Mother",
       Gidarjil: "Gaya",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1416,7 +1416,7 @@ export const WordJSON_Wadjingu = {
       English: "Elder sister",
       Gidarjil: "Bayi",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
       Audio: "",
       Video: "",
     },
@@ -1424,7 +1424,7 @@ export const WordJSON_Wadjingu = {
       English: "Elder brother",
       Gidarjil: "Taguru",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1432,7 +1432,7 @@ export const WordJSON_Wadjingu = {
       English: "Grandfather",
       Gidarjil: "Ngadi",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/grandfather.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/grandfather.jpg",
       Audio: "",
       Video: "",
     },
@@ -1440,7 +1440,7 @@ export const WordJSON_Wadjingu = {
       English: "Grandmother(paternal)",
       Gidarjil: "Yabura",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/grandmother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/grandmother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1448,7 +1448,7 @@ export const WordJSON_Wadjingu = {
       English: "Younger Sister",
       Gidarjil: "Menngo:ngo",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/young sister.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/young sister.png",
       Audio: "",
       Video: "",
     },
@@ -1456,7 +1456,7 @@ export const WordJSON_Wadjingu = {
       English: "Younger Brother",
       Gidarjil: "Waburu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/younger brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/younger brother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1466,7 +1466,7 @@ export const WordJSON_Wadjingu = {
       English: "Snake",
       Gidarjil: "Kombara",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
       Audio: "",
       Video: "",
     },
@@ -1474,7 +1474,7 @@ export const WordJSON_Wadjingu = {
       English: "Fish",
       Gidarjil: "Wina",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
       Audio: "",
       Video: "",
     },
@@ -1482,7 +1482,7 @@ export const WordJSON_Wadjingu = {
       English: "Grass ",
       Gidarjil: "Wudhun",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
       Audio: "",
       Video: "",
     },
@@ -1490,7 +1490,7 @@ export const WordJSON_Wadjingu = {
       English: "Water ",
       Gidarjil: "Kam:u",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
       Audio: "",
       Video: "",
     },
@@ -1498,13 +1498,13 @@ export const WordJSON_Wadjingu = {
       English: "Sun",
       Gidarjil: "Duru",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
       Audio: "",
       Video: "",
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Wakka_Wakka = {
   language: "Wakka Wakka",
   wordlist_greeting: [],
@@ -1513,7 +1513,7 @@ export const WordJSON_Wakka_Wakka = {
       English: "Nose",
       Gidarjil: "Muru",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
       Audio: "",
       Video: "",
     },
@@ -1522,7 +1522,7 @@ export const WordJSON_Wakka_Wakka = {
       English: "Eye",
       Gidarjil: "Me",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
       Audio: "",
       Video: "",
     },
@@ -1530,7 +1530,7 @@ export const WordJSON_Wakka_Wakka = {
       English: "Ear",
       Gidarjil: "Binaŋ",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
       Audio: "",
       Video: "",
     },
@@ -1538,7 +1538,7 @@ export const WordJSON_Wakka_Wakka = {
       English: "Head",
       Gidarjil: "Mau",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
       Audio: "",
       Video: "",
     },
@@ -1548,7 +1548,7 @@ export const WordJSON_Wakka_Wakka = {
       English: "Father",
       Gidarjil: "Baba",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
       Audio: "",
       Video: "",
     },
@@ -1556,7 +1556,7 @@ export const WordJSON_Wakka_Wakka = {
       English: "Mother",
       Gidarjil: "Du*",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1564,7 +1564,7 @@ export const WordJSON_Wakka_Wakka = {
       English: "Elder sister",
       Gidarjil: "ɠa*ɲ",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
       Audio: "",
       Video: "",
     },
@@ -1572,7 +1572,7 @@ export const WordJSON_Wakka_Wakka = {
       English: "Elder brother",
       Gidarjil: "ɠaɠa",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1580,7 +1580,7 @@ export const WordJSON_Wakka_Wakka = {
       English: "Grandfather(paternal)",
       Gidarjil: "Yalu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/grandfather.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/grandfather.jpg",
       Audio: "",
       Video: "",
     },
@@ -1588,7 +1588,7 @@ export const WordJSON_Wakka_Wakka = {
       English: "Grandmother(paternal)",
       Gidarjil: "Waindem",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/grandmother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/grandmother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1596,7 +1596,7 @@ export const WordJSON_Wakka_Wakka = {
       English: "Younger Sister",
       Gidarjil: "Gandan",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/young sister.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/young sister.png",
       Audio: "",
       Video: "",
     },
@@ -1604,7 +1604,7 @@ export const WordJSON_Wakka_Wakka = {
       English: "Younger Brother",
       Gidarjil: "Djuaŋ",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/younger brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/younger brother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1614,7 +1614,7 @@ export const WordJSON_Wakka_Wakka = {
       English: "Snake",
       Gidarjil: "Muraŋ",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
       Audio: "",
       Video: "",
     },
@@ -1622,7 +1622,7 @@ export const WordJSON_Wakka_Wakka = {
       English: "Jellyfish",
       Gidarjil: "Bala",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/jellyfish.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/jellyfish.jpg",
       Audio: "",
       Video: "",
     },
@@ -1630,7 +1630,7 @@ export const WordJSON_Wakka_Wakka = {
       English: "Tree",
       Gidarjil: "Dadu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/tree.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/tree.jpg",
       Audio: "",
       Video: "",
     },
@@ -1638,7 +1638,7 @@ export const WordJSON_Wakka_Wakka = {
       English: "Water",
       Gidarjil: "Guŋ",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
       Audio: "",
       Video: "",
     },
@@ -1646,13 +1646,13 @@ export const WordJSON_Wakka_Wakka = {
       English: "Sun",
       Gidarjil: "ɠanan",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
       Audio: "",
       Video: "",
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Woppaburra = {
   language: "Woppaburra",
   wordlist_greeting: [],
@@ -1661,7 +1661,7 @@ export const WordJSON_Woppaburra = {
       English: "Nose",
       Gidarjil: "Wuru",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
       Audio: "",
       Video: "",
     },
@@ -1670,7 +1670,7 @@ export const WordJSON_Woppaburra = {
       English: "Eye",
       Gidarjil: "Miil",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
       Audio: "",
       Video: "",
     },
@@ -1678,7 +1678,7 @@ export const WordJSON_Woppaburra = {
       English: "Ear",
       Gidarjil: "Binna",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
       Audio: "",
       Video: "",
     },
@@ -1686,7 +1686,7 @@ export const WordJSON_Woppaburra = {
       English: "Head",
       Gidarjil: "Aari",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
       Audio: "",
       Video: "",
     },
@@ -1696,7 +1696,7 @@ export const WordJSON_Woppaburra = {
       English: "Father",
       Gidarjil: "Bia",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
       Audio: "",
       Video: "",
     },
@@ -1704,7 +1704,7 @@ export const WordJSON_Woppaburra = {
       English: "Adult man",
       Gidarjil: "Ada",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/adult man.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/adult man.jpg",
       Audio: "",
       Video: "",
     },
@@ -1712,7 +1712,7 @@ export const WordJSON_Woppaburra = {
       English: "Adult woman",
       Gidarjil: "in.gil",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/adult woman.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/adult woman.jpg",
       Audio: "",
       Video: "",
     },
@@ -1722,7 +1722,7 @@ export const WordJSON_Woppaburra = {
       English: "Snake",
       Gidarjil: "Wambalu",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
       Audio: "",
       Video: "",
     },
@@ -1730,7 +1730,7 @@ export const WordJSON_Woppaburra = {
       English: "Shellfish",
       Gidarjil: "Baba",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/shellfish.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/shellfish.jpg",
       Audio: "",
       Video: "",
     },
@@ -1738,7 +1738,7 @@ export const WordJSON_Woppaburra = {
       English: "Ti-tree",
       Gidarjil: "Buŋga",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/tree.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/tree.jpg",
       Audio: "",
       Video: "",
     },
@@ -1746,7 +1746,7 @@ export const WordJSON_Woppaburra = {
       English: "Water",
       Gidarjil: "Alli",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
       Audio: "",
       Video: "",
     },
@@ -1754,13 +1754,13 @@ export const WordJSON_Woppaburra = {
       English: "Sun",
       Gidarjil: "Aari",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
       Audio: "",
       Video: "",
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const WordJSON_Yinman = {
   language: "Yinman",
   wordlist_greeting: [],
@@ -1769,7 +1769,7 @@ export const WordJSON_Yinman = {
       English: "Nose",
       Gidarjil: "Budjong",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/nose.png",
       Audio: "",
       Video: "",
     },
@@ -1778,7 +1778,7 @@ export const WordJSON_Yinman = {
       English: "Eye",
       Gidarjil: "Mii",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/eye.jpg",
       Audio: "",
       Video: "",
     },
@@ -1786,7 +1786,7 @@ export const WordJSON_Yinman = {
       English: "Ear",
       Gidarjil: "Bina",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/ear.jpg",
       Audio: "",
       Video: "",
     },
@@ -1794,7 +1794,7 @@ export const WordJSON_Yinman = {
       English: "Head",
       Gidarjil: "Kaum",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/head.jpg",
       Audio: "",
       Video: "",
     },
@@ -1802,7 +1802,7 @@ export const WordJSON_Yinman = {
       English: "Hand",
       Gidarjil: "Na",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/body/hand.jpeg",
       Audio: "",
       Video: "",
     },
@@ -1812,7 +1812,7 @@ export const WordJSON_Yinman = {
       English: "Father",
       Gidarjil: "Yaboo",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/father.jpg",
       Audio: "",
       Video: "",
     },
@@ -1820,7 +1820,7 @@ export const WordJSON_Yinman = {
       English: "Mother",
       Gidarjil: "Too",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/mother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1828,7 +1828,7 @@ export const WordJSON_Yinman = {
       English: "Elder Sister",
       Gidarjil: "Thudgee",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder sister.jpg",
       Audio: "",
       Video: "",
     },
@@ -1836,7 +1836,7 @@ export const WordJSON_Yinman = {
       English: "Elder Brother",
       Gidarjil: "Dutha",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/elder brother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1844,7 +1844,7 @@ export const WordJSON_Yinman = {
       English: "Younger Sister",
       Gidarjil: "Gundan",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/young sister.png",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/young sister.png",
       Audio: "",
       Video: "",
     },
@@ -1852,7 +1852,7 @@ export const WordJSON_Yinman = {
       English: "Younger Brother",
       Gidarjil: "Gunda",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/family/younger brother.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/family/younger brother.jpg",
       Audio: "",
       Video: "",
     },
@@ -1862,7 +1862,7 @@ export const WordJSON_Yinman = {
       English: "Snake",
       Gidarjil: "Onega",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/snake.jpg",
       Audio: "",
       Video: "",
     },
@@ -1870,7 +1870,7 @@ export const WordJSON_Yinman = {
       English: "Fish",
       Gidarjil: "Winnal",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/fish.jpg",
       Audio: "",
       Video: "",
     },
@@ -1878,7 +1878,7 @@ export const WordJSON_Yinman = {
       English: "Grass ",
       Gidarjil: "Bunan",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/grass.jpg",
       Audio: "",
       Video: "",
     },
@@ -1886,7 +1886,7 @@ export const WordJSON_Yinman = {
       English: "Water",
       Gidarjil: "Goong",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/water.jpg",
       Audio: "",
       Video: "",
     },
@@ -1894,13 +1894,13 @@ export const WordJSON_Yinman = {
       English: "Sun",
       Gidarjil: "Chewtoo",
       Image:
-        "https://amplifylanguageappgidarjil114226-dev.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
+        "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/environment/sun.jpg",
       Audio: "",
       Video: "",
     },
   ],
   wordlist_conversation: [],
-};
+}
 export const PCCC_GeoJson = {
   type: "FeatureCollection",
   features: [
@@ -2111,4 +2111,4 @@ export const PCCC_GeoJson = {
     //   id: "16",
     // },
   ],
-};
+}
