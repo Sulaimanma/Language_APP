@@ -28,8 +28,8 @@ const App = () => {
   const [lessonData, setLessonData] = useState([])
 
   const fetchUrl = `https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/wordlist/${language}.json`
-  const fetch_word = (fetchUrl) => {
-    axios
+  const fetch_word = async (fetchUrl) => {
+    await axios
       .get(fetchUrl)
       .then((res) => {
         const data = res.data
@@ -43,84 +43,83 @@ const App = () => {
 
   useEffect(() => {
     fetch_word(fetchUrl)
-    wordData.length !== 0 &&
-      setLessonData([
-        wordData.wordlist_greeting.length && {
-          lessonTitle: "Lesson: Greetings!",
-          lessonIntro: "Learning some basic greetings",
-          imageUrl:
-            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/greeting.jpg",
-          now: 0,
-        },
-        wordData.wordlist_body.length && {
-          lessonTitle: "Lesson: Know myself!",
-          lessonIntro: "Learning some words related to your body",
-          imageUrl:
-            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/body.jpg",
-          now: 0,
-        },
-        wordData.wordlist_family.length && {
-          lessonTitle: "Lesson: My Family!",
-          lessonIntro: "Talking about your family, using possessive adjective",
-          imageUrl:
-            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/family.jpg",
-          now: 0,
-        },
-        wordData.wordlist_environment.length && {
-          lessonTitle: "Lesson: Environment!",
-          lessonIntro: "Learning some environmental words",
-          imageUrl:
-            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/environment.jpg",
-          now: 0,
-        },
-        wordData.wordlist_conversation.length && {
-          lessonTitle: "Lesson: Conversation!",
-          lessonIntro: "Learning some phrase for conversation",
-          imageUrl:
-            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/conversation.jpg",
-          now: 0,
-        },
-      ])
+
+    setLessonData([
+      {
+        lessonTitle: "Lesson: Greetings!",
+        lessonIntro: "Learning some basic greetings",
+        imageUrl:
+          "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/greeting.jpg",
+        now: 0,
+      },
+      {
+        lessonTitle: "Lesson: Know myself!",
+        lessonIntro: "Learning some words related to your body",
+        imageUrl:
+          "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/body.jpg",
+        now: 0,
+      },
+      {
+        lessonTitle: "Lesson: My Family!",
+        lessonIntro: "Talking about your family, using possessive adjective",
+        imageUrl:
+          "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/family.jpg",
+        now: 0,
+      },
+      {
+        lessonTitle: "Lesson: Environment!",
+        lessonIntro: "Learning some environmental words",
+        imageUrl:
+          "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/environment.jpg",
+        now: 0,
+      },
+      {
+        lessonTitle: "Lesson: Conversation!",
+        lessonIntro: "Learning some phrase for conversation",
+        imageUrl:
+          "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/conversation.jpg",
+        now: 0,
+      },
+    ])
   }, [fetchUrl, language])
   useEffect(() => {
-    wordData.length !== 0 &&
-      setLessonData([
-        wordData.wordlist_greeting.length && {
-          lessonTitle: "Lesson: Greetings!",
-          lessonIntro: "Learning some basic greetings",
-          imageUrl:
-            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/greeting.jpg",
-          now: 0,
-        },
-        wordData.wordlist_body.length && {
-          lessonTitle: "Lesson: Know myself!",
-          lessonIntro: "Learning some words related to your body",
-          imageUrl:
-            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/body.jpg",
-          now: 0,
-        },
-        wordData.wordlist_family.length && {
-          lessonTitle: "Lesson: My Family!",
-          lessonIntro: "Talking about your family, using possessive adjective",
-          imageUrl:
-            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/family.jpg",
-          now: 0,
-        },
-        wordData.wordlist_environment.length && {
-          lessonTitle: "Lesson: Environment!",
-          lessonIntro: "Learning some environmental words",
-          imageUrl:
-            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/environment.jpg",
-          now: 0,
-        },
-        wordData.wordlist_conversation.length && {
-          lessonTitle: "Lesson: Conversation!",
-          lessonIntro: "Learning some phrase for conversation",
-          imageUrl:
-            "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/conversation.jpg",
-          now: 0,
-        },
-      ])
+    setLessonData([
+      {
+        lessonTitle: "Lesson: Greetings!",
+        lessonIntro: "Learning some basic greetings",
+        imageUrl:
+          "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/greeting.jpg",
+        now: 0,
+      },
+      {
+        lessonTitle: "Lesson: Know myself!",
+        lessonIntro: "Learning some words related to your body",
+        imageUrl:
+          "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/body.jpg",
+        now: 0,
+      },
+      {
+        lessonTitle: "Lesson: My Family!",
+        lessonIntro: "Talking about your family, using possessive adjective",
+        imageUrl:
+          "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/family.jpg",
+        now: 0,
+      },
+      {
+        lessonTitle: "Lesson: Environment!",
+        lessonIntro: "Learning some environmental words",
+        imageUrl:
+          "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/environment.jpg",
+        now: 0,
+      },
+      {
+        lessonTitle: "Lesson: Conversation!",
+        lessonIntro: "Learning some phrase for conversation",
+        imageUrl:
+          "https://gidarjil.s3-ap-southeast-2.amazonaws.com/public/img/icon/conversation.jpg",
+        now: 0,
+      },
+    ])
   }, [wordData])
   let location = useLocation()
   const timeout = {}
