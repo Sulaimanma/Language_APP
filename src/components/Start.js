@@ -34,7 +34,7 @@ export default function Start(props) {
         onViewportChange={viewpoint => {
           setViewpoint(viewpoint);
         }}
-        mapStyle="mapbox://styles/guneriboi/cknqr5qtp07t517rt8ykm55ri"
+        mapStyle="mapbox://styles/guneriboi/ckliz10u80f7817mtlpnik90t"
       >
         {PCCC_GeoJson.features.map(region => (
           <Marker
